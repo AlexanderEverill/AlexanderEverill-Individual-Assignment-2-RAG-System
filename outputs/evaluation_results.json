@@ -1,0 +1,1712 @@
+{
+  "metadata": {
+    "test_set_size": 15,
+    "configs": [
+      "baseline",
+      "+hybrid",
+      "+rerank",
+      "enhanced"
+    ],
+    "metrics": [
+      "P@5",
+      "R@5",
+      "P@10",
+      "R@10",
+      "MRR",
+      "correctness",
+      "groundedness",
+      "completeness",
+      "citation_accuracy"
+    ]
+  },
+  "per_query": [
+    {
+      "id": "Q01",
+      "query": "What does Principle 2 (Skill, Care and Diligence) require of firms?",
+      "category": "simple_fact",
+      "relevant_rule_codes": [
+        "PRIN 2.1.1R",
+        "PRIN 1.1.6G",
+        "PRIN 1.1.7G"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "Principle 2 (Skill, Care and Diligence) requires a firm to conduct its business with due skill, care, and diligence.",
+          "chunk_ids": [
+            "PRIN_0017",
+            "PRIN_0018",
+            "PRIN_0160",
+            "PRIN_0025",
+            "PRIN_0180"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.3333333333333333,
+            "P@10": 0.1,
+            "R@10": 0.3333333333333333,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 5,
+            "groundedness": 5,
+            "completeness": 5,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 1570.5
+        },
+        "+hybrid": {
+          "answer": "Principle 2 (Skill, Care and Diligence) requires a firm to conduct its business with due skill, care, and diligence.",
+          "chunk_ids": [
+            "PRIN_0017",
+            "COBS_0068",
+            "PRIN_0008",
+            "PRIN_0018",
+            "PRIN_0160"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.2,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 5,
+            "groundedness": 5,
+            "completeness": 5,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 1227.9
+        },
+        "+rerank": {
+          "answer": "Principle 2 (Skill, Care and Diligence) requires a firm to conduct its business with due skill, care, and diligence.",
+          "chunk_ids": [
+            "PRIN_0008",
+            "COBS_0068",
+            "PRIN_0017",
+            "PRIN_0012",
+            "PRIN_0035"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.1,
+            "R@10": 0.3333333333333333,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 5,
+            "groundedness": 5,
+            "completeness": 5,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 3353.5
+        },
+        "enhanced": {
+          "answer": "Principle 2 (Skill, Care and Diligence) requires firms to conduct their business with due skill, care, and diligence. This means that firms must ensure that they act with the necessary competence and attention to detail in their business operations.\n\nSupport for this requirement can be found in PRIN 2.1.1R, which states that a firm must conduct its business with due skill, care, and diligence. This is a Rule (R), meaning it is a legally binding obligation that firms must adhere to.\n\nFurther elaboration is provided in PRIN 1.1.7, which explains that under Principle 2, a firm would be in breach if it was shown to have failed to act with due skill, care, and diligence in the conduct of its business. This reinforces the mandatory nature of the requirement, as it outlines the potential for disciplinary sanctions if a firm fails to meet the standard of conduct required by this Principle.",
+          "chunk_ids": [
+            "COBS_1964",
+            "PRIN_0008",
+            "COBS_0068",
+            "PRIN_0017",
+            "PRIN_0006"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 1.0,
+            "P@10": 0.2,
+            "R@10": 0.6666666666666666,
+            "MRR": 0.5
+          },
+          "generation": {
+            "correctness": 5,
+            "groundedness": 5,
+            "completeness": 5,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 2969.8
+        }
+      }
+    },
+    {
+      "id": "Q02",
+      "query": "What are the 11 Principles for Businesses under PRIN?",
+      "category": "simple_fact",
+      "relevant_rule_codes": [
+        "PRIN 2.1.1R",
+        "PRIN 1.1.5G",
+        "PRIN 1.1.6G",
+        "PRIN 3.2.3R"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "PRIN_0002",
+            "PRIN_0003",
+            "PRIN_0009",
+            "PRIN_0000",
+            "PRIN_0216"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.0,
+            "R@10": 0.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 924.0
+        },
+        "+hybrid": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "PRIN_0000",
+            "PRIN_0007",
+            "PRIN_0001",
+            "PRIN_0002",
+            "PRIN_0230"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.25,
+            "P@10": 0.2,
+            "R@10": 0.25,
+            "MRR": 0.5
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 817.8
+        },
+        "+rerank": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "PRIN_0033",
+            "PRIN_0012",
+            "PRIN_0005",
+            "PRIN_0027",
+            "PRIN_0216"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.25,
+            "P@10": 0.1,
+            "R@10": 0.25,
+            "MRR": 0.3333333333333333
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1025.1
+        },
+        "enhanced": {
+          "answer": "The provided context does not contain information relevant to this question. The context includes references to specific Principles and their applications, but it does not list all 11 Principles for Businesses under PRIN.",
+          "chunk_ids": [
+            "PRIN_0033",
+            "PRIN_0230",
+            "PRIN_0006",
+            "PRIN_0005",
+            "PRIN_0208"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 0.75,
+            "P@10": 0.2,
+            "R@10": 0.25,
+            "MRR": 0.3333333333333333
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 3,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1289.3
+        }
+      }
+    },
+    {
+      "id": "Q03",
+      "query": "Who does the PRIN sourcebook apply to?",
+      "category": "simple_fact",
+      "relevant_rule_codes": [
+        "PRIN 1.1.1R",
+        "PRIN 1.1.2G"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "PRIN_0192",
+            "PRIN_0000",
+            "PRIN_0190",
+            "PRIN_0199",
+            "PRIN_0064"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.5,
+            "P@10": 0.1,
+            "R@10": 0.5,
+            "MRR": 0.5
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 923.5
+        },
+        "+hybrid": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "PRIN_0000",
+            "PRIN_0090",
+            "PRIN_0192",
+            "PRIN_0195",
+            "PRIN_0148"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.5,
+            "P@10": 0.1,
+            "R@10": 0.5,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 923.8
+        },
+        "+rerank": {
+          "answer": "The PRIN sourcebook applies to every firm, except in relation to its carrying on of auction regulation bidding. It also applies to certain payment service providers and electronic money issuers that are not firms. Additionally, the application of the Principles is modified for firms conducting MiFID business and Annex II benchmark administrators.",
+          "chunk_ids": [
+            "PRIN_0193",
+            "PRIN_0001",
+            "PRIN_0202",
+            "PRIN_0000",
+            "PRIN_0090"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 0.5,
+            "P@10": 0.1,
+            "R@10": 0.5,
+            "MRR": 0.5
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 5,
+            "completeness": 4,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 1537.2
+        },
+        "enhanced": {
+          "answer": "The PRIN sourcebook applies to every firm, but its application can be modified depending on the type of business conducted. Specifically, PRIN 1.1.1 states that the Principles apply in whole or in part to every firm, with modifications for firms conducting MiFID business and Annex II benchmark administrators. PRIN 3 specifies to whom, to what, and where the Principles apply (PRIN 1.1.1, Rule - mandatory).\n\nAdditionally, PRIN 3.1.1B clarifies that Principle 7 applies to a registered person communicating a financial promotion relating to qualifying cryptoassets, similar to how it applies to an authorised person (PRIN 3.1.1B, Rule - mandatory).\n\nFurthermore, PRIN 3.1.12 indicates that Principle 12 and PRIN 2A apply only when the client is a retail customer or when there is a distribution chain involving a retail customer (PRIN 3.1.12, Guidance - expected).\n\nLastly, PRIN 2A.6.1 outlines that this section applies to all firms to whom Principle 12 and PRIN 2A apply, particularly those responsible for direct interaction and support to retail customers, regardless of the communication channel used (PRIN 2A.6.1, Rule - mandatory).\n\nThese rules and guidance collectively define the scope of the PRIN sourcebook's application.",
+          "chunk_ids": [
+            "PRIN_0195",
+            "PRIN_0202",
+            "PRIN_0000",
+            "PRIN_0090",
+            "PRIN_0148"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.5,
+            "P@10": 0.1,
+            "R@10": 0.5,
+            "MRR": 0.3333333333333333
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 5,
+            "completeness": 4,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 3586.3
+        }
+      }
+    },
+    {
+      "id": "Q04",
+      "query": "What does COBS 4.2.1R say about financial promotions?",
+      "category": "rule_reference",
+      "relevant_rule_codes": [
+        "COBS 4.2.1R"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "COBS_1626",
+            "COBS_2337",
+            "COBS_0330",
+            "COBS_0343",
+            "COBS_0364"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 1.0,
+            "P@10": 0.1,
+            "R@10": 1.0,
+            "MRR": 0.5
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 841.1
+        },
+        "+hybrid": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "COBS_2337",
+            "COBS_0493",
+            "COBS_1626",
+            "COBS_0247",
+            "COBS_0330"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 1.0,
+            "P@10": 0.1,
+            "R@10": 1.0,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 922.2
+        },
+        "+rerank": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "COBS_0330",
+            "COBS_0343",
+            "COBS_0493",
+            "COBS_2337",
+            "COBS_1625"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 1.0,
+            "P@10": 0.1,
+            "R@10": 1.0,
+            "MRR": 0.25
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 921.0
+        },
+        "enhanced": {
+          "answer": "The provided context does not contain information relevant to this question.",
+          "chunk_ids": [
+            "COBS_0330",
+            "COBS_0343",
+            "COBS_0493",
+            "COBS_2337",
+            "COBS_0247"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 1.0,
+            "P@10": 0.1,
+            "R@10": 1.0,
+            "MRR": 0.25
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1127.8
+        }
+      }
+    },
+    {
+      "id": "Q05",
+      "query": "What are the requirements under COBS 2.1.1R regarding acting honestly, fairly and professionally?",
+      "category": "rule_reference",
+      "relevant_rule_codes": [
+        "COBS 2.1.1R",
+        "COBS 2.1.2G",
+        "COBS 2.3.3G"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "The requirements under COBS 2.1.1R regarding acting honestly, fairly, and professionally are that a firm must act in accordance with the best interests of its client. This rule applies in relation to designated investment business carried on for a retail client, in relation to MiFID, equivalent third country or optional exemption business for any client, and in relation to insurance distribution for any client. Additionally, for a management company, this rule applies in relation to any UCITS scheme the firm manages.",
+          "chunk_ids": [
+            "COBS_0098",
+            "COBS_0068",
+            "COBS_1596",
+            "COBS_0032",
+            "COBS_0031"
+          ],
+          "retrieval": {
+            "P@5": 0.8,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.4,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 5,
+            "completeness": 4,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 1625.6
+        },
+        "+hybrid": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "COBS_0098",
+            "COBS_0068",
+            "COBS_1596",
+            "COBS_0032",
+            "COBS_0833"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.4,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 924.3
+        },
+        "+rerank": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "COBS_0068",
+            "COBS_0098",
+            "COBS_1525",
+            "COBS_1524",
+            "COBS_0032"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.4,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1253.8
+        },
+        "enhanced": {
+          "answer": "The requirements under COBS 2.1.1R regarding acting honestly, fairly, and professionally are that a firm must adhere to these principles in its dealings with clients. This obligation is reinforced by the need to act in accordance with the best interests of its clients, as well as the duties under Principles 1 (integrity), 2 (skill, care and diligence), and 6 (customers' interests) as outlined in COBS 2.3.3. \n\nCOBS 2.1.1R is a Rule, meaning it is a legally binding obligation for firms to follow. This rule requires firms to conduct their business with integrity, skill, care, and diligence, ensuring that they prioritize the interests of their clients in all professional dealings. \n\nAdditionally, COBS 2.3A.7R reiterates the requirement for firms to act honestly, fairly, and professionally in accordance with the best interests of their clients, further emphasizing the importance of these principles.\n\nIn summary, under COBS 2.1.1R, firms must act with integrity, skill, care, and diligence, prioritizing the best interests of their clients in all professional interactions.",
+          "chunk_ids": [
+            "COBS_0068",
+            "COBS_0098",
+            "COBS_1525",
+            "COBS_1524",
+            "COBS_0032"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.4,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 4,
+            "completeness": 4,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 4916.3
+        }
+      }
+    },
+    {
+      "id": "Q06",
+      "query": "What does SYSC 10.1.8R require regarding conflicts of interest records?",
+      "category": "rule_reference",
+      "relevant_rule_codes": [
+        "SYSC 10.1.8R"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "SYSC_0794",
+            "SYSC_0792",
+            "SYSC_0843",
+            "SYSC_0550",
+            "SYSC_0807"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 1.0,
+            "P@10": 0.1,
+            "R@10": 1.0,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 821.2
+        },
+        "+hybrid": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "SYSC_0794",
+            "SYSC_0821",
+            "SYSC_0816",
+            "SYSC_0792",
+            "SYSC_0815"
+          ],
+          "retrieval": {
+            "P@5": 0.8,
+            "R@5": 1.0,
+            "P@10": 0.5,
+            "R@10": 1.0,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1330.7
+        },
+        "+rerank": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "SYSC_0821",
+            "SYSC_0844",
+            "SYSC_0815",
+            "SYSC_0816",
+            "SYSC_0843"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 1.0,
+            "P@10": 0.4,
+            "R@10": 1.0,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1004.3
+        },
+        "enhanced": {
+          "answer": "SYSC 10.1.8R requires firms to keep and regularly update a record of situations where a conflict of interest that could damage a client's interests has arisen or may arise in the context of ongoing services or activities. Additionally, firms must ensure that their senior management receives written reports on these situations frequently, and at least annually. This is a Rule (R), meaning it is a legally binding obligation for firms to comply with these requirements (SYSC 10.1A.8R).",
+          "chunk_ids": [
+            "SYSC_0821",
+            "SYSC_0844",
+            "SYSC_0815",
+            "SYSC_0816",
+            "COBS_1222"
+          ],
+          "retrieval": {
+            "P@5": 0.8,
+            "R@5": 1.0,
+            "P@10": 0.5,
+            "R@10": 1.0,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 4,
+            "completeness": 4,
+            "citation_accuracy": 3
+          },
+          "latency_ms": 1845.3
+        }
+      }
+    },
+    {
+      "id": "Q07",
+      "query": "How do the Consumer Duty rules in PRIN 2A relate to the conduct of business rules in COBS 4?",
+      "category": "cross_section",
+      "relevant_rule_codes": [
+        "PRIN 2A.1.1R",
+        "PRIN 2A.5.1R",
+        "COBS 4.2.1R",
+        "PRIN 2A.1.10G",
+        "PRIN 2A.1.12G",
+        "PRIN 2A.1.17G"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "PRIN_0213",
+            "PRIN_0017",
+            "PRIN_0027",
+            "COBS_1579",
+            "COBS_1623"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.3333333333333333,
+            "P@10": 0.1,
+            "R@10": 0.3333333333333333,
+            "MRR": 0.3333333333333333
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 923.4
+        },
+        "+hybrid": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "PRIN_0027",
+            "PRIN_0017",
+            "PRIN_0213",
+            "PRIN_0029",
+            "PRIN_0231"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 0.5,
+            "P@10": 0.3,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 922.4
+        },
+        "+rerank": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "PRIN_0027",
+            "PRIN_0017",
+            "PRIN_0029",
+            "PRIN_0213",
+            "COBS_2349"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 0.5,
+            "P@10": 0.1,
+            "R@10": 0.3333333333333333,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1501.4
+        },
+        "enhanced": {
+          "answer": "The provided context does not contain information relevant to this question. The context focuses on the Consumer Duty rules in PRIN 2A and their relationship with other principles within PRIN, but it does not address how these rules relate to the conduct of business rules in COBS 4.",
+          "chunk_ids": [
+            "PRIN_0027",
+            "PRIN_0017",
+            "PRIN_0035",
+            "PRIN_0029",
+            "PRIN_0198"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.3,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 3,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1374.8
+        }
+      }
+    },
+    {
+      "id": "Q08",
+      "query": "How do SYSC systems and controls requirements support the FCA Principles?",
+      "category": "cross_section",
+      "relevant_rule_codes": [
+        "PRIN 2.1.1R",
+        "SYSC 4.1.1R",
+        "SYSC 6.1.1R",
+        "SYSC 1.2.1G"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "SYSC_0004",
+            "SYSC_0885",
+            "SYSC_0003",
+            "SYSC_0712",
+            "SYSC_0489"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.25,
+            "P@10": 0.1,
+            "R@10": 0.25,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 819.9
+        },
+        "+hybrid": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "SYSC_0885",
+            "SYSC_1447",
+            "SYSC_0004",
+            "SYSC_0984",
+            "SYSC_0993"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.25,
+            "P@10": 0.1,
+            "R@10": 0.25,
+            "MRR": 0.3333333333333333
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1024.2
+        },
+        "+rerank": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "SYSC_1447",
+            "SYSC_0004",
+            "SYSC_0882",
+            "SYSC_0875",
+            "SYSC_0915"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.25,
+            "P@10": 0.2,
+            "R@10": 0.5,
+            "MRR": 0.5
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 892.0
+        },
+        "enhanced": {
+          "answer": "The SYSC systems and controls requirements support the FCA Principles by encouraging firms to take responsibility for their organisational arrangements and ensuring these arrangements are aligned with the FCA's regulatory functions. Specifically, SYSC aims to:\n\n1. Encourage directors and senior managers to take practical responsibility for their firm's arrangements, which are of interest to the FCA because they affect the FCA's functions under the Act. This aligns with the FCA's focus on accountability and effective management within firms (SYSC 1.2.1(1)G). This is Guidance, meaning it is the FCA's expectation but not mandatory.\n\n2. Increase certainty by amplifying Principle 3, which requires firms to take reasonable care to organise and control their affairs responsibly and effectively, with adequate risk management systems (SYSC 1.2.1(2)G). This is Guidance, indicating the FCA's expectation for firms to adhere to this principle.\n\n3. Encourage firms to assign responsibility for effective and responsible organisation to specific directors and senior managers, thereby promoting accountability and clarity in management roles (SYSC 1.2.1(3)G). This is Guidance, reflecting the FCA's expectations.\n\n4. Create a common platform of organisational and systems and controls requirements for all firms, ensuring a consistent approach across the industry (SYSC 1.2.1(4)G). This is Guidance, indicating the FCA's expectation for standardisation in systems and controls.\n\nThese elements collectively support the FCA Principles by fostering a culture of accountability, effective risk management, and organisational clarity within firms.",
+          "chunk_ids": [
+            "SYSC_1447",
+            "SYSC_0004",
+            "SYSC_0882",
+            "SYSC_0984",
+            "SYSC_1352"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.25,
+            "P@10": 0.1,
+            "R@10": 0.25,
+            "MRR": 0.5
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 5,
+            "completeness": 4,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 3891.8
+        }
+      }
+    },
+    {
+      "id": "Q09",
+      "query": "What are the rules about treating customers fairly?",
+      "category": "ambiguous",
+      "relevant_rule_codes": [
+        "PRIN 2.1.1R",
+        "PRIN 2A.1.1R",
+        "COBS 2.1.1R",
+        "COBS 2.3.3G",
+        "COBS 20.2.2G",
+        "PRIN 1.2.1G"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "PRIN_0037",
+            "PRIN_0038",
+            "PRIN_0079",
+            "PRIN_0039",
+            "PRIN_0012"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.16666666666666666,
+            "P@10": 0.1,
+            "R@10": 0.16666666666666666,
+            "MRR": 0.2
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1026.2
+        },
+        "+hybrid": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "PRIN_0012",
+            "COBS_0068",
+            "PRIN_0037",
+            "COBS_2082",
+            "PRIN_0038"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 0.5,
+            "P@10": 0.3,
+            "R@10": 0.5,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 930.0
+        },
+        "+rerank": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "PRIN_0017",
+            "PRIN_0012",
+            "COBS_0068",
+            "COBS_0098",
+            "PRIN_0079"
+          ],
+          "retrieval": {
+            "P@5": 0.8,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.2,
+            "R@10": 0.3333333333333333,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1025.5
+        },
+        "enhanced": {
+          "answer": "The provided context does not contain information relevant to the specific rules about treating customers fairly. The context mentions treating with-profits policyholders fairly in the context of with-profits policies (COBS 20.2.2 and COBS 20.2.5R), but it does not provide a comprehensive overview of the general rules about treating customers fairly. \n\nFor a complete understanding of the rules about treating customers fairly, additional context from the FCA Handbook, specifically from the Principles for Businesses (PRIN) or Conduct of Business Sourcebook (COBS), would be necessary.",
+          "chunk_ids": [
+            "COBS_2074",
+            "COBS_2082",
+            "PRIN_0012",
+            "COBS_2085",
+            "COBS_0068"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 0.5,
+            "P@10": 0.3,
+            "R@10": 0.5,
+            "MRR": 0.5
+          },
+          "generation": {
+            "correctness": 2,
+            "groundedness": 3,
+            "completeness": 2,
+            "citation_accuracy": 3
+          },
+          "latency_ms": 2051.1
+        }
+      }
+    },
+    {
+      "id": "Q10",
+      "query": "What should firms do about compliance?",
+      "category": "ambiguous",
+      "relevant_rule_codes": [
+        "SYSC 6.1.1R",
+        "SYSC 6.1.3R",
+        "SYSC 6.1.4R"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "SYSC_0519",
+            "SYSC_0688",
+            "SYSC_0693",
+            "SYSC_1495",
+            "COBS_2342"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 1.0,
+            "P@10": 0.2,
+            "R@10": 1.0,
+            "MRR": 0.5
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 825.7
+        },
+        "+hybrid": {
+          "answer": "Firms should ensure that their compliance function is appropriately organized and resourced. This includes having a separate compliance function if necessary, documenting its organization and responsibilities, staffing it with a competent and independent team, and providing it with adequate resources and access to relevant records. The compliance function should also establish a risk-based monitoring program and report directly to the management body when significant risks are detected. Additionally, the remuneration of compliance staff should not compromise their objectivity.",
+          "chunk_ids": [
+            "SYSC_0686",
+            "SYSC_0519",
+            "COBS_1844",
+            "SYSC_0688",
+            "PRIN_0178"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.3333333333333333,
+            "P@10": 0.2,
+            "R@10": 1.0,
+            "MRR": 0.25
+          },
+          "generation": {
+            "correctness": 2,
+            "groundedness": 3,
+            "completeness": 2,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1699.3
+        },
+        "+rerank": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "SYSC_0519",
+            "SYSC_0507",
+            "SYSC_0954",
+            "SYSC_0950",
+            "SYSC_0686"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.4,
+            "R@10": 1.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1026.3
+        },
+        "enhanced": {
+          "answer": "Firms must establish and maintain a compliance function that is appropriately structured and resourced to ensure effective compliance with regulatory obligations. Here are the steps firms should take:\n\n1. **Establish a Compliance Function**: Depending on the nature, scale, and complexity of the business, it may be appropriate for a firm to have a separate compliance function. This function should be documented, staffed by competent personnel, and have unrestricted access to relevant records and the governing body (SYSC 3.2.7G). This is guidance, meaning it is expected but not mandatory.\n\n2. **Conduct Risk-Based Monitoring**: The compliance function must conduct an assessment to establish a risk-based monitoring programme that considers all areas of the firm's designated investment business and associated activities. This programme must prioritize compliance risk comprehensively (SYSC 6.1.3-BR). This is a rule, meaning it is mandatory.\n\n3. **Ensure Independence and Authority**: For common platform firms, the compliance function must have the necessary authority, resources, expertise, and access to information. The compliance officer must be appointed by the management body and report directly to it when significant risks are detected. The compliance function's personnel must not be involved in the activities they monitor, and their remuneration must not compromise their objectivity (SYSC 6.1.3-CR). This is a rule, meaning it is mandatory.\n\n4. **Appoint a Compliance Officer**: Certain firms, such as debt management and credit repair firms, must appoint a compliance officer responsible for ensuring compliance with SYSC 6.1.1R and related reporting (SYSC 6.1.4CR). This is a rule, meaning it is mandatory.\n\n5. **Maintain Policies and Procedures**: Firms must establish, implement, and maintain clear and effective policies and procedures for compliance, have them approved by the governing body, and periodically review their effectiveness. Following reviews, firms must address any deficiencies (COBS 23.8.1R). This is a rule, meaning it is mandatory.\n\nThese steps ensure that a firm's compliance function is robust, independent, and capable of effectively managing compliance risks.",
+          "chunk_ids": [
+            "SYSC_0519",
+            "SYSC_0686",
+            "SYSC_0688",
+            "SYSC_0693",
+            "COBS_2342"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 1.0,
+            "P@10": 0.2,
+            "R@10": 1.0,
+            "MRR": 0.3333333333333333
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 4,
+            "completeness": 4,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 7745.1
+        }
+      }
+    },
+    {
+      "id": "Q11",
+      "query": "What are the FCA rules on cryptocurrency staking rewards?",
+      "category": "edge_case",
+      "relevant_rule_codes": [],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "COBS_0247",
+            "SYSC_1054",
+            "COBS_0966",
+            "SYSC_1029",
+            "SYSC_1053"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.0,
+            "R@10": 0.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 5,
+            "groundedness": 5,
+            "completeness": 5,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 2114.1
+        },
+        "+hybrid": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "SYSC_1045",
+            "COBS_0247",
+            "SYSC_1043",
+            "SYSC_1054",
+            "SYSC_1407"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.0,
+            "R@10": 0.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 5,
+            "groundedness": 5,
+            "completeness": 5,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 3073.0
+        },
+        "+rerank": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "COBS_0247",
+            "SYSC_1167",
+            "SYSC_1045",
+            "SYSC_1054",
+            "SYSC_1081"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.0,
+            "R@10": 0.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 3,
+            "groundedness": 3,
+            "completeness": 3,
+            "citation_accuracy": 3
+          },
+          "latency_ms": 2047.4
+        },
+        "enhanced": {
+          "answer": "The provided context does not contain information relevant to this question. There are no specific FCA rules on cryptocurrency staking rewards mentioned in the retrieved regulatory context.",
+          "chunk_ids": [
+            "COBS_0247",
+            "SYSC_1045",
+            "SYSC_1054",
+            "SYSC_1043",
+            "SYSC_1081"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.0,
+            "R@10": 0.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 5,
+            "groundedness": 5,
+            "completeness": 5,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 3174.2
+        }
+      }
+    },
+    {
+      "id": "Q12",
+      "query": "What does the FCA Handbook say about climate change risk disclosures?",
+      "category": "edge_case",
+      "relevant_rule_codes": [],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "COBS_2203",
+            "SYSC_0814",
+            "COBS_0046",
+            "COBS_1646",
+            "SYSC_1188"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.0,
+            "R@10": 0.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1125.7
+        },
+        "+hybrid": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "COBS_2203",
+            "SYSC_1736",
+            "SYSC_0814",
+            "SYSC_1711",
+            "COBS_0046"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.0,
+            "R@10": 0.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 2489.1
+        },
+        "+rerank": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "SYSC_0897",
+            "SYSC_1188",
+            "SYSC_1052",
+            "SYSC_0727",
+            "SYSC_0536"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.0,
+            "R@10": 0.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 2,
+            "groundedness": 2,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1883.5
+        },
+        "enhanced": {
+          "answer": "The provided context does not contain information relevant to the question about climate change risk disclosures.",
+          "chunk_ids": [
+            "SYSC_1188",
+            "SYSC_0814",
+            "COBS_2203",
+            "COBS_1254",
+            "COBS_0510"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.0,
+            "R@10": 0.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 3,
+            "groundedness": 4,
+            "completeness": 3,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 2664.3
+        }
+      }
+    },
+    {
+      "id": "Q13",
+      "query": "What is an 'eligible counterparty' under COBS?",
+      "category": "keyword",
+      "relevant_rule_codes": [
+        "COBS 3.6.1R",
+        "COBS 3.6.2R",
+        "COBS 3.6.4R"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "An eligible counterparty is a client that is either a per se eligible counterparty or an elective eligible counterparty. A client can only be an eligible counterparty in relation to eligible counterparty business.",
+          "chunk_ids": [
+            "COBS_0216",
+            "COBS_0241",
+            "COBS_0218",
+            "COBS_0222",
+            "COBS_0217"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.3,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 3,
+            "groundedness": 4,
+            "completeness": 2,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 1127.7
+        },
+        "+hybrid": {
+          "answer": "An eligible counterparty is a client that is either a per se eligible counterparty or an elective eligible counterparty. A client can only be an eligible counterparty in relation to eligible counterparty business.",
+          "chunk_ids": [
+            "COBS_0216",
+            "COBS_0241",
+            "COBS_0218",
+            "COBS_0032",
+            "COBS_0223"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.3,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 3,
+            "groundedness": 4,
+            "completeness": 2,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 1335.6
+        },
+        "+rerank": {
+          "answer": "An eligible counterparty is a client that is either a per se eligible counterparty or an elective eligible counterparty.",
+          "chunk_ids": [
+            "COBS_0216",
+            "COBS_0241",
+            "COBS_0223",
+            "COBS_0222",
+            "COBS_0218"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.6,
+            "R@10": 1.0,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 2,
+            "groundedness": 4,
+            "completeness": 2,
+            "citation_accuracy": 3
+          },
+          "latency_ms": 1114.4
+        },
+        "enhanced": {
+          "answer": "An 'eligible counterparty' under COBS is defined as a client that is either a per se eligible counterparty or an elective eligible counterparty. This classification is applicable specifically in relation to eligible counterparty business, with an exception noted in PRIN 1 Annex 1 R (COBS 3.6.1(1)R). This is a Rule (R), meaning it is a legally binding obligation.\n\nAdditionally, a firm may obtain a prospective counterparty's confirmation to be treated as an eligible counterparty either through a general agreement or for each individual transaction (COBS 3.6.6R). This is also a Rule (R), indicating a mandatory requirement for firms.\n\nThe provided context does not contain further detailed criteria for what constitutes a per se or elective eligible counterparty beyond these references.",
+          "chunk_ids": [
+            "COBS_0216",
+            "COBS_0241",
+            "COBS_0223",
+            "COBS_0222",
+            "COBS_0218"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.3,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 3,
+            "groundedness": 4,
+            "completeness": 2,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 2354.0
+        }
+      }
+    },
+    {
+      "id": "Q14",
+      "query": "What is the 'compliance function' requirement under SYSC?",
+      "category": "keyword",
+      "relevant_rule_codes": [
+        "SYSC 6.1.3R",
+        "SYSC 6.1.4R"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "SYSC_0519",
+            "SYSC_0521",
+            "SYSC_0692",
+            "SYSC_0680",
+            "SYSC_0693"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 1.0,
+            "P@10": 0.3,
+            "R@10": 1.0,
+            "MRR": 0.3333333333333333
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 762.6
+        },
+        "+hybrid": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "SYSC_0693",
+            "SYSC_0688",
+            "SYSC_0521",
+            "SYSC_0695",
+            "SYSC_0519"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 1.0,
+            "P@10": 0.5,
+            "R@10": 1.0,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 3891.2
+        },
+        "+rerank": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "SYSC_0519",
+            "SYSC_0521",
+            "SYSC_0695",
+            "SYSC_0688",
+            "SYSC_0693"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 1.0,
+            "P@10": 0.5,
+            "R@10": 1.0,
+            "MRR": 0.25
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 2663.9
+        },
+        "enhanced": {
+          "answer": "The compliance function requirements under SYSC are detailed in several rules and guidance sections, focusing on the independence, authority, and resourcing of the compliance function within a firm.\n\n1. **Authority and Independence**: A firm must ensure that the compliance function has the necessary authority, resources, expertise, and access to all relevant information. The compliance officer must be appointed and responsible for the compliance function and any required reporting (SYSC 6.1.4R). This is a Rule (R), meaning it is a mandatory requirement.\n\n2. **Remuneration**: The method of determining the remuneration for those involved in the compliance function must not compromise their objectivity. This requirement is also a Rule (R) under SYSC 6.1.4R, making it mandatory.\n\n3. **Staffing and Documentation**: Depending on the nature, scale, and complexity of its business, a firm should have a separate compliance function. The organisation and responsibilities of this function should be documented, staffed by competent personnel, and adequately resourced (SYSC 3.2.7G). This is Guidance (G), indicating it is an expectation but not mandatory.\n\n4. **Allocation of Responsibility**: A firm must allocate the responsibility for oversight of compliance to a director or senior manager, who must report to the governing body regarding this responsibility (SYSC 3.2.8R). This is a Rule (R), thus mandatory.\n\n5. **Access and Recourse**: The compliance function should have unrestricted access to the firm's relevant records and ultimate recourse to its governing body (SYSC 3.2.7G). This is Guidance (G), meaning it is expected but not mandatory.\n\nThese rules and guidance ensure that the compliance function operates effectively and independently within a firm, maintaining its objectivity and authority.",
+          "chunk_ids": [
+            "SYSC_0690",
+            "SYSC_0519",
+            "SYSC_0521",
+            "SYSC_0520",
+            "SYSC_0695"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 1.0,
+            "P@10": 0.5,
+            "R@10": 1.0,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 2,
+            "groundedness": 3,
+            "completeness": 2,
+            "citation_accuracy": 3
+          },
+          "latency_ms": 8558.5
+        }
+      }
+    },
+    {
+      "id": "Q15",
+      "query": "What does COBS require regarding the 'suitability' of investment recommendations?",
+      "category": "rule_reference",
+      "relevant_rule_codes": [
+        "COBS 9.2.1R",
+        "COBS 9.2.2R",
+        "COBS 9.2.3R",
+        "COBS 9A.2.1R",
+        "COBS 9A.2.2G",
+        "COBS 9.1.1A",
+        "COBS 9A.3.3R"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "COBS requires firms to undertake a suitability assessment not only when making a personal recommendation to buy a financial instrument or an insurance-based investment product but for all decisions whether to trade, including making any personal recommendations about whether or not to buy, hold, or sell an investment. Additionally, a firm's responsibility to perform the suitability assessment is not reduced when a personal recommendation on insurance-based investment products is provided through an automated or semi-automated system.",
+          "chunk_ids": [
+            "COBS_1607",
+            "COBS_0911",
+            "COBS_0910",
+            "COBS_0944",
+            "COBS_0952"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 0.2857142857142857,
+            "P@10": 0.2,
+            "R@10": 0.2857142857142857,
+            "MRR": 0.3333333333333333
+          },
+          "generation": {
+            "correctness": 3,
+            "groundedness": 4,
+            "completeness": 3,
+            "citation_accuracy": 3
+          },
+          "latency_ms": 1638.0
+        },
+        "+hybrid": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "COBS_0965",
+            "COBS_1607",
+            "COBS_0958",
+            "COBS_0911",
+            "COBS_0575"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.2857142857142857,
+            "P@10": 0.3,
+            "R@10": 0.42857142857142855,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1024.5
+        },
+        "+rerank": {
+          "answer": "COBS requires firms to undertake a suitability assessment not only when making a personal recommendation to buy a financial instrument or an insurance-based investment product but for all decisions whether to trade, including making any personal recommendations about whether or not to buy, hold or sell an investment. Additionally, a firm must not make a recommendation where none of the insurance-based investment products are suitable for the client. The responsibility to perform the suitability assessment is not reduced even if the recommendation is provided through an automated or semi-automated system.",
+          "chunk_ids": [
+            "COBS_0910",
+            "COBS_0829",
+            "COBS_0940",
+            "COBS_0965",
+            "COBS_0944"
+          ],
+          "retrieval": {
+            "P@5": 1.0,
+            "R@5": 0.5714285714285714,
+            "P@10": 0.6,
+            "R@10": 0.5714285714285714,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 2,
+            "groundedness": 4,
+            "completeness": 2,
+            "citation_accuracy": 3
+          },
+          "latency_ms": 2868.4
+        },
+        "enhanced": {
+          "answer": "COBS requires firms to undertake a suitability assessment for investment recommendations, ensuring that any personal recommendation is suitable for the client based on their objectives and personal circumstances.\n\n1. **Suitability Assessment Requirement**: Firms should conduct a suitability assessment not only when making a personal recommendation to buy a financial instrument or an insurance-based investment product but for all decisions whether to trade, including recommendations about whether to buy, hold, or sell an investment (COBS 9A.2.2G). This is Guidance, meaning it is the FCA's expectation but not mandatory.\n\n2. **Periodic Suitability Assessment**: A firm providing a periodic suitability assessment must review the suitability of the recommendations at least annually. The frequency must be increased where appropriate, considering the client's risk profile and the type of financial instruments recommended (COBS 9A.3.9R). This is a Rule, making it a mandatory obligation.\n\n3. **Suitability Report**: When providing investment advice to a retail client, a firm must provide a report outlining the advice given, its suitability, and how it meets the client's objectives and personal circumstances, including investment term, knowledge, experience, attitude to risk, and capacity for loss (COBS 9A.3.3R). This is a Rule, making it mandatory.\n\n4. **Prohibition on Unsuitable Recommendations**: A firm must not make a recommendation on an insurance-based investment product if none of the products are suitable for the client (COBS 9A.2.20AR). This is a Rule, making it mandatory.\n\nThese requirements ensure that investment recommendations are tailored to the client's needs and circumstances, promoting responsible and informed decision-making.",
+          "chunk_ids": [
+            "COBS_0910",
+            "COBS_0829",
+            "COBS_0958",
+            "COBS_0950",
+            "COBS_0940"
+          ],
+          "retrieval": {
+            "P@5": 0.8,
+            "R@5": 0.5714285714285714,
+            "P@10": 0.3,
+            "R@10": 0.42857142857142855,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 3,
+            "groundedness": 4,
+            "completeness": 3,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 4248.7
+        }
+      }
+    }
+  ],
+  "aggregated": {
+    "baseline": {
+      "retrieval": {
+        "P@5": 0.28,
+        "R@5": 0.4802,
+        "P@10": 0.14,
+        "R@10": 0.4802,
+        "MRR": 0.5133
+      },
+      "generation": {
+        "correctness": 2.0,
+        "groundedness": 2.2,
+        "completeness": 1.93,
+        "citation_accuracy": 2.07
+      },
+      "avg_latency_ms": 1137.9,
+      "num_queries": 15
+    },
+    "+hybrid": {
+      "retrieval": {
+        "P@5": 0.32,
+        "R@5": 0.5079,
+        "P@10": 0.2333,
+        "R@10": 0.573,
+        "MRR": 0.7389
+      },
+      "generation": {
+        "correctness": 1.73,
+        "groundedness": 1.87,
+        "completeness": 1.67,
+        "citation_accuracy": 1.73
+      },
+      "avg_latency_ms": 1502.4,
+      "num_queries": 15
+    },
+    "+rerank": {
+      "retrieval": {
+        "P@5": 0.3733,
+        "R@5": 0.5159,
+        "P@10": 0.2533,
+        "R@10": 0.5659,
+        "MRR": 0.5889
+      },
+      "generation": {
+        "correctness": 1.8,
+        "groundedness": 2.13,
+        "completeness": 1.73,
+        "citation_accuracy": 1.87
+      },
+      "avg_latency_ms": 1607.8,
+      "num_queries": 15
+    },
+    "enhanced": {
+      "retrieval": {
+        "P@5": 0.4133,
+        "R@5": 0.6381,
+        "P@10": 0.2333,
+        "R@10": 0.573,
+        "MRR": 0.5833
+      },
+      "generation": {
+        "correctness": 3.07,
+        "groundedness": 3.8,
+        "completeness": 3.0,
+        "citation_accuracy": 3.27
+      },
+      "avg_latency_ms": 3453.2,
+      "num_queries": 15
+    }
+  }
+}
