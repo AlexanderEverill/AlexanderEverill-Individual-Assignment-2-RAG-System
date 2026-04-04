@@ -1,0 +1,107 @@
+[
+  {
+    "id": "Q01",
+    "query": "What does Principle 2 (Skill, Care and Diligence) require of firms?",
+    "category": "simple_fact",
+    "ground_truth_answer": "Principle 2 requires that a firm must conduct its business with due skill, care and diligence. This is a mandatory obligation (Rule) set out in PRIN 2.1.1R.",
+    "relevant_rule_codes": ["PRIN 2.1.1R", "PRIN 1.1.6G", "PRIN 1.1.7G"]
+  },
+  {
+    "id": "Q02",
+    "query": "What are the 11 Principles for Businesses under PRIN?",
+    "category": "simple_fact",
+    "ground_truth_answer": "The 11 Principles for Businesses are: (1) Integrity, (2) Skill, Care and Diligence, (3) Management and Control, (4) Financial Prudence, (5) Market Conduct, (6) Customers' Interests, (7) Communications with Clients, (8) Conflicts of Interest, (9) Customers: Relationships of Trust, (10) Clients' Assets, and (11) Relations with Regulators. These are set out in PRIN 2.1.1R.",
+    "relevant_rule_codes": ["PRIN 2.1.1R", "PRIN 1.1.5G", "PRIN 1.1.6G", "PRIN 3.2.3R"]
+  },
+  {
+    "id": "Q03",
+    "query": "Who does the PRIN sourcebook apply to?",
+    "category": "simple_fact",
+    "ground_truth_answer": "PRIN applies to every firm that is subject to FCA regulation. The application provisions are set out in PRIN 1.1, which specifies the scope including any limitations for particular types of firm or activity.",
+    "relevant_rule_codes": ["PRIN 1.1.1R", "PRIN 1.1.2G"]
+  },
+  {
+    "id": "Q04",
+    "query": "What does COBS 4.2.1R say about financial promotions?",
+    "category": "rule_reference",
+    "ground_truth_answer": "COBS 4.2.1R requires that a firm must ensure that a communication or a financial promotion is fair, clear and not misleading. This is a mandatory rule that applies to all communications and financial promotions made by authorised firms.",
+    "relevant_rule_codes": ["COBS 4.2.1R"]
+  },
+  {
+    "id": "Q05",
+    "query": "What are the requirements under COBS 2.1.1R regarding acting honestly, fairly and professionally?",
+    "category": "rule_reference",
+    "ground_truth_answer": "COBS 2.1.1R requires that a firm must act honestly, fairly and professionally in accordance with the best interests of its client. This client's best interests rule applies to firms conducting designated investment business for retail clients.",
+    "relevant_rule_codes": ["COBS 2.1.1R", "COBS 2.1.2G", "COBS 2.3.3G"]
+  },
+  {
+    "id": "Q06",
+    "query": "What does SYSC 10.1.8R require regarding conflicts of interest records?",
+    "category": "rule_reference",
+    "ground_truth_answer": "SYSC 10.1.8R requires a firm to keep and regularly update a record of the kinds of service or activity carried out by or on behalf of the firm in which a conflict of interest entailing a risk of damage to the interests of one or more clients has arisen or, in the case of an ongoing service or activity, may arise.",
+    "relevant_rule_codes": ["SYSC 10.1.8R"]
+  },
+  {
+    "id": "Q07",
+    "query": "How do the Consumer Duty rules in PRIN 2A relate to the conduct of business rules in COBS 4?",
+    "category": "cross_section",
+    "ground_truth_answer": "The Consumer Duty under PRIN 2A sets a higher standard of consumer protection that complements COBS 4. PRIN 2A requires firms to act to deliver good outcomes for retail customers, including through the consumer understanding outcome. COBS 4 implements specific requirements for communications to be fair, clear and not misleading (COBS 4.2.1R), which directly supports the PRIN 2A consumer understanding requirements. Together they create layered obligations: PRIN 2A sets the overarching standard while COBS 4 provides detailed rules on how communications must meet that standard.",
+    "relevant_rule_codes": ["PRIN 2A.1.1R", "PRIN 2A.5.1R", "COBS 4.2.1R", "PRIN 2A.1.10G", "PRIN 2A.1.12G", "PRIN 2A.1.17G"]
+  },
+  {
+    "id": "Q08",
+    "query": "How do SYSC systems and controls requirements support the FCA Principles?",
+    "category": "cross_section",
+    "ground_truth_answer": "SYSC requires firms to establish robust governance arrangements, systems and controls that enable them to comply with the FCA Principles. For example, Principle 3 (Management and Control) requires a firm to take reasonable care to organise and control its affairs responsibly and effectively, and SYSC provides the detailed rules on how to achieve this through organisational requirements, compliance functions, and risk management frameworks.",
+    "relevant_rule_codes": ["PRIN 2.1.1R", "SYSC 4.1.1R", "SYSC 6.1.1R", "SYSC 1.2.1G"]
+  },
+  {
+    "id": "Q09",
+    "query": "What are the rules about treating customers fairly?",
+    "category": "ambiguous",
+    "ground_truth_answer": "Treating Customers Fairly (TCF) is a central concept in FCA regulation. Principle 6 (PRIN 2.1.1R) requires a firm to pay due regard to the interests of its customers and treat them fairly. This is reinforced by the Consumer Duty under PRIN 2A, which requires firms to act to deliver good outcomes for retail customers. COBS also contains specific rules supporting fair treatment, including COBS 2.1.1R requiring firms to act honestly, fairly and professionally in the best interests of clients.",
+    "relevant_rule_codes": ["PRIN 2.1.1R", "PRIN 2A.1.1R", "COBS 2.1.1R", "COBS 2.3.3G", "COBS 20.2.2G", "PRIN 1.2.1G"]
+  },
+  {
+    "id": "Q10",
+    "query": "What should firms do about compliance?",
+    "category": "ambiguous",
+    "ground_truth_answer": "Firms must establish and maintain effective compliance policies and procedures under SYSC. SYSC 6.1.1R requires a firm to establish, implement and maintain adequate policies and procedures sufficient to ensure compliance of the firm with its obligations under the regulatory system. SYSC 6.1.3R requires a firm to maintain a permanent and effective compliance function which operates independently and has responsibility for monitoring and assessing the adequacy and effectiveness of the firm's compliance measures.",
+    "relevant_rule_codes": ["SYSC 6.1.1R", "SYSC 6.1.3R", "SYSC 6.1.4R"]
+  },
+  {
+    "id": "Q11",
+    "query": "What are the FCA rules on cryptocurrency staking rewards?",
+    "category": "edge_case",
+    "ground_truth_answer": "The FCA Handbook sourcebooks within this corpus (PRIN, COBS, SYSC) do not contain specific rules on cryptocurrency staking rewards. While the FCA has been expanding its regulatory perimeter for cryptoassets, detailed rules on staking are not found in these sourcebooks.",
+    "relevant_rule_codes": []
+  },
+  {
+    "id": "Q12",
+    "query": "What does the FCA Handbook say about climate change risk disclosures?",
+    "category": "edge_case",
+    "ground_truth_answer": "The core sourcebooks in this corpus (PRIN, COBS, SYSC) do not contain specific detailed rules on climate change risk disclosures. While general principles about communications being fair, clear and not misleading (COBS 4.2.1R) could apply to sustainability-related disclosures, specific climate risk disclosure requirements are found in other parts of the regulatory framework not covered by this corpus.",
+    "relevant_rule_codes": []
+  },
+  {
+    "id": "Q13",
+    "query": "What is an 'eligible counterparty' under COBS?",
+    "category": "keyword",
+    "ground_truth_answer": "An eligible counterparty is a client classification under COBS. COBS 3.6 sets out the eligible counterparty category, which includes entities such as investment firms, credit institutions, insurance companies, collective investment schemes, pension funds, and other authorised financial institutions. When dealing with eligible counterparties, firms are not required to comply with certain COBS obligations that apply to professional or retail clients, reflecting the assumption that these entities have sufficient expertise and resources.",
+    "relevant_rule_codes": ["COBS 3.6.1R", "COBS 3.6.2R", "COBS 3.6.4R"]
+  },
+  {
+    "id": "Q14",
+    "query": "What is the 'compliance function' requirement under SYSC?",
+    "category": "keyword",
+    "ground_truth_answer": "SYSC 6.1.3R requires a firm to maintain a permanent and effective compliance function which operates independently and has the responsibility for monitoring and regularly assessing the adequacy and effectiveness of the measures and procedures put in place to detect and minimise any risk of failure by the firm to comply with its obligations under the regulatory system, and the associated risks. The compliance function must also advise and assist relevant persons in complying with the firm's obligations.",
+    "relevant_rule_codes": ["SYSC 6.1.3R", "SYSC 6.1.4R"]
+  },
+  {
+    "id": "Q15",
+    "query": "What does COBS require regarding the 'suitability' of investment recommendations?",
+    "category": "rule_reference",
+    "ground_truth_answer": "COBS 9.2.1R requires that a firm must take reasonable steps to ensure that a personal recommendation, or a decision to trade, is suitable for its client. This involves assessing the client's knowledge and experience, financial situation, and investment objectives. COBS 9.2.2R specifies that the firm must obtain information about the client's knowledge and experience, financial situation, and investment objectives to enable the firm to make the recommendation or take the decision that is suitable.",
+    "relevant_rule_codes": ["COBS 9.2.1R", "COBS 9.2.2R", "COBS 9.2.3R", "COBS 9A.2.1R", "COBS 9A.2.2G", "COBS 9.1.1A", "COBS 9A.3.3R"]
+  }
+]
