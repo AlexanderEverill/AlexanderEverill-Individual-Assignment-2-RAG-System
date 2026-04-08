@@ -53,8 +53,9 @@ requirements — do not conflate them.
 "should" (Guidance).
 6. If the context partially answers the question, provide what you can and explicitly \
 list what information is missing.
-7. If the context is entirely irrelevant to the question, state: "The provided context \
-does not contain information relevant to this question." Do not speculate."""
+7. Only refuse to answer if NO retrieved source addresses the question at all. If any \
+source partially relates to the question, extract and present whatever relevant \
+information you can find. Err on the side of answering rather than refusing."""
 
 ENHANCED_USER_PROMPT = """\
 Retrieved regulatory context (ordered by relevance):
@@ -120,7 +121,7 @@ def generate_baseline(question: str, chunks: list[dict]) -> str:
         model=GENERATION_MODEL,
         messages=[{"role": "user", "content": prompt}],
         temperature=0.2,
-        max_tokens=1024,
+        max_tokens=2048,
     )
     return response.choices[0].message.content.strip()
 
@@ -145,6 +146,6 @@ def generate_enhanced(question: str, chunks: list[dict]) -> str:
             {"role": "user", "content": user_msg},
         ],
         temperature=0.2,
-        max_tokens=1024,
+        max_tokens=2048,
     )
     return response.choices[0].message.content.strip()

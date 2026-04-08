@@ -1,16 +1,17 @@
 # Runs evaluation metrics (P@5, R@5, P@10, R@10, MRR, generation quality) on the test set
 
 """
-Evaluation module — runs all 4 ablation configurations against the test set,
+Evaluation module — runs all 5 ablation configurations against the test set,
 computes retrieval metrics (P@5, R@5, P@10, R@10, MRR) and LLM-as-judge
 generation scores, then writes consolidated results to
 outputs/evaluation_results.json.
 
 Ablation configurations:
-    1. Baseline    — Vector only (k=5), no re-ranking, vanilla prompt
-    2. +Hybrid     — Hybrid BM25+Vector (k=20→top 5 by RRF), no re-ranking, vanilla prompt
-    3. +Rerank     — Vector only (k=20→top 5 by cross-encoder), vanilla prompt
-    4. Enhanced    — Hybrid (k=20) → cross-encoder (→top 5) → enhanced prompt
+    1. Baseline      — Vector only (k=5), no re-ranking, vanilla prompt
+    2. +Prompt       — Vector only (k=5), no re-ranking, enhanced prompt
+    3. +Hybrid       — Hybrid BM25+Vector (k=20→top 5 by RRF), no re-ranking, enhanced prompt
+    4. +Rerank       — Vector only (k=20→top 5 by cross-encoder), enhanced prompt
+    5. Enhanced      — Hybrid (k=20) → cross-encoder (→top 5) → enhanced prompt
 """
 
 import json
@@ -19,7 +20,7 @@ import sys
 import time
 from pathlib import Path
 
-from openai import OpenAI
+from openai import OpenAI, RateLimitError
 
 sys.path.insert(0, str(Path(__file__).parent))
 from config import (
@@ -54,28 +55,34 @@ def run_config_baseline(question: str) -> dict:
     """Config 1: Vector only (k=5) → vanilla prompt."""
     chunks = vector_search(question, top_k=5)
     answer = generate_baseline(question, chunks)
-    # Baseline only retrieves 5, so candidates == chunks
+    return {"answer": answer, "chunks": chunks, "candidates": chunks}
+
+
+def run_config_prompt_only(question: str) -> dict:
+    """Config 2: Vector only (k=5) → enhanced prompt."""
+    chunks = vector_search(question, top_k=5)
+    answer = generate_enhanced(question, chunks)
     return {"answer": answer, "chunks": chunks, "candidates": chunks}
 
 
 def run_config_hybrid(question: str) -> dict:
-    """Config 2: Hybrid BM25+Vector (k=20 → top 5 by RRF) → vanilla prompt."""
+    """Config 3: Hybrid BM25+Vector (k=20 → top 5 by RRF) → enhanced prompt."""
     candidates = hybrid_search(question, top_n=RERANK_CANDIDATE_K)
     top5 = candidates[:RERANK_TOP_K]
-    answer = generate_baseline(question, top5)
+    answer = generate_enhanced(question, top5)
     return {"answer": answer, "chunks": top5, "candidates": candidates}
 
 
 def run_config_rerank(question: str) -> dict:
-    """Config 3: Vector only (k=20 → cross-encoder → top 5) → vanilla prompt."""
+    """Config 4: Vector only (k=20 → cross-encoder → top 5) → enhanced prompt."""
     candidates = vector_search(question, top_k=RERANK_CANDIDATE_K)
     reranked = rerank(question, candidates, top_k=RERANK_TOP_K)
-    answer = generate_baseline(question, reranked)
+    answer = generate_enhanced(question, reranked)
     return {"answer": answer, "chunks": reranked, "candidates": candidates}
 
 
 def run_config_enhanced(question: str) -> dict:
-    """Config 4: Hybrid (k=20) → cross-encoder (→ top 5) → enhanced prompt."""
+    """Config 5: Hybrid (k=20) → cross-encoder (→ top 5) → enhanced prompt."""
     candidates = hybrid_search(question, top_n=RERANK_CANDIDATE_K)
     reranked = rerank(question, candidates, top_k=RERANK_TOP_K)
     answer = generate_enhanced(question, reranked)
@@ -83,10 +90,11 @@ def run_config_enhanced(question: str) -> dict:
 
 
 CONFIGS = {
-    "baseline":  run_config_baseline,
-    "+hybrid":   run_config_hybrid,
-    "+rerank":   run_config_rerank,
-    "enhanced":  run_config_enhanced,
+    "baseline":     run_config_baseline,
+    "+prompt":      run_config_prompt_only,
+    "+hybrid":      run_config_hybrid,
+    "+rerank":      run_config_rerank,
+    "enhanced":     run_config_enhanced,
 }
 
 
@@ -220,12 +228,19 @@ def judge_answer(
         answer=answer,
     )
 
-    response = client.chat.completions.create(
-        model=GENERATION_MODEL,
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.0,
-        max_tokens=200,
-    )
+    for attempt in range(5):
+        try:
+            response = client.chat.completions.create(
+                model=GENERATION_MODEL,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.0,
+                max_tokens=200,
+            )
+            break
+        except RateLimitError:
+            wait = 2 ** attempt
+            print(f"\n    [rate limited, retrying in {wait}s]", end="", flush=True)
+            time.sleep(wait)
     raw = response.choices[0].message.content.strip()
 
     # Parse JSON from the response — handle potential markdown wrapping
@@ -251,7 +266,7 @@ def judge_answer(
 
 def run_evaluation(verbose: bool = True) -> dict:
     """
-    Run all 4 ablation configs against the full test set.
+    Run all 5 ablation configs against the full test set.
 
     Returns a results dict and writes it to outputs/evaluation_results.json.
     """
@@ -306,7 +321,14 @@ def run_evaluation(verbose: bool = True) -> dict:
                 print(f"  Running config: {cfg_name} ...", end=" ", flush=True)
 
             start = time.perf_counter()
-            output = runner(query)
+            for attempt in range(5):
+                try:
+                    output = runner(query)
+                    break
+                except RateLimitError:
+                    wait = 2 ** attempt
+                    print(f"\n    [rate limited, retrying in {wait}s]", end="", flush=True)
+                    time.sleep(wait)
             latency = (time.perf_counter() - start) * 1000
 
             chunks = output["chunks"]
@@ -338,12 +360,14 @@ def run_evaluation(verbose: bool = True) -> dict:
             }
             query_result["configs"][cfg_name] = cfg_result
 
-            # Accumulate
-            accum[cfg_name]["p5"].append(p5)
-            accum[cfg_name]["r5"].append(r5)
-            accum[cfg_name]["p10"].append(p10)
-            accum[cfg_name]["r10"].append(r10)
-            accum[cfg_name]["mrr"].append(mrr)
+            # Accumulate (exclude edge cases from retrieval metrics as they
+            # have no relevant rule codes, making P/R/MRR undefined)
+            if relevant_codes:
+                accum[cfg_name]["p5"].append(p5)
+                accum[cfg_name]["r5"].append(r5)
+                accum[cfg_name]["p10"].append(p10)
+                accum[cfg_name]["r10"].append(r10)
+                accum[cfg_name]["mrr"].append(mrr)
             accum[cfg_name]["latency_ms"].append(latency)
             for metric in ["correctness", "groundedness", "completeness", "citation_accuracy"]:
                 val = gen_scores.get(metric, 0)
@@ -354,23 +378,26 @@ def run_evaluation(verbose: bool = True) -> dict:
 
     # -- Aggregate across all queries --
     for cfg_name, acc in accum.items():
-        n = len(acc["p5"]) or 1
+        n_retrieval = len(acc["p5"]) or 1
+        n_gen = len(acc["correctness"]) or 1
+        n_total = len(acc["latency_ms"]) or 1
         results["aggregated"][cfg_name] = {
             "retrieval": {
-                "P@5": round(sum(acc["p5"]) / n, 4),
-                "R@5": round(sum(acc["r5"]) / n, 4),
-                "P@10": round(sum(acc["p10"]) / n, 4),
-                "R@10": round(sum(acc["r10"]) / n, 4),
-                "MRR": round(sum(acc["mrr"]) / n, 4),
+                "P@5": round(sum(acc["p5"]) / n_retrieval, 4),
+                "R@5": round(sum(acc["r5"]) / n_retrieval, 4),
+                "P@10": round(sum(acc["p10"]) / n_retrieval, 4),
+                "R@10": round(sum(acc["r10"]) / n_retrieval, 4),
+                "MRR": round(sum(acc["mrr"]) / n_retrieval, 4),
             },
             "generation": {
-                "correctness": round(sum(acc["correctness"]) / max(len(acc["correctness"]), 1), 2),
-                "groundedness": round(sum(acc["groundedness"]) / max(len(acc["groundedness"]), 1), 2),
-                "completeness": round(sum(acc["completeness"]) / max(len(acc["completeness"]), 1), 2),
-                "citation_accuracy": round(sum(acc["citation_accuracy"]) / max(len(acc["citation_accuracy"]), 1), 2),
+                "correctness": round(sum(acc["correctness"]) / n_gen, 2),
+                "groundedness": round(sum(acc["groundedness"]) / n_gen, 2),
+                "completeness": round(sum(acc["completeness"]) / n_gen, 2),
+                "citation_accuracy": round(sum(acc["citation_accuracy"]) / n_gen, 2),
             },
-            "avg_latency_ms": round(sum(acc["latency_ms"]) / n, 1),
-            "num_queries": n,
+            "avg_latency_ms": round(sum(acc["latency_ms"]) / n_total, 1),
+            "num_queries_retrieval": n_retrieval,
+            "num_queries_generation": n_gen,
         }
 
     # -- Archive previous results, then write new results --
