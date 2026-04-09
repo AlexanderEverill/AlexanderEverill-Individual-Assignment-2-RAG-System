@@ -1,0 +1,2090 @@
+{
+  "metadata": {
+    "test_set_size": 15,
+    "configs": [
+      "baseline",
+      "+prompt",
+      "+hybrid",
+      "+rerank",
+      "enhanced"
+    ],
+    "metrics": [
+      "P@5",
+      "R@5",
+      "P@10",
+      "R@10",
+      "MRR",
+      "correctness",
+      "groundedness",
+      "completeness",
+      "citation_accuracy"
+    ]
+  },
+  "per_query": [
+    {
+      "id": "Q01",
+      "query": "What does Principle 2 (Skill, Care and Diligence) require of firms?",
+      "category": "simple_fact",
+      "relevant_rule_codes": [
+        "PRIN 2.1.1R",
+        "PRIN 1.1.6G",
+        "PRIN 1.1.7G"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "Principle 2 (Skill, Care and Diligence) requires a firm to conduct its business with due skill, care, and diligence.",
+          "chunk_ids": [
+            "PRIN_0017",
+            "PRIN_0018",
+            "PRIN_0160",
+            "PRIN_0025",
+            "PRIN_0180"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.3333333333333333,
+            "P@10": 0.1,
+            "R@10": 0.3333333333333333,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 5,
+            "groundedness": 5,
+            "completeness": 5,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 4330.9
+        },
+        "+prompt": {
+          "answer": "Principle 2 requires firms to conduct their business with due skill, care, and diligence. This is a mandatory obligation, meaning firms must adhere to this standard in their operations.\n\nSupport for this requirement is found in PRIN 2.1.1R, which states: \"A firm must conduct its business with due skill, care and diligence.\" This is a Rule (R), indicating that it is a legally binding obligation for firms.",
+          "chunk_ids": [
+            "PRIN_0017",
+            "PRIN_0018",
+            "PRIN_0160",
+            "PRIN_0025",
+            "PRIN_0180"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.3333333333333333,
+            "P@10": 0.1,
+            "R@10": 0.3333333333333333,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 5,
+            "groundedness": 5,
+            "completeness": 5,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 1972.0
+        },
+        "+hybrid": {
+          "answer": "Principle 2 (Skill, Care and Diligence) requires firms to conduct their business with due skill, care, and diligence. This is a mandatory obligation, meaning firms must adhere to this standard in their operations.\n\nSupport for this requirement is found in PRIN 2.1.1R, which states: \"A firm must conduct its business with due skill, care and diligence.\" As this is a Rule (R), it imposes a legally binding obligation on firms to ensure that their business activities are carried out with the necessary competence and attention to detail.\n\nAdditionally, PRIN 1.1.7 provides further context by explaining that a breach of Principle 2 occurs if a firm is shown to have failed to act with due skill, care, and diligence in the conduct of its business. This reinforces the mandatory nature of the requirement and clarifies that the FCA would need to demonstrate a lack of these qualities to establish a breach.\n\nTherefore, firms are required to maintain a high standard of skill, care, and diligence in their business conduct to comply with Principle 2.",
+          "chunk_ids": [
+            "PRIN_0017",
+            "COBS_0068",
+            "PRIN_0008",
+            "PRIN_0018",
+            "PRIN_0160"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.2,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 5,
+            "groundedness": 4,
+            "completeness": 5,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 3392.6
+        },
+        "+rerank": {
+          "answer": "Principle 2 (Skill, Care and Diligence) requires firms to conduct their business with due skill, care, and diligence. This means that firms must ensure that their business activities are carried out competently and with the necessary attention to detail and professionalism.\n\nSupport for this requirement is found in PRIN 2.1.1R, which states: \"A firm must conduct its business with due skill, care and diligence.\" This is a Rule (R), meaning it is a legally binding obligation that firms must adhere to.\n\nAdditionally, PRIN 1.1.7 provides context on what constitutes a breach of this Principle. It explains that a firm would be in breach if it is shown to have failed to act with due skill, care, and diligence in the conduct of its business. This reinforces the mandatory nature of the requirement under Principle 2.",
+          "chunk_ids": [
+            "PRIN_0008",
+            "COBS_0068",
+            "PRIN_0017",
+            "PRIN_0012",
+            "PRIN_0035"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.1,
+            "R@10": 0.3333333333333333,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 5,
+            "groundedness": 5,
+            "completeness": 5,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 4648.2
+        },
+        "enhanced": {
+          "answer": "Principle 2 (Skill, Care and Diligence) requires firms to conduct their business with due skill, care, and diligence. This means that firms must ensure that their actions and decisions are made with the necessary competence and attention to detail to meet regulatory standards and protect client interests.\n\nSupport for this requirement can be found in the following rules:\n\n1. **PRIN 2.1.1R** (Rule): This rule explicitly states that a firm must conduct its business with due skill, care, and diligence. As a Rule, this is a mandatory obligation for firms, meaning they must adhere to this standard in their operations.\n\n2. **PRIN 1.1.7** (Guidance): This guidance explains that breaching a Principle, such as Principle 2, makes a firm liable to disciplinary sanctions. It clarifies that a firm would be in breach of Principle 2 if it was shown to have failed to act with due skill, care, and diligence in the conduct of its business. Although this is Guidance, it sets the expectation that firms should meet this standard to avoid sanctions.\n\n3. **COBS 2.3.3R** (Rule): This rule includes the obligation for a firm to act with skill, care, and diligence as part of acting in the best interests of its clients. As a Rule, this is a legally binding obligation, reinforcing the requirement for firms to maintain high standards of conduct in their dealings with clients.\n\nThese references collectively emphasize the importance of maintaining a high standard of skill, care, and diligence in all aspects of a firm's business operations.",
+          "chunk_ids": [
+            "COBS_1964",
+            "PRIN_0008",
+            "COBS_0068",
+            "PRIN_0017",
+            "PRIN_0006"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 1.0,
+            "P@10": 0.2,
+            "R@10": 0.6666666666666666,
+            "MRR": 0.5
+          },
+          "generation": {
+            "correctness": 5,
+            "groundedness": 4,
+            "completeness": 5,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 4154.0
+        }
+      }
+    },
+    {
+      "id": "Q02",
+      "query": "What are the 11 Principles for Businesses under PRIN?",
+      "category": "simple_fact",
+      "relevant_rule_codes": [
+        "PRIN 2.1.1R",
+        "PRIN 1.1.5G",
+        "PRIN 1.1.6G",
+        "PRIN 3.2.3R"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "PRIN_0002",
+            "PRIN_0003",
+            "PRIN_0009",
+            "PRIN_0000",
+            "PRIN_0216"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.0,
+            "R@10": 0.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 765.0
+        },
+        "+prompt": {
+          "answer": "The provided context does not contain information relevant to this question. The context discusses the general application and authority of the Principles for Businesses but does not list or describe the 11 Principles themselves.",
+          "chunk_ids": [
+            "PRIN_0002",
+            "PRIN_0003",
+            "PRIN_0009",
+            "PRIN_0000",
+            "PRIN_0216"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.0,
+            "R@10": 0.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 5,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1754.6
+        },
+        "+hybrid": {
+          "answer": "The provided context does not contain information relevant to the specific content of the 11 Principles for Businesses under PRIN. The context only discusses the application and scope of the Principles in general terms and their application to MiFID business and other entities. Specific details about each of the 11 Principles are not included in the retrieved context.",
+          "chunk_ids": [
+            "PRIN_0000",
+            "PRIN_0007",
+            "PRIN_0001",
+            "PRIN_0002",
+            "PRIN_0230"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.25,
+            "P@10": 0.2,
+            "R@10": 0.25,
+            "MRR": 0.5
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 3468.2
+        },
+        "+rerank": {
+          "answer": "The provided context does not contain information relevant to this question. The context mentions some of the Principles, such as Principles 3, 4, 6, 7, 8, 9, 10, 11, and 12, but it does not provide a complete list of the 11 Principles for Businesses under PRIN.",
+          "chunk_ids": [
+            "PRIN_0033",
+            "PRIN_0012",
+            "PRIN_0005",
+            "PRIN_0027",
+            "PRIN_0216"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.25,
+            "P@10": 0.1,
+            "R@10": 0.25,
+            "MRR": 0.3333333333333333
+          },
+          "generation": {
+            "correctness": 2,
+            "groundedness": 3,
+            "completeness": 2,
+            "citation_accuracy": 3
+          },
+          "latency_ms": 1519.8
+        },
+        "enhanced": {
+          "answer": "The provided context does not contain information relevant to this question. The context includes references to specific Principles and their applications but does not list all 11 Principles for Businesses under PRIN.",
+          "chunk_ids": [
+            "PRIN_0033",
+            "PRIN_0230",
+            "PRIN_0006",
+            "PRIN_0005",
+            "PRIN_0208"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 0.75,
+            "P@10": 0.2,
+            "R@10": 0.25,
+            "MRR": 0.3333333333333333
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1228.4
+        }
+      }
+    },
+    {
+      "id": "Q03",
+      "query": "Who does the PRIN sourcebook apply to?",
+      "category": "simple_fact",
+      "relevant_rule_codes": [
+        "PRIN 1.1.1R",
+        "PRIN 1.1.2G"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "PRIN_0192",
+            "PRIN_0000",
+            "PRIN_0190",
+            "PRIN_0199",
+            "PRIN_0064"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.5,
+            "P@10": 0.1,
+            "R@10": 0.5,
+            "MRR": 0.5
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 901.4
+        },
+        "+prompt": {
+          "answer": "The PRIN sourcebook applies, in whole or in part, to every firm. The application of the Principles is modified for firms conducting MiFID business and Annex II benchmark administrators. PRIN 3 specifies to whom, to what, and where the Principles apply (PRIN 1.1.1). This is a Guidance (G), meaning it is the FCA's expectation but not mandatory.\n\nAdditionally, PRIN applies to a TP firm, with specific principles applicable depending on the firm's activities. For instance, only Principles 1, 2, 3, 9, 11, 12, and PRIN 2A apply to a TP UCITS qualifier, specifically concerning the activities in PRIN 3.2.2R (PRIN 3.1.9). This is a Rule (R), indicating a legally binding obligation.",
+          "chunk_ids": [
+            "PRIN_0192",
+            "PRIN_0000",
+            "PRIN_0190",
+            "PRIN_0199",
+            "PRIN_0064"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.5,
+            "P@10": 0.1,
+            "R@10": 0.5,
+            "MRR": 0.5
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 5,
+            "completeness": 4,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 2834.5
+        },
+        "+hybrid": {
+          "answer": "The PRIN sourcebook applies, in whole or in part, to every firm. However, the application of the Principles is modified for firms conducting MiFID business and Annex II benchmark administrators. The specific rules about to whom, to what, and where the Principles apply are detailed in PRIN 3 (PRIN 1.1.1). This is a statement of applicability and does not specify mandatory or expected obligations, but rather outlines the scope of application.\n\nAdditionally, PRIN 2A.3.24 specifies exceptions where PRIN 2A.3 does not apply, such as firms subject to PROD 3, PROD 4, or PROD 7 for any product they manufacture or distribute within the scope of the relevant PROD chapter, or a bespoke insurance contract as defined in PROD 1.4.3-CR. This is a clarification of scope rather than a rule imposing obligations.\n\nTherefore, the PRIN sourcebook broadly applies to all firms but includes specific modifications and exceptions as outlined.",
+          "chunk_ids": [
+            "PRIN_0000",
+            "PRIN_0090",
+            "PRIN_0192",
+            "PRIN_0195",
+            "PRIN_0148"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.5,
+            "P@10": 0.1,
+            "R@10": 0.5,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 5,
+            "completeness": 4,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 2753.0
+        },
+        "+rerank": {
+          "answer": "The PRIN sourcebook applies to every firm, with specific exceptions and modifications. According to PRIN 1.1.1, the Principles apply in whole or in part to every firm, but their application is modified for firms conducting MiFID business and Annex II benchmark administrators (PRIN 1.1.1, Rule). This means that while the Principles are generally mandatory, there are specific modifications for certain types of business.\n\nAdditionally, PRIN 3.1.1 states that PRIN applies to every firm, except in relation to its carrying on of auction regulation bidding (PRIN 3.1.1, Rule). This indicates that firms involved in auction regulation bidding are exempt from the application of PRIN.\n\nFurthermore, PRIN 1.1.1A extends the application of the Principles to certain payment service providers and electronic money issuers that are not firms, indicating that these entities are also subject to the Principles as if they were firms (PRIN 1.1.1A, Rule).\n\nIn summary, PRIN applies broadly to firms and certain non-firm entities, with specific exceptions and modifications for particular activities and business types.",
+          "chunk_ids": [
+            "PRIN_0193",
+            "PRIN_0001",
+            "PRIN_0202",
+            "PRIN_0000",
+            "PRIN_0090"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 0.5,
+            "P@10": 0.1,
+            "R@10": 0.5,
+            "MRR": 0.5
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 5,
+            "completeness": 4,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 3231.9
+        },
+        "enhanced": {
+          "answer": "The PRIN sourcebook applies to every firm, but the application of the Principles is modified for firms conducting MiFID business and Annex II benchmark administrators. PRIN 3 specifies to whom, to what, and where the Principles apply (PRIN 1.1.1). This is a Rule (R), meaning it is a mandatory obligation for firms.\n\nAdditionally, PRIN 3.1.1B specifies that Principle 7 applies to a registered person communicating a financial promotion relating to qualifying cryptoassets, as it applies to an authorised person, with certain disregards (PRIN 3.1.1B). This is also a Rule (R), indicating a mandatory requirement.\n\nFurthermore, PRIN 3.1.12 states that Principle 12 and PRIN 2A only apply where a client is a retail customer, or there is a distribution chain involving a retail customer (PRIN 3.1.12). This is Guidance (G), meaning it is an expectation but not mandatory.\n\nTherefore, the PRIN sourcebook applies broadly to firms but with specific modifications and conditions based on the type of business and the nature of the client.",
+          "chunk_ids": [
+            "PRIN_0195",
+            "PRIN_0202",
+            "PRIN_0000",
+            "PRIN_0090",
+            "PRIN_0148"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.5,
+            "P@10": 0.1,
+            "R@10": 0.5,
+            "MRR": 0.3333333333333333
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 5,
+            "completeness": 4,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 2885.4
+        }
+      }
+    },
+    {
+      "id": "Q04",
+      "query": "What does COBS 4.2.1R say about financial promotions?",
+      "category": "rule_reference",
+      "relevant_rule_codes": [
+        "COBS 4.2.1R"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "COBS_1626",
+            "COBS_2337",
+            "COBS_0330",
+            "COBS_0343",
+            "COBS_0364"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 1.0,
+            "P@10": 0.1,
+            "R@10": 1.0,
+            "MRR": 0.5
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 819.4
+        },
+        "+prompt": {
+          "answer": "The provided context does not contain information relevant to this question. Specifically, there is no direct citation or description of COBS 4.2.1R within the retrieved context. Therefore, I cannot provide details about what COBS 4.2.1R says about financial promotions based on the information given.",
+          "chunk_ids": [
+            "COBS_1626",
+            "COBS_2337",
+            "COBS_0330",
+            "COBS_0343",
+            "COBS_0364"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 1.0,
+            "P@10": 0.1,
+            "R@10": 1.0,
+            "MRR": 0.5
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1679.8
+        },
+        "+hybrid": {
+          "answer": "COBS 4.2.1R states that financial promotions must not be misleading. This is a Rule (R), meaning it is a legally binding obligation for firms. Firms must ensure that any financial promotion they communicate or approve is clear, fair, and not misleading. This requirement is crucial to maintain transparency and protect consumers from deceptive or unclear information.\n\nThe provided context specifically cites COBS 4.2.1R in Source 1, indicating its importance in the regulatory framework for financial promotions. As a Rule, firms are mandated to comply with this requirement.",
+          "chunk_ids": [
+            "COBS_2337",
+            "COBS_0493",
+            "COBS_1626",
+            "COBS_0247",
+            "COBS_0330"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 1.0,
+            "P@10": 0.1,
+            "R@10": 1.0,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 3,
+            "completeness": 4,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 2451.6
+        },
+        "+rerank": {
+          "answer": "The provided context does not contain information relevant to this question.",
+          "chunk_ids": [
+            "COBS_0330",
+            "COBS_0343",
+            "COBS_0493",
+            "COBS_2337",
+            "COBS_1625"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 1.0,
+            "P@10": 0.1,
+            "R@10": 1.0,
+            "MRR": 0.25
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1542.8
+        },
+        "enhanced": {
+          "answer": "The provided context does not contain information relevant to this question.",
+          "chunk_ids": [
+            "COBS_0330",
+            "COBS_0343",
+            "COBS_0493",
+            "COBS_2337",
+            "COBS_0247"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 1.0,
+            "P@10": 0.1,
+            "R@10": 1.0,
+            "MRR": 0.25
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1110.2
+        }
+      }
+    },
+    {
+      "id": "Q05",
+      "query": "What are the requirements under COBS 2.1.1R regarding acting honestly, fairly and professionally?",
+      "category": "rule_reference",
+      "relevant_rule_codes": [
+        "COBS 2.1.1R",
+        "COBS 2.1.2G",
+        "COBS 2.3.3G"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "COBS_0098",
+            "COBS_0068",
+            "COBS_1596",
+            "COBS_0032",
+            "COBS_0031"
+          ],
+          "retrieval": {
+            "P@5": 0.8,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.4,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 823.5
+        },
+        "+prompt": {
+          "answer": "Under COBS 2.1.1R, a firm must act honestly, fairly, and professionally in accordance with the best interests of its client. This is a Rule (R), meaning it is a legally binding obligation that the firm must adhere to. Specifically, the rule applies in several contexts:\n\n1. **Designated Investment Business for Retail Clients**: The firm must act in the best interests of retail clients when carrying out designated investment business (COBS 2.1.1(2)(a)R).\n\n2. **MiFID, Equivalent Third Country, or Optional Exemption Business**: The obligation extends to any client when the firm is conducting business under MiFID, equivalent third country, or optional exemption regulations (COBS 2.1.1(2)(b)R).\n\n3. **Insurance Distribution**: The rule also applies to any client in the context of insurance distribution (COBS 2.1.1(2)(c)R).\n\n4. **UCITS Scheme Management**: For a management company, the rule is applicable in relation to any UCITS scheme the firm manages (COBS 2.1.1(3)R).\n\nThese requirements ensure that firms maintain a high standard of conduct across various types of business activities, prioritizing the client's best interests in their operations.",
+          "chunk_ids": [
+            "COBS_0098",
+            "COBS_0068",
+            "COBS_1596",
+            "COBS_0032",
+            "COBS_0031"
+          ],
+          "retrieval": {
+            "P@5": 0.8,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.4,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 5,
+            "groundedness": 5,
+            "completeness": 5,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 3100.4
+        },
+        "+hybrid": {
+          "answer": "Under COBS 2.1.1R, a firm must act honestly, fairly, and professionally in accordance with the best interests of its clients. This is a mandatory requirement, as indicated by the rule type (R), meaning firms are legally obligated to comply with it.\n\nThis requirement is further supported by COBS 2.3A.7R, which reiterates the obligation to act in the best interests of clients, linking it to article 24(9) of MiFID and articles 29(2) and 29(3) of the IDD. This rule also emphasizes that fees, commissions, or non-monetary benefits must be designed to enhance the quality of a service, aligning with the firm's duty to act in clients' best interests.\n\nAdditionally, COBS 2.3.3 provides guidance that the obligation to act honestly, fairly, and professionally includes adherence to the client's best interests rule and the duties under Principles 1 (integrity), 2 (skill, care, and diligence), and 6 (customers' interests). While this is guidance (G) and not a rule, it reflects the FCA's expectations for firms in fulfilling their obligations under COBS 2.1.1R.\n\nTherefore, firms must ensure their actions are aligned with these principles and rules to comply with the regulatory requirements.",
+          "chunk_ids": [
+            "COBS_0098",
+            "COBS_0068",
+            "COBS_1596",
+            "COBS_0032",
+            "COBS_0833"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.4,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 4,
+            "completeness": 4,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 3648.6
+        },
+        "+rerank": {
+          "answer": "Under COBS 2.1.1R, a firm must act honestly, fairly, and professionally in accordance with the best interests of its clients. This requirement is a Rule (R), meaning it is a legally binding obligation for the firm. Specifically, COBS 2.1.1R mandates that firms adhere to these principles when conducting business, ensuring that the client's best interests are prioritized. This obligation is further supported by COBS 2.3.3, which links this requirement to the duties under Principles 1 (integrity), 2 (skill, care and diligence), and 6 (customers' interests), reinforcing the firm's obligation to act in the best interests of its clients.",
+          "chunk_ids": [
+            "COBS_0068",
+            "COBS_0098",
+            "COBS_1525",
+            "COBS_1524",
+            "COBS_0032"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.4,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 4,
+            "completeness": 4,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 2527.4
+        },
+        "enhanced": {
+          "answer": "The requirements under COBS 2.1.1R regarding acting honestly, fairly, and professionally are that a firm must conduct its business in a manner that is honest, fair, and professional, taking into account the best interests of its clients. This obligation is part of the broader duty to act in accordance with the best interests of clients and is linked to the principles of integrity, skill, care, diligence, and customers' interests.\n\n1. **COBS 2.1.1R** (Rule): This rule mandates that a firm must act honestly, fairly, and professionally in accordance with the best interests of its clients. This is a legally binding obligation, meaning firms must comply with it.\n\n2. **COBS 2.3.3** (Guidance): This guidance explains that the obligation to act honestly, fairly, and professionally includes adhering to the client's best interests rule and the duties under Principles 1 (integrity), 2 (skill, care, and diligence), and 6 (customers' interests). While this is guidance and not mandatory, it indicates the FCA's expectations for how firms should interpret and apply the rule.\n\n3. **COBS 2.3A.7(2)R** (Rule): This rule reiterates the requirement for firms to act honestly, fairly, and professionally in accordance with the best interests of their clients, referencing COBS 2.1.1R. It is a mandatory requirement, reinforcing the obligation under COBS 2.1.1R.\n\nThese rules and guidance collectively emphasize the importance of maintaining high standards of conduct in client interactions, ensuring that firms prioritize the best interests of their clients in their business activities.",
+          "chunk_ids": [
+            "COBS_0068",
+            "COBS_0098",
+            "COBS_1525",
+            "COBS_1524",
+            "COBS_0032"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.4,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 4,
+            "completeness": 4,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 5151.1
+        }
+      }
+    },
+    {
+      "id": "Q06",
+      "query": "What does SYSC 10.1.8R require regarding conflicts of interest records?",
+      "category": "rule_reference",
+      "relevant_rule_codes": [
+        "SYSC 10.1.8R"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "SYSC_0794",
+            "SYSC_0792",
+            "SYSC_0843",
+            "SYSC_0550",
+            "SYSC_0807"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 1.0,
+            "P@10": 0.1,
+            "R@10": 1.0,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 915.0
+        },
+        "+prompt": {
+          "answer": "The provided context does not contain information relevant to this question. There is no specific detail about SYSC 10.1.8R in the retrieved regulatory context.",
+          "chunk_ids": [
+            "SYSC_0794",
+            "SYSC_0792",
+            "SYSC_0843",
+            "SYSC_0550",
+            "SYSC_0807"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 1.0,
+            "P@10": 0.1,
+            "R@10": 1.0,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1395.9
+        },
+        "+hybrid": {
+          "answer": "The provided context does not contain information relevant to this question. Specifically, there is no mention of SYSC 10.1.8R or its requirements regarding conflicts of interest records.",
+          "chunk_ids": [
+            "SYSC_0794",
+            "SYSC_0821",
+            "SYSC_0816",
+            "SYSC_0792",
+            "SYSC_0815"
+          ],
+          "retrieval": {
+            "P@5": 0.8,
+            "R@5": 1.0,
+            "P@10": 0.5,
+            "R@10": 1.0,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1851.5
+        },
+        "+rerank": {
+          "answer": "The provided context does not contain information relevant to this question. Specifically, there is no mention of SYSC 10.1.8R or its requirements regarding conflicts of interest records.",
+          "chunk_ids": [
+            "SYSC_0821",
+            "SYSC_0844",
+            "SYSC_0815",
+            "SYSC_0816",
+            "SYSC_0843"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 1.0,
+            "P@10": 0.4,
+            "R@10": 1.0,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1693.6
+        },
+        "enhanced": {
+          "answer": "The provided context does not contain information relevant to this question. Specifically, there is no direct reference to SYSC 10.1.8R regarding conflicts of interest records. The context includes information about related rules and guidance, but not the specific requirements of SYSC 10.1.8R.",
+          "chunk_ids": [
+            "SYSC_0821",
+            "SYSC_0844",
+            "SYSC_0815",
+            "SYSC_0816",
+            "COBS_1222"
+          ],
+          "retrieval": {
+            "P@5": 0.8,
+            "R@5": 1.0,
+            "P@10": 0.5,
+            "R@10": 1.0,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 3332.9
+        }
+      }
+    },
+    {
+      "id": "Q07",
+      "query": "How do the Consumer Duty rules in PRIN 2A relate to the conduct of business rules in COBS 4?",
+      "category": "cross_section",
+      "relevant_rule_codes": [
+        "PRIN 2A.1.1R",
+        "PRIN 2A.5.1R",
+        "COBS 4.2.1R",
+        "PRIN 2A.1.10G",
+        "PRIN 2A.1.12G",
+        "PRIN 2A.1.17G"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "PRIN_0213",
+            "PRIN_0017",
+            "PRIN_0027",
+            "COBS_1579",
+            "COBS_1623"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.3333333333333333,
+            "P@10": 0.1,
+            "R@10": 0.3333333333333333,
+            "MRR": 0.3333333333333333
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1338.9
+        },
+        "+prompt": {
+          "answer": "The provided context does not contain information relevant to this question.",
+          "chunk_ids": [
+            "PRIN_0213",
+            "PRIN_0017",
+            "PRIN_0027",
+            "COBS_1579",
+            "COBS_1623"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.3333333333333333,
+            "P@10": 0.1,
+            "R@10": 0.3333333333333333,
+            "MRR": 0.3333333333333333
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1492.1
+        },
+        "+hybrid": {
+          "answer": "The provided context does not contain information relevant to this question. The context discusses the Consumer Duty rules in PRIN 2A and their overarching conduct obligations, but it does not specifically address how these rules relate to the conduct of business rules in COBS 4.",
+          "chunk_ids": [
+            "PRIN_0027",
+            "PRIN_0017",
+            "PRIN_0213",
+            "PRIN_0029",
+            "PRIN_0231"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 0.5,
+            "P@10": 0.3,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 3,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1985.2
+        },
+        "+rerank": {
+          "answer": "The provided context does not contain information relevant to this question. The context includes information about the Consumer Duty in PRIN 2A and its overarching conduct obligations, but it does not specifically address how these rules relate to the conduct of business rules in COBS 4.",
+          "chunk_ids": [
+            "PRIN_0027",
+            "PRIN_0017",
+            "PRIN_0029",
+            "PRIN_0213",
+            "COBS_2349"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 0.5,
+            "P@10": 0.1,
+            "R@10": 0.3333333333333333,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 3,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 2016.5
+        },
+        "enhanced": {
+          "answer": "The provided context does not contain information relevant to this question. The context focuses on the Consumer Duty rules in PRIN 2A and their relationship with other principles, but it does not address the conduct of business rules in COBS 4 or how they relate to PRIN 2A.",
+          "chunk_ids": [
+            "PRIN_0027",
+            "PRIN_0017",
+            "PRIN_0035",
+            "PRIN_0029",
+            "PRIN_0198"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.3,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1464.0
+        }
+      }
+    },
+    {
+      "id": "Q08",
+      "query": "How do SYSC systems and controls requirements support the FCA Principles?",
+      "category": "cross_section",
+      "relevant_rule_codes": [
+        "PRIN 2.1.1R",
+        "SYSC 4.1.1R",
+        "SYSC 6.1.1R",
+        "SYSC 1.2.1G"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "SYSC_0004",
+            "SYSC_0885",
+            "SYSC_0003",
+            "SYSC_0712",
+            "SYSC_0489"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.25,
+            "P@10": 0.1,
+            "R@10": 0.25,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 866.5
+        },
+        "+prompt": {
+          "answer": "SYSC systems and controls requirements support the FCA Principles by ensuring that firms take reasonable care to organize and control their affairs responsibly and effectively, with adequate risk management systems. This is directly linked to Principle 3, which mandates that a firm must manage its affairs responsibly and effectively.\n\n1. **Encouraging Responsibility**: SYSC aims to encourage directors and senior managers to take practical responsibility for their firm's arrangements, which are likely to be of interest to the FCA because they affect the FCA's functions. This aligns with the FCA's focus on responsible management and oversight (SYSC 1.2.1(1)G). As guidance, this is the FCA's expectation but not a mandatory requirement.\n\n2. **Amplifying Principle 3**: SYSC increases certainty by amplifying Principle 3, which requires firms to take reasonable care to organize and control their affairs responsibly and effectively, with adequate risk management systems (SYSC 1.2.1(2)G). This guidance indicates the FCA's expectation for firms to align their systems and controls with this principle.\n\n3. **Vesting Responsibility**: SYSC encourages firms to assign responsibility for effective and responsible organization to specific directors and senior managers, ensuring accountability and clear oversight within the firm (SYSC 1.2.1(3)G). This guidance reflects the FCA's expectation for firms to have clear lines of responsibility.\n\n4. **Common Platform**: SYSC creates a common platform of organizational and systems and controls requirements for all firms, promoting consistency and standardization across the industry (SYSC 1.2.1(4)G). This guidance supports the FCA's expectation for firms to maintain a baseline level of systems and controls.\n\n5. **Tailored Systems and Controls**: The nature and extent of the systems and controls a firm must maintain depend on various factors, such as the nature, scale, and complexity of its business, and the degree of risk associated with its operations (SYSC 3.1.2(1)R). This rule is mandatory, requiring firms to tailor their systems and controls to their specific circumstances.\n\n6. **Regular Review**: Firms are expected to carry out regular reviews of their systems and controls to ensure they remain appropriate and effective (SYSC 3.1.2(2)R). This rule is mandatory, emphasizing the need for ongoing assessment and adaptation of controls.\n\nThese SYSC requirements collectively support the FCA Principles by promoting responsible management, accountability, and effective risk management within firms.",
+          "chunk_ids": [
+            "SYSC_0004",
+            "SYSC_0885",
+            "SYSC_0003",
+            "SYSC_0712",
+            "SYSC_0489"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.25,
+            "P@10": 0.1,
+            "R@10": 0.25,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 4,
+            "completeness": 4,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 4971.7
+        },
+        "+hybrid": {
+          "answer": "The SYSC systems and controls requirements support the FCA Principles by encouraging firms to take responsibility for their organisational arrangements, thereby enhancing compliance with the FCA's regulatory objectives.\n\n1. **Encouraging Responsibility**: SYSC aims to encourage directors and senior managers to take practical responsibility for their firm's arrangements, which are likely to be of interest to the FCA. This aligns with the FCA's focus on ensuring firms are well-managed and compliant with regulatory standards. This is supported by SYSC 1.2.1(1)G, which is Guidance, meaning it is the FCA's expectation but not mandatory.\n\n2. **Amplifying Principle 3**: SYSC increases certainty by amplifying Principle 3, which requires firms to take reasonable care to organise and control their affairs responsibly and effectively, with adequate risk management systems. This is outlined in SYSC 1.2.1(2)G. Again, this is Guidance, indicating the FCA's expectations.\n\n3. **Vesting Responsibility**: SYSC encourages firms to vest responsibility for effective and responsible organisation in specific directors and senior managers. This ensures accountability and clarity in management roles, supporting the FCA's regulatory framework. This is detailed in SYSC 1.2.1(3)G, which is Guidance.\n\n4. **Creating a Common Platform**: SYSC creates a common platform of organisational and systems and controls requirements for all firms, promoting consistency and clarity across the industry. This is described in SYSC 1.2.1(4)G, which is also Guidance.\n\nThese elements collectively support the FCA's Principles by promoting a culture of responsibility, accountability, and effective risk management within firms.",
+          "chunk_ids": [
+            "SYSC_0885",
+            "SYSC_1447",
+            "SYSC_0004",
+            "SYSC_0984",
+            "SYSC_0993"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.25,
+            "P@10": 0.1,
+            "R@10": 0.25,
+            "MRR": 0.3333333333333333
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 4,
+            "completeness": 4,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 3636.1
+        },
+        "+rerank": {
+          "answer": "SYSC systems and controls requirements support the FCA Principles by encouraging firms to take responsibility for their organisational arrangements, ensuring these are managed responsibly and effectively, and by creating a common platform for organisational requirements.\n\n1. **Encouraging Responsibility**: SYSC aims to encourage directors and senior managers to take appropriate practical responsibility for their firm's arrangements, which aligns with the FCA's interest in ensuring firms are managed effectively. This is outlined in SYSC 1.2.1(1)G, which is Guidance, indicating the FCA's expectation rather than a mandatory requirement.\n\n2. **Amplifying Principle 3**: SYSC increases certainty by amplifying Principle 3, which mandates that a firm must take reasonable care to organise and control its affairs responsibly and effectively, with adequate risk management systems. This is specified in SYSC 1.2.1(2)G. As Guidance, this reflects the FCA's expectations for firms to follow.\n\n3. **Assigning Responsibility**: SYSC encourages firms to vest responsibility for effective and responsible organisation in specific directors and senior managers, as per SYSC 1.2.1(3)G. This Guidance supports the FCA's Principles by ensuring accountability within firms.\n\n4. **Creating a Common Platform**: SYSC establishes a common platform of organisational and systems and controls requirements for all firms, as stated in SYSC 1.2.1(4)G. This Guidance helps standardize expectations across firms, supporting the FCA's regulatory objectives.\n\nThese SYSC provisions collectively support the FCA Principles by promoting responsible management and accountability within firms, aligning with the FCA's broader regulatory framework.",
+          "chunk_ids": [
+            "SYSC_1447",
+            "SYSC_0004",
+            "SYSC_0882",
+            "SYSC_0875",
+            "SYSC_0915"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.25,
+            "P@10": 0.2,
+            "R@10": 0.5,
+            "MRR": 0.5
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 5,
+            "completeness": 4,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 4135.5
+        },
+        "enhanced": {
+          "answer": "SYSC systems and controls requirements support the FCA Principles by encouraging firms to take responsibility for their organisational arrangements and ensuring effective risk management. Specifically, SYSC aims to:\n\n1. Encourage directors and senior managers to take practical responsibility for their firm's arrangements, which aligns with the FCA's interests and functions (SYSC 1.2.1(1)G). This is Guidance, meaning it is the FCA's expectation but not mandatory.\n\n2. Increase certainty by amplifying Principle 3, which requires firms to take reasonable care to organise and control their affairs responsibly and effectively, with adequate risk management systems (SYSC 1.2.1(2)G). This is Guidance, indicating the FCA's expectation.\n\n3. Encourage firms to assign responsibility for effective and responsible organisation to specific directors and senior managers (SYSC 1.2.1(3)G). Again, this is Guidance, reflecting the FCA's expectation.\n\n4. Create a common platform of organisational and systems and controls requirements for all firms (SYSC 1.2.1(4)G). This is Guidance, showing the FCA's expectation.\n\nThese requirements collectively support the FCA Principles by ensuring that firms have robust systems and controls in place, which are crucial for maintaining the integrity and stability of the financial system.",
+          "chunk_ids": [
+            "SYSC_1447",
+            "SYSC_0004",
+            "SYSC_0882",
+            "SYSC_0984",
+            "SYSC_1352"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.25,
+            "P@10": 0.1,
+            "R@10": 0.25,
+            "MRR": 0.5
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 5,
+            "completeness": 4,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 3276.0
+        }
+      }
+    },
+    {
+      "id": "Q09",
+      "query": "What are the rules about treating customers fairly?",
+      "category": "ambiguous",
+      "relevant_rule_codes": [
+        "PRIN 2.1.1R",
+        "PRIN 2A.1.1R",
+        "COBS 2.1.1R",
+        "COBS 2.3.3G",
+        "COBS 20.2.2G",
+        "PRIN 1.2.1G"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "PRIN_0037",
+            "PRIN_0038",
+            "PRIN_0079",
+            "PRIN_0039",
+            "PRIN_0012"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.16666666666666666,
+            "P@10": 0.1,
+            "R@10": 0.16666666666666666,
+            "MRR": 0.2
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 912.3
+        },
+        "+prompt": {
+          "answer": "The rules about treating customers fairly are primarily addressed in the context of acting in good faith and managing conflicts of interest. Here are the relevant rules:\n\n1. **Acting in Good Faith**: A firm must act in good faith towards retail customers, which is a mandatory requirement. This involves honesty, fair and open dealing, and acting consistently with the reasonable expectations of retail customers (PRIN 2A.2.1R, PRIN 2A.2.2G). As a Rule (R), acting in good faith is a legally binding obligation.\n\n2. **Avoiding and Mitigating Harm**: A firm must avoid causing foreseeable harm to retail customers and, where that is not practical, mitigate such harm (PRIN 2A.3.14R). This is a Rule (R), meaning it is mandatory for firms to comply.\n\n3. **Managing Conflicts of Interest**: Firms must support the proper management of conflicts of interest (PRIN 2A.3.14R). This is also a Rule (R), indicating a mandatory requirement.\n\n4. **Considering Customer Needs**: Firms must ensure that the needs, characteristics, and objectives of the target market are duly taken into account (PRIN 2A.3.14R). This is a Rule (R), thus a mandatory obligation.\n\n5. **Examples of Not Acting in Good Faith**: The guidance provides examples where a firm might not be acting in good faith, such as failing to consider customers' interests, exploiting customers, or taking advantage of vulnerable customers (PRIN 2A.2.3G). This is Guidance (G), which means it is the FCA's expectation but not a mandatory requirement.\n\nThese rules and guidance collectively ensure that firms treat customers fairly by mandating good faith actions, avoiding harm, managing conflicts, and considering customer needs.",
+          "chunk_ids": [
+            "PRIN_0037",
+            "PRIN_0038",
+            "PRIN_0079",
+            "PRIN_0039",
+            "PRIN_0012"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.16666666666666666,
+            "P@10": 0.1,
+            "R@10": 0.16666666666666666,
+            "MRR": 0.2
+          },
+          "generation": {
+            "correctness": 3,
+            "groundedness": 4,
+            "completeness": 3,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 3385.7
+        },
+        "+hybrid": {
+          "answer": "The rules about treating customers fairly are primarily addressed in the FCA's Principles for Businesses and Conduct of Business sourcebooks. Here are the relevant rules and guidance:\n\n1. **Principle 6 (Customers' interests)**: Firms must pay due regard to the interests of their customers and treat them fairly. This principle is explicitly mentioned in PRIN 1.2.1, which states that the requirement to treat customers fairly depends on the characteristics of the client or customer concerned. This is a Rule (R), meaning it is a mandatory obligation for firms (PRIN 1.2.1R).\n\n2. **Principle 7 (Communications with clients)**: Firms must ensure that communications with clients are clear, fair, and not misleading. This is also highlighted in PRIN 1.2.1, emphasizing the importance of tailoring communications to the characteristics of the client or customer. This is a Rule (R), thus mandatory (PRIN 1.2.1R).\n\n3. **COBS 2.3.3**: This rule requires firms to act honestly, fairly, and professionally in accordance with the best interests of their clients. It includes the client's best interests rule and duties under Principles 1 (integrity), 2 (skill, care, and diligence), and 6 (customers' interests). This is a Rule (R), making it a mandatory obligation (COBS 2.3.3R).\n\n4. **PRIN 2A.2.1**: Firms must act in good faith towards retail customers. This is a Rule (R), indicating a mandatory requirement for firms to adhere to (PRIN 2A.2.1R).\n\n5. **PRIN 2A.2.2**: Acting in good faith involves honesty, fair and open dealing, and acting consistently with the reasonable expectations of retail customers. This is a Rule (R), which firms must follow (PRIN 2A.2.2R).\n\nThese rules collectively establish a framework that mandates firms to treat customers fairly, ensuring their interests are prioritized and communications are clear and honest.",
+          "chunk_ids": [
+            "PRIN_0012",
+            "COBS_0068",
+            "PRIN_0037",
+            "COBS_2082",
+            "PRIN_0038"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 0.5,
+            "P@10": 0.3,
+            "R@10": 0.5,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 4,
+            "completeness": 4,
+            "citation_accuracy": 3
+          },
+          "latency_ms": 3733.3
+        },
+        "+rerank": {
+          "answer": "Firms must treat customers fairly by adhering to several principles outlined in the FCA Handbook:\n\n1. **Customers' Interests**: A firm must pay due regard to the interests of its customers and treat them fairly. This is a mandatory obligation under PRIN 2.1.1R, which means firms must comply with this rule.\n\n2. **Communications with Clients**: A firm must ensure that communications with clients are clear, fair, and not misleading. This is also a mandatory requirement under PRIN 2.1.1R.\n\n3. **Conflicts of Interest**: Firms must manage conflicts of interest fairly, both between themselves and their customers and between a customer and another client. This is another mandatory obligation under PRIN 2.1.1R.\n\n4. **Consumer Duty**: Firms must act to deliver good outcomes for retail customers, which includes treating them fairly. This is a mandatory requirement under PRIN 2.1.1R.\n\nThese principles are further supported by guidance in PRIN 1.2.1G, which explains that the requirements for treating customers fairly depend on the characteristics of the client or customer concerned. This guidance is not mandatory but indicates the FCA's expectations for firms to consider the specific needs and characteristics of their clients when applying these principles.\n\nIn summary, treating customers fairly involves mandatory compliance with principles related to customers' interests, communications, conflicts of interest, and consumer duty, as outlined in PRIN 2.1.1R.",
+          "chunk_ids": [
+            "PRIN_0017",
+            "PRIN_0012",
+            "COBS_0068",
+            "COBS_0098",
+            "PRIN_0079"
+          ],
+          "retrieval": {
+            "P@5": 0.8,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.2,
+            "R@10": 0.3333333333333333,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 3,
+            "groundedness": 2,
+            "completeness": 3,
+            "citation_accuracy": 2
+          },
+          "latency_ms": 2759.9
+        },
+        "enhanced": {
+          "answer": "The provided context contains information relevant to treating customers fairly, specifically in the context of with-profits policies.\n\n1. **Contractual Entitlements**: Firms must deliver each policyholder's contractual entitlement, and neither Principle 6 (Customers' interests) nor the rules on treating with-profits policyholders fairly relieve a firm of this obligation (COBS 20.2.2). This is a Rule (R), meaning it is a mandatory obligation.\n\n2. **Fair Treatment in With-Profits Funds**: If a with-profits fund has suffered adverse experience due to a firm's failure to comply with the rules and guidance on treating with-profits policyholders fairly, that adverse experience may only be accounted for under specific conditions. This includes the reasonable opinion of the firm's governing body that the adverse experience cannot be met from the firm's inherited estate or any assets attributable to shareholders (COBS 20.2.5). This is also a Rule (R), indicating a mandatory requirement.\n\n3. **Principles of Business**: Principles 6 (Customers' interests), 7 (Communications with clients), 8 (Conflicts of interest), and others impose requirements on firms in relation to their clients or customers. These principles require firms to have due regard for customers' interests and to treat them fairly, which is dependent on the characteristics of the client or customer (PRIN 1.2.1). This is Guidance (G), meaning it is an expectation but not mandatory.\n\nThe context does not provide a comprehensive overview of all rules related to treating customers fairly but focuses on specific aspects related to with-profits policies and general principles.",
+          "chunk_ids": [
+            "COBS_2074",
+            "COBS_2082",
+            "PRIN_0012",
+            "COBS_2085",
+            "COBS_0068"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 0.5,
+            "P@10": 0.3,
+            "R@10": 0.5,
+            "MRR": 0.5
+          },
+          "generation": {
+            "correctness": 2,
+            "groundedness": 4,
+            "completeness": 2,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 4451.0
+        }
+      }
+    },
+    {
+      "id": "Q10",
+      "query": "What should firms do about compliance?",
+      "category": "ambiguous",
+      "relevant_rule_codes": [
+        "SYSC 6.1.1R",
+        "SYSC 6.1.3R",
+        "SYSC 6.1.4R"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "SYSC_0519",
+            "SYSC_0688",
+            "SYSC_0693",
+            "SYSC_1495",
+            "COBS_2342"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 1.0,
+            "P@10": 0.2,
+            "R@10": 1.0,
+            "MRR": 0.5
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 2509.2
+        },
+        "+prompt": {
+          "answer": "Firms should establish and maintain a compliance function that is appropriately structured and resourced to ensure effective monitoring and adherence to regulatory obligations. Here are the steps firms should take:\n\n1. **Establish a Compliance Function**: Depending on the nature, scale, and complexity of the business, it may be appropriate for a firm to have a separate compliance function. This function should be documented, staffed by competent personnel, and have adequate resources and independence (SYSC 3.2.7G). This is Guidance, meaning it is expected but not mandatory.\n\n2. **Conduct Compliance Risk Assessment**: The compliance function must conduct a risk assessment to establish a risk-based monitoring program that covers all areas of the firm's designated investment business and related activities (SYSC 6.1.3-BR). This is a Rule, meaning it is mandatory.\n\n3. **Ensure Compliance Function Independence and Authority**: A common platform firm must ensure that the compliance function has the necessary authority, resources, expertise, and access to relevant information. It must also ensure that the compliance officer is appointed by the management body and that the compliance function reports directly to the management body when significant risks are detected (SYSC 6.1.3-CR). This is a Rule, meaning it is mandatory.\n\n4. **Appoint a Compliance Officer**: Certain firms, such as debt management and credit repair firms, must appoint a compliance officer responsible for ensuring compliance with SYSC 6.1.1R and for any required compliance reporting (SYSC 6.1.4CR). This is a Rule, meaning it is mandatory.\n\n5. **Maintain Policies and Procedures**: Firms must establish, implement, and maintain clear and effective policies and procedures for compliance, have them approved by the governing body, and periodically review their effectiveness (COBS 23.8.1R). This is a Rule, meaning it is mandatory.\n\nBy following these steps, firms can ensure that their compliance functions are robust and capable of effectively managing compliance risks.",
+          "chunk_ids": [
+            "SYSC_0519",
+            "SYSC_0688",
+            "SYSC_0693",
+            "SYSC_1495",
+            "COBS_2342"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 1.0,
+            "P@10": 0.2,
+            "R@10": 1.0,
+            "MRR": 0.5
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 4,
+            "completeness": 4,
+            "citation_accuracy": 3
+          },
+          "latency_ms": 7242.4
+        },
+        "+hybrid": {
+          "answer": "Firms should take several steps regarding their compliance functions, depending on the nature, scale, and complexity of their business:\n\n1. **Establish a Compliance Function**: Firms may need to have a separate compliance function. This function should be documented, staffed by an appropriate number of competent staff, and sufficiently independent to perform duties objectively. It should be adequately resourced and have unrestricted access to the firm's relevant records, with ultimate recourse to its governing body (SYSC 3.2.7G). This is guidance, meaning it is expected but not mandatory.\n\n2. **Risk-Based Monitoring Programme**: The compliance function must conduct an assessment to establish a risk-based monitoring programme. This programme should consider all areas of the firm's designated investment business and any relevant ancillary services and activities. The programme must prioritize compliance risk assessment to ensure comprehensive monitoring (SYSC 6.1.3-BR). This is a rule, meaning it is mandatory.\n\n3. **Authority and Independence**: A common platform firm must ensure the compliance function has the necessary authority, resources, expertise, and access to all relevant information. A compliance officer must be appointed by the management body, responsible for the compliance function and reporting as required by UK law on markets in financial instruments. The compliance function should report directly to the management body when significant risks are detected. The compliance function's personnel must not be involved in the services or activities they monitor, and their remuneration must not compromise their objectivity (SYSC 6.1.3-CR). This is a rule, meaning it is mandatory.\n\n4. **Consideration for Other Firms**: Other firms should take account of the compliance function rule (SYSC 6.1.3R) as guidance, meaning they should consider it as expected practice but it is not mandatory (SYSC 6.1.3-CG).\n\nThese steps ensure that a firm's compliance function is effective, independent, and capable of managing compliance risks appropriately.",
+          "chunk_ids": [
+            "SYSC_0686",
+            "SYSC_0519",
+            "COBS_1844",
+            "SYSC_0688",
+            "PRIN_0178"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.3333333333333333,
+            "P@10": 0.2,
+            "R@10": 1.0,
+            "MRR": 0.25
+          },
+          "generation": {
+            "correctness": 3,
+            "groundedness": 3,
+            "completeness": 3,
+            "citation_accuracy": 2
+          },
+          "latency_ms": 5781.1
+        },
+        "+rerank": {
+          "answer": "Firms should establish and maintain effective systems and controls for compliance with applicable requirements and standards under the regulatory system. This includes countering the risk that the firm might be used to further financial crime. This is a mandatory requirement as per SYSC 3.2.6R, which states that a firm \"must take reasonable care\" to ensure these systems and controls are in place.\n\nAdditionally, depending on the nature, scale, and complexity of its business, it may be appropriate for a firm to have a separate compliance function. This function should be documented, staffed by competent and independent personnel, adequately resourced, and have unrestricted access to relevant records and recourse to the firm's governing body. This is guidance as per SYSC 3.2.7G, meaning it is expected but not mandatory.\n\nIn summary, the establishment of systems and controls is a mandatory requirement, while the organization of a separate compliance function is expected but not obligatory.",
+          "chunk_ids": [
+            "SYSC_0519",
+            "SYSC_0507",
+            "SYSC_0954",
+            "SYSC_0950",
+            "SYSC_0686"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.4,
+            "R@10": 1.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 3,
+            "groundedness": 4,
+            "completeness": 2,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 2202.9
+        },
+        "enhanced": {
+          "answer": "Firms must establish and maintain a compliance function that is appropriate to the nature, scale, and complexity of their business. This involves several key steps:\n\n1. **Establish a Compliance Function**: Depending on the firm's business, it may be necessary to have a separate compliance function. This function should be documented, staffed by competent and independent personnel, adequately resourced, and have access to relevant records and the governing body (SYSC 3.2.7G). This is Guidance, meaning it is expected but not mandatory.\n\n2. **Conduct Compliance Risk Assessment**: The compliance function must conduct an assessment to establish a risk-based monitoring programme that covers all areas of the firm's designated investment business and ancillary services (SYSC 6.1.3-BR). This is a Rule, making it a mandatory requirement.\n\n3. **Ensure Compliance Function Independence**: A firm must ensure that the compliance function has the necessary authority, resources, expertise, and access to information. The compliance officer must be appointed by the management body and report directly to it when significant risks are detected (SYSC 6.1.3-CR). This is a Rule, thus mandatory.\n\n4. **Appoint a Compliance Officer**: Certain firms, such as debt management or credit repair firms, must appoint a compliance officer responsible for ensuring compliance with obligations and reporting (SYSC 6.1.4CR). This is a Rule, making it mandatory for applicable firms.\n\n5. **Establish Policies and Procedures**: Firms must establish, implement, and maintain clear policies and procedures for compliance, have them approved by the governing body, and periodically review their effectiveness (COBS 23.8.1R). This is a Rule, indicating a mandatory obligation.\n\nIn summary, firms must establish a robust compliance function, conduct risk assessments, ensure the independence of the compliance function, appoint a compliance officer where required, and maintain effective compliance policies and procedures.",
+          "chunk_ids": [
+            "SYSC_0519",
+            "SYSC_0686",
+            "SYSC_0688",
+            "SYSC_0693",
+            "COBS_2342"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 1.0,
+            "P@10": 0.2,
+            "R@10": 1.0,
+            "MRR": 0.3333333333333333
+          },
+          "generation": {
+            "correctness": 3,
+            "groundedness": 4,
+            "completeness": 4,
+            "citation_accuracy": 3
+          },
+          "latency_ms": 6335.8
+        }
+      }
+    },
+    {
+      "id": "Q11",
+      "query": "What are the FCA rules on cryptocurrency staking rewards?",
+      "category": "edge_case",
+      "relevant_rule_codes": [],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "COBS_0247",
+            "SYSC_1054",
+            "COBS_0966",
+            "SYSC_1029",
+            "SYSC_1053"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.0,
+            "R@10": 0.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 4,
+            "completeness": 4,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 3017.5
+        },
+        "+prompt": {
+          "answer": "The provided context does not contain information relevant to the question about FCA rules on cryptocurrency staking rewards.",
+          "chunk_ids": [
+            "COBS_0247",
+            "SYSC_1054",
+            "COBS_0966",
+            "SYSC_1029",
+            "SYSC_1053"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.0,
+            "R@10": 0.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 5,
+            "groundedness": 5,
+            "completeness": 5,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 3751.9
+        },
+        "+hybrid": {
+          "answer": "The provided context does not contain information relevant to this question. There are no specific FCA rules on cryptocurrency staking rewards mentioned in the retrieved sections.",
+          "chunk_ids": [
+            "SYSC_1045",
+            "COBS_0247",
+            "SYSC_1043",
+            "SYSC_1054",
+            "SYSC_1407"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.0,
+            "R@10": 0.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 5,
+            "groundedness": 5,
+            "completeness": 5,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 3310.2
+        },
+        "+rerank": {
+          "answer": "The provided context does not contain information relevant to this question. There are no specific FCA rules on cryptocurrency staking rewards mentioned in the retrieved context.",
+          "chunk_ids": [
+            "COBS_0247",
+            "SYSC_1167",
+            "SYSC_1045",
+            "SYSC_1054",
+            "SYSC_1081"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.0,
+            "R@10": 0.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 5,
+            "groundedness": 5,
+            "completeness": 5,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 4053.3
+        },
+        "enhanced": {
+          "answer": "The provided context does not contain information relevant to this question. There are no specific FCA rules on cryptocurrency staking rewards mentioned in the retrieved excerpts.",
+          "chunk_ids": [
+            "COBS_0247",
+            "SYSC_1045",
+            "SYSC_1054",
+            "SYSC_1043",
+            "SYSC_1081"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.0,
+            "R@10": 0.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 5,
+            "groundedness": 5,
+            "completeness": 5,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 3279.9
+        }
+      }
+    },
+    {
+      "id": "Q12",
+      "query": "What does the FCA Handbook say about climate change risk disclosures?",
+      "category": "edge_case",
+      "relevant_rule_codes": [],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "COBS_2203",
+            "SYSC_0814",
+            "COBS_0046",
+            "COBS_1646",
+            "SYSC_1188"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.0,
+            "R@10": 0.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1864.5
+        },
+        "+prompt": {
+          "answer": "The provided context does not contain information relevant to the question about climate change risk disclosures. None of the cited sections or rules address climate change risk disclosures.",
+          "chunk_ids": [
+            "COBS_2203",
+            "SYSC_0814",
+            "COBS_0046",
+            "COBS_1646",
+            "SYSC_1188"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.0,
+            "R@10": 0.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 5,
+            "completeness": 4,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 2827.6
+        },
+        "+hybrid": {
+          "answer": "The provided context does not contain information relevant to the question about climate change risk disclosures.",
+          "chunk_ids": [
+            "COBS_2203",
+            "SYSC_1736",
+            "SYSC_0814",
+            "SYSC_1711",
+            "COBS_0046"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.0,
+            "R@10": 0.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 3,
+            "groundedness": 4,
+            "completeness": 3,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 3444.0
+        },
+        "+rerank": {
+          "answer": "The provided context does not contain information relevant to the question about climate change risk disclosures.",
+          "chunk_ids": [
+            "SYSC_0897",
+            "SYSC_1188",
+            "SYSC_1052",
+            "SYSC_0727",
+            "SYSC_0536"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.0,
+            "R@10": 0.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 5,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1809.9
+        },
+        "enhanced": {
+          "answer": "The provided context does not contain information relevant to the question about climate change risk disclosures.",
+          "chunk_ids": [
+            "SYSC_1188",
+            "SYSC_0814",
+            "COBS_2203",
+            "COBS_1254",
+            "COBS_0510"
+          ],
+          "retrieval": {
+            "P@5": 0.0,
+            "R@5": 0.0,
+            "P@10": 0.0,
+            "R@10": 0.0,
+            "MRR": 0.0
+          },
+          "generation": {
+            "correctness": 3,
+            "groundedness": 4,
+            "completeness": 3,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 4199.3
+        }
+      }
+    },
+    {
+      "id": "Q13",
+      "query": "What is an 'eligible counterparty' under COBS?",
+      "category": "keyword",
+      "relevant_rule_codes": [
+        "COBS 3.6.1R",
+        "COBS 3.6.2R",
+        "COBS 3.6.4R"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "An eligible counterparty is a client that is either a per se eligible counterparty or an elective eligible counterparty.",
+          "chunk_ids": [
+            "COBS_0216",
+            "COBS_0241",
+            "COBS_0218",
+            "COBS_0222",
+            "COBS_0217"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.3,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 3,
+            "groundedness": 5,
+            "completeness": 2,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 1357.0
+        },
+        "+prompt": {
+          "answer": "An 'eligible counterparty' under COBS is defined as a client that is either a per se eligible counterparty or an elective eligible counterparty. This classification applies specifically to eligible counterparty business, with an exception noted in PRIN 1 Annex 1 R (COBS 3.6.1(1)R). This is a Rule, meaning it is a mandatory requirement.\n\nA per se eligible counterparty includes entities such as investment firms, credit institutions, insurance companies, collective investment schemes authorised under the UK provisions implementing the UCITS Directive or their management companies, pension funds or their management companies, other financial institutions authorised or regulated under UK law, national governments or their corresponding offices, central banks, and supranational organisations (COBS 3.6.2R). This is also a Rule, indicating these entities must be treated as per se eligible counterparties unless categorised differently under the chapter.\n\nAdditionally, a firm may treat a client as an elective eligible counterparty in relation to business other than MiFID or equivalent third country business if certain conditions are met, such as the client being an undertaking and a per se professional client, with specific exceptions (COBS 3.6.3R). This is a Rule, thus mandatory for firms to follow when categorising clients as elective eligible counterparties.",
+          "chunk_ids": [
+            "COBS_0216",
+            "COBS_0241",
+            "COBS_0218",
+            "COBS_0222",
+            "COBS_0217"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.3,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 4,
+            "groundedness": 5,
+            "completeness": 4,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 3698.1
+        },
+        "+hybrid": {
+          "answer": "An 'eligible counterparty' under COBS is defined as a client that is either a per se eligible counterparty or an elective eligible counterparty. This classification applies specifically to eligible counterparty business, with an exception noted in PRIN 1 Annex 1 R (COBS 3.6.1(1)R). This is a Rule (R), meaning it is a mandatory requirement for firms to follow.\n\nAdditionally, a firm may treat a client as an elective eligible counterparty in relation to business other than MiFID or equivalent third country business if certain conditions are met, such as the client being an undertaking and a per se professional client, with specific exclusions (COBS 3.6.3R). This is also a Rule (R), indicating a mandatory obligation.\n\nFurthermore, a firm can obtain a prospective counterparty's confirmation to be treated as an eligible counterparty either through a general agreement or for each individual transaction (COBS 3.6.6R). This is a Rule (R), thus mandatory for compliance.\n\nThese rules collectively outline the criteria and processes for classifying a client as an eligible counterparty under COBS.",
+          "chunk_ids": [
+            "COBS_0216",
+            "COBS_0241",
+            "COBS_0218",
+            "COBS_0032",
+            "COBS_0223"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.3,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 3,
+            "groundedness": 4,
+            "completeness": 2,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 3601.5
+        },
+        "+rerank": {
+          "answer": "An 'eligible counterparty' under COBS is defined as a client that is either a per se eligible counterparty or an elective eligible counterparty. This classification applies specifically to eligible counterparty business, with an exception noted in PRIN 1 Annex 1 R. \n\n1. **Per se eligible counterparty**: This is a client that automatically qualifies as an eligible counterparty without needing to meet additional criteria.\n\n2. **Elective eligible counterparty**: A client can be treated as an elective eligible counterparty if certain conditions are met, such as being an undertaking and a per se professional client, except when the client is a per se professional client solely because it is an institutional investor under COBS 3.5.2R(5).\n\nThese definitions and conditions are outlined in COBS 3.6.1 and COBS 3.6.3. Both are Rules (R), meaning they are mandatory requirements for firms.\n\n- **COBS 3.6.1R**: Defines eligible counterparties and specifies the context in which a client can be considered as such.\n- **COBS 3.6.3R**: Details the conditions under which a firm may treat a client as an elective eligible counterparty, particularly for business other than MiFID or equivalent third country business.\n\nThese rules establish the criteria and conditions under which clients can be classified as eligible counterparties, which firms must adhere to.",
+          "chunk_ids": [
+            "COBS_0216",
+            "COBS_0241",
+            "COBS_0223",
+            "COBS_0222",
+            "COBS_0218"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.6,
+            "R@10": 1.0,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 3,
+            "groundedness": 4,
+            "completeness": 3,
+            "citation_accuracy": 4
+          },
+          "latency_ms": 4193.4
+        },
+        "enhanced": {
+          "answer": "An 'eligible counterparty' under COBS is defined as a client that is either a per se eligible counterparty or an elective eligible counterparty. This classification applies specifically in relation to eligible counterparty business, with an exception noted in PRIN 1 Annex 1 R (COBS 3.6.1(1)R). This is a Rule (R), meaning it is a legally binding obligation for firms.\n\nAdditionally, a firm may obtain a prospective counterparty's confirmation to be treated as an eligible counterparty either through a general agreement or for each individual transaction (COBS 3.6.6R). This is also a Rule (R), indicating a mandatory requirement for firms.\n\nThe provided context does not contain further details on the specific criteria or processes for classifying a client as a per se or elective eligible counterparty beyond these points.",
+          "chunk_ids": [
+            "COBS_0216",
+            "COBS_0241",
+            "COBS_0223",
+            "COBS_0222",
+            "COBS_0218"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 0.6666666666666666,
+            "P@10": 0.3,
+            "R@10": 0.6666666666666666,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 3,
+            "groundedness": 4,
+            "completeness": 2,
+            "citation_accuracy": 5
+          },
+          "latency_ms": 3529.2
+        }
+      }
+    },
+    {
+      "id": "Q14",
+      "query": "What is the 'compliance function' requirement under SYSC?",
+      "category": "keyword",
+      "relevant_rule_codes": [
+        "SYSC 6.1.3R",
+        "SYSC 6.1.4R"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "I don't have enough information.",
+          "chunk_ids": [
+            "SYSC_0519",
+            "SYSC_0521",
+            "SYSC_0692",
+            "SYSC_0680",
+            "SYSC_0693"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 1.0,
+            "P@10": 0.3,
+            "R@10": 1.0,
+            "MRR": 0.3333333333333333
+          },
+          "generation": {
+            "correctness": 1,
+            "groundedness": 1,
+            "completeness": 1,
+            "citation_accuracy": 1
+          },
+          "latency_ms": 1379.6
+        },
+        "+prompt": {
+          "answer": "The 'compliance function' requirement under SYSC involves several key elements:\n\n1. **Documentation and Staffing**: Depending on the nature, scale, and complexity of its business, a firm may need to have a separate compliance function. This function should be documented, staffed by an appropriate number of competent staff, and sufficiently independent to perform their duties objectively. It should also be adequately resourced and have unrestricted access to the firm's relevant records, with ultimate recourse to its governing body (SYSC 3.2.7G). This is Guidance (G), meaning it is expected but not mandatory.\n\n2. **Allocation of Responsibility**: A firm that is not a common platform firm or management company and that carries on designated investment business with or for retail or professional clients must allocate the responsibility for oversight of the firm's compliance to a director or senior manager. This person must also report to the governing body regarding that responsibility (SYSC 6.1.4AR). This is a Rule (R), meaning it is a mandatory requirement.\n\n3. **Appointment of a Compliance Officer**: Certain firms, such as debt management firms, credit repair firms, and Class 1 firms as defined in CMCOB 7.2.5R(1), must appoint a compliance officer responsible for ensuring the firm meets its obligations under SYSC 6.1.1R and for any compliance reporting under SYSC 4.3.2R (SYSC 6.1.4CR). This is a Rule (R), indicating a mandatory obligation.\n\nThese requirements collectively ensure that firms maintain a robust compliance framework appropriate to their business operations.",
+          "chunk_ids": [
+            "SYSC_0519",
+            "SYSC_0521",
+            "SYSC_0692",
+            "SYSC_0680",
+            "SYSC_0693"
+          ],
+          "retrieval": {
+            "P@5": 0.6,
+            "R@5": 1.0,
+            "P@10": 0.3,
+            "R@10": 1.0,
+            "MRR": 0.3333333333333333
+          },
+          "generation": {
+            "correctness": 2,
+            "groundedness": 3,
+            "completeness": 2,
+            "citation_accuracy": 3
+          },
+          "latency_ms": 4928.3
+        },
+        "+hybrid": {
+          "answer": "The compliance function requirement under SYSC involves several key obligations and expectations for firms, particularly regarding the establishment, authority, and independence of the compliance function.\n\n1. **Appointment of a Compliance Officer**: \n   - Certain firms, such as debt management firms and credit repair firms, must appoint a compliance officer responsible for ensuring the firm meets its compliance obligations (SYSC 6.1.4C(1)R). This is a Rule, meaning it is a mandatory requirement.\n\n2. **Risk-Based Monitoring Programme**:\n   - Firms must establish a risk-based monitoring programme that considers all areas of the firm's designated investment business and ancillary services (SYSC 6.1.3-B). This is a Rule, indicating a mandatory requirement.\n\n3. **Authority and Independence**:\n   - A common platform firm must ensure that the compliance function has the necessary authority, resources, expertise, and access to relevant information (SYSC 6.1.3-C(1)R). This is a Rule, making it mandatory.\n   - The compliance function must report directly to the management body on an ad-hoc basis if there is a significant risk of non-compliance (SYSC 6.1.3-C(3)R). This is also a mandatory Rule.\n   - The compliance function must be independent, with relevant persons not involved in the services or activities they monitor, and their remuneration must not compromise their objectivity (SYSC 6.1.3-C(4)R and (5)R). These are mandatory Rules.\n\n4. **Documentation and Resources**:\n   - The organisation and responsibilities of a compliance function should be documented, and it should be staffed by competent and independent personnel (SYSC 3.2.7G). This is Guidance, meaning it is expected but not mandatory.\n\nThese requirements ensure that the compliance function is effective, independent, and capable of monitoring and managing compliance risks within the firm.",
+          "chunk_ids": [
+            "SYSC_0693",
+            "SYSC_0688",
+            "SYSC_0521",
+            "SYSC_0695",
+            "SYSC_0519"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 1.0,
+            "P@10": 0.5,
+            "R@10": 1.0,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 2,
+            "groundedness": 3,
+            "completeness": 2,
+            "citation_accuracy": 2
+          },
+          "latency_ms": 6493.1
+        },
+        "+rerank": {
+          "answer": "The compliance function requirements under SYSC are outlined in several rules and guidance, focusing on the structure, independence, and responsibilities of the compliance function within a firm.\n\n1. **Structure and Independence**: \n   - A firm must consider having a separate compliance function depending on its business's nature, scale, and complexity. This function should be documented, staffed by competent and independent personnel, adequately resourced, and have unrestricted access to relevant records and recourse to the governing body (SYSC 3.2.7G). This is Guidance, meaning it is expected but not mandatory.\n\n2. **Authority and Resources**:\n   - The compliance function must have the necessary authority, resources, expertise, and access to all relevant information to discharge its responsibilities properly and independently (SYSC 6.1.3-C(1)R). This is a Rule, meaning it is mandatory.\n\n3. **Appointment and Reporting**:\n   - A compliance officer must be appointed by the management body, responsible for the compliance function, and for any compliance reporting required under UK law on markets in financial instruments (SYSC 6.1.3-C(2)R). This is a Rule, meaning it is mandatory.\n\n4. **Independence from Monitored Activities**:\n   - Personnel involved in the compliance function must not be involved in the activities they monitor, and their remuneration must not compromise their objectivity (SYSC 6.1.3-C(4) and (5)R). These are Rules, meaning they are mandatory.\n\n5. **Risk-Based Monitoring**:\n   - The compliance function must establish a risk-based monitoring program that considers all areas of the firm's designated investment business and ancillary services (SYSC 6.1.3-BR). This is a Rule, meaning it is mandatory.\n\n6. **Regular Assessment**:\n   - A common platform firm must regularly assess whether the compliance function's effectiveness is compromised and review this assessment regularly (SYSC 6.1.5AR). This is a Rule, meaning it is mandatory.\n\nThese requirements ensure that the compliance function is structured to operate effectively and independently, with sufficient authority and resources to monitor and report on compliance risks within the firm.",
+          "chunk_ids": [
+            "SYSC_0519",
+            "SYSC_0521",
+            "SYSC_0695",
+            "SYSC_0688",
+            "SYSC_0693"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 1.0,
+            "P@10": 0.5,
+            "R@10": 1.0,
+            "MRR": 0.25
+          },
+          "generation": {
+            "correctness": 3,
+            "groundedness": 2,
+            "completeness": 3,
+            "citation_accuracy": 2
+          },
+          "latency_ms": 5128.4
+        },
+        "enhanced": {
+          "answer": "The 'compliance function' requirement under SYSC involves several key obligations for firms:\n\n1. **Authority and Independence**: A firm must ensure that the compliance function has the necessary authority, resources, expertise, and access to all relevant information. Additionally, the compliance function must operate independently from the services or activities it monitors (SYSC 6.1.4R, Rule). This is a mandatory requirement.\n\n2. **Appointment of Compliance Officer**: A compliance officer must be appointed and be responsible for the compliance function and any required reporting (SYSC 6.1.4R, Rule). This is also mandatory.\n\n3. **Remuneration**: The method of determining the remuneration of relevant persons involved in the compliance function must not compromise their objectivity (SYSC 6.1.4R, Rule). This requirement is mandatory.\n\n4. **Documentation and Staffing**: The organisation and responsibilities of a compliance function should be documented. It should be staffed by an appropriate number of competent staff who are sufficiently independent to perform their duties objectively. The compliance function should be adequately resourced and have unrestricted access to the firm's relevant records, as well as ultimate recourse to its governing body (SYSC 3.2.7G, Guidance). This is an expectation, not a mandatory requirement.\n\n5. **Allocation of Responsibility**: A firm must allocate to a director or senior manager the function of having responsibility for oversight of the firm's compliance and reporting to the governing body in respect of that responsibility (SYSC 3.2.8R, Rule). This is mandatory.\n\nThese rules and guidance collectively ensure that the compliance function within a firm is effective, independent, and capable of fulfilling its regulatory obligations.",
+          "chunk_ids": [
+            "SYSC_0690",
+            "SYSC_0519",
+            "SYSC_0521",
+            "SYSC_0520",
+            "SYSC_0695"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 1.0,
+            "P@10": 0.5,
+            "R@10": 1.0,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 2,
+            "groundedness": 3,
+            "completeness": 2,
+            "citation_accuracy": 3
+          },
+          "latency_ms": 5695.5
+        }
+      }
+    },
+    {
+      "id": "Q15",
+      "query": "What does COBS require regarding the 'suitability' of investment recommendations?",
+      "category": "rule_reference",
+      "relevant_rule_codes": [
+        "COBS 9.2.1R",
+        "COBS 9.2.2R",
+        "COBS 9.2.3R",
+        "COBS 9A.2.1R",
+        "COBS 9A.2.2G",
+        "COBS 9.1.1A",
+        "COBS 9A.3.3R"
+      ],
+      "configs": {
+        "baseline": {
+          "answer": "COBS requires firms to undertake a suitability assessment when making a personal recommendation to buy a financial instrument or an insurance-based investment product, as well as for all decisions whether to trade, including making any personal recommendations about whether or not to buy, hold, or sell an investment. Additionally, when a firm providing a portfolio management service makes a recommendation or request, or provides advice to a client to alter a mandate that defines the limits of the firm's discretion, it should be considered a recommendation for the purposes of suitability assessment. Furthermore, the responsibility to perform the suitability assessment is not reduced when a personal recommendation is provided through an automated or semi-automated system. When providing a suitability report, the firm should ensure that the contents are fair, clear, and not misleading.",
+          "chunk_ids": [
+            "COBS_1607",
+            "COBS_0911",
+            "COBS_0910",
+            "COBS_0944",
+            "COBS_0952"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 0.2857142857142857,
+            "P@10": 0.2,
+            "R@10": 0.2857142857142857,
+            "MRR": 0.3333333333333333
+          },
+          "generation": {
+            "correctness": 3,
+            "groundedness": 4,
+            "completeness": 3,
+            "citation_accuracy": 2
+          },
+          "latency_ms": 1821.3
+        },
+        "+prompt": {
+          "answer": "COBS requires firms to undertake a suitability assessment for investment recommendations to ensure that the advice or recommendations provided are appropriate for the client\u2019s circumstances.\n\n1. **Suitability Assessment Requirement**: Firms must conduct a suitability assessment when making personal recommendations to buy, hold, or sell an investment. This includes any recommendations or advice that might alter a client's investment mandate. This requirement is mandatory as per COBS 9A.2.1R, which is a Rule (R), meaning firms must comply with it (COBS 9A.2.2G, COBS 9A.2.3G).\n\n2. **Automated Systems**: The responsibility to perform a suitability assessment is not diminished when recommendations are provided through automated or semi-automated systems. This is also a Rule (R), indicating a mandatory obligation (COBS 9A.2.24R).\n\n3. **Guidance on Suitability**: There is guidance provided on assessing suitability, which firms should consider to ensure compliance with the suitability rules. This guidance is not mandatory but reflects the FCA's expectations (COBS 18.8A.10G, COBS 9.3.1G).\n\n4. **Record Keeping**: Firms should maintain records of suitability assessments, as suggested by the guidance on record keeping and retention periods for suitability records (COBS 9.5.1G).\n\nIn summary, firms must conduct a suitability assessment for all investment recommendations, including those made through automated systems, and should maintain appropriate records of these assessments.",
+          "chunk_ids": [
+            "COBS_1607",
+            "COBS_0911",
+            "COBS_0910",
+            "COBS_0944",
+            "COBS_0952"
+          ],
+          "retrieval": {
+            "P@5": 0.4,
+            "R@5": 0.2857142857142857,
+            "P@10": 0.2,
+            "R@10": 0.2857142857142857,
+            "MRR": 0.3333333333333333
+          },
+          "generation": {
+            "correctness": 3,
+            "groundedness": 3,
+            "completeness": 3,
+            "citation_accuracy": 2
+          },
+          "latency_ms": 4940.9
+        },
+        "+hybrid": {
+          "answer": "COBS requires firms to undertake a suitability assessment when providing investment recommendations. Here are the specific requirements:\n\n1. **Suitability Assessment Requirement**: A firm must conduct a suitability assessment when making a recommendation or providing advice to a client. This is mandated by COBS 9A.2.1R, which requires firms to ensure that any recommendation or advice is suitable for the client based on their circumstances. This is a Rule (R), meaning it is a legally binding obligation.\n\n2. **Record Keeping**: Firms must maintain records of the suitability assessment. According to COBS 9A.4.4R, these records must include the result of the suitability assessment, the recommendation made, any changes to the client's risk tolerance, and any changes to the underlying investment assets. This is also a Rule (R), indicating a mandatory requirement.\n\n3. **Periodic Suitability Assessment**: For firms providing periodic suitability assessments, they must review the suitability of recommendations at least annually. The frequency must be increased where appropriate, based on the client's risk profile and the type of financial instruments recommended (COBS 9A.3.9R). This is a Rule (R), thus mandatory.\n\n4. **Guidance on Recommendations**: When a firm makes a recommendation or provides advice that involves altering a client's mandate, this should be considered a recommendation requiring a suitability assessment (COBS 9A.2.3G). This is Guidance (G), meaning it is the FCA's expectation but not legally binding.\n\nThese rules and guidance collectively ensure that investment recommendations are suitable for clients, aligning with their needs and circumstances.",
+          "chunk_ids": [
+            "COBS_0965",
+            "COBS_1607",
+            "COBS_0958",
+            "COBS_0911",
+            "COBS_0575"
+          ],
+          "retrieval": {
+            "P@5": 0.2,
+            "R@5": 0.2857142857142857,
+            "P@10": 0.3,
+            "R@10": 0.42857142857142855,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 2,
+            "groundedness": 3,
+            "completeness": 2,
+            "citation_accuracy": 3
+          },
+          "latency_ms": 5979.0
+        },
+        "+rerank": {
+          "answer": "Firms must conduct a suitability assessment when making personal recommendations regarding financial instruments or insurance-based investment products. This requirement applies to all decisions to trade, including recommendations to buy, hold, or sell an investment. This is outlined in COBS 9A.2.2G, which is Guidance, meaning it is the FCA's expectation but not mandatory.\n\nFurthermore, when providing a personal recommendation on an insurance-based investment product, a firm must not make a recommendation if none of the products are suitable for the client. This is a mandatory requirement as per COBS 9A.2.20AR, which is a Rule.\n\nAdditionally, the responsibility to perform the suitability assessment is not diminished if the recommendation is provided through an automated or semi-automated system, as stated in COBS 9A.2.24R, which is also a Rule and therefore mandatory.\n\nIn summary, firms are expected to assess suitability for all investment recommendations and must not recommend unsuitable products, with these obligations remaining regardless of the method of delivery.",
+          "chunk_ids": [
+            "COBS_0910",
+            "COBS_0829",
+            "COBS_0940",
+            "COBS_0965",
+            "COBS_0944"
+          ],
+          "retrieval": {
+            "P@5": 1.0,
+            "R@5": 0.5714285714285714,
+            "P@10": 0.6,
+            "R@10": 0.5714285714285714,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 2,
+            "groundedness": 4,
+            "completeness": 2,
+            "citation_accuracy": 3
+          },
+          "latency_ms": 3956.1
+        },
+        "enhanced": {
+          "answer": "COBS requires firms to conduct a suitability assessment for investment recommendations to ensure that the recommendations align with the client's objectives and circumstances. Here are the specific requirements:\n\n1. **Suitability Assessment Requirement**: Firms should undertake a suitability assessment not only when making a personal recommendation to buy a financial instrument or an insurance-based investment product but for all decisions whether to trade, including making any personal recommendations about whether or not to buy, hold or sell an investment (COBS 9A.2.2G). This is Guidance, meaning it is the FCA's expectation but not mandatory.\n\n2. **Periodic Suitability Assessment**: A firm providing a periodic suitability assessment must review the suitability of the recommendations given at least annually. The frequency of the periodic suitability assessment must be increased where appropriate by reference to the risk profile of the client and the type of financial instruments recommended (COBS 9A.3.9R). This is a Rule, meaning it is a mandatory obligation.\n\n3. **Suitability Report**: When providing investment advice to a retail client, a firm must provide the client with a report that includes an outline of the advice given and how the recommendation is suitable for them. The report must also include information on whether the recommended services or instruments are likely to require the retail client to seek a periodic review of their arrangements (COBS 9A.3.3R). This is a Rule, indicating a mandatory requirement.\n\n4. **Prohibition on Unsuitable Recommendations**: When providing a personal recommendation on an insurance-based investment product, a firm must not make a recommendation where none of the insurance-based investment products are suitable for the client (COBS 9A.2.20AR). This is a Rule, thus a mandatory obligation.\n\nThese rules and guidance ensure that firms act in the best interest of their clients by providing suitable investment recommendations based on a thorough understanding of the client's needs and circumstances.",
+          "chunk_ids": [
+            "COBS_0910",
+            "COBS_0829",
+            "COBS_0958",
+            "COBS_0950",
+            "COBS_0940"
+          ],
+          "retrieval": {
+            "P@5": 0.8,
+            "R@5": 0.5714285714285714,
+            "P@10": 0.3,
+            "R@10": 0.42857142857142855,
+            "MRR": 1.0
+          },
+          "generation": {
+            "correctness": 2,
+            "groundedness": 3,
+            "completeness": 2,
+            "citation_accuracy": 3
+          },
+          "latency_ms": 4730.7
+        }
+      }
+    }
+  ],
+  "aggregated": {
+    "baseline": {
+      "retrieval": {
+        "P@5": 0.28,
+        "R@5": 0.4802,
+        "P@10": 0.14,
+        "R@10": 0.4802,
+        "MRR": 0.5133
+      },
+      "generation": {
+        "correctness": 1.73,
+        "groundedness": 1.93,
+        "completeness": 1.67,
+        "citation_accuracy": 1.8
+      },
+      "avg_latency_ms": 1574.8,
+      "num_queries": 15
+    },
+    "+prompt": {
+      "retrieval": {
+        "P@5": 0.28,
+        "R@5": 0.4802,
+        "P@10": 0.14,
+        "R@10": 0.4802,
+        "MRR": 0.5133
+      },
+      "generation": {
+        "correctness": 3.13,
+        "groundedness": 3.73,
+        "completeness": 3.13,
+        "citation_accuracy": 3.33
+      },
+      "avg_latency_ms": 3331.7,
+      "num_queries": 15
+    },
+    "+hybrid": {
+      "retrieval": {
+        "P@5": 0.32,
+        "R@5": 0.5079,
+        "P@10": 0.2333,
+        "R@10": 0.573,
+        "MRR": 0.7389
+      },
+      "generation": {
+        "correctness": 3.07,
+        "groundedness": 3.4,
+        "completeness": 3.0,
+        "citation_accuracy": 3.13
+      },
+      "avg_latency_ms": 3701.9,
+      "num_queries": 15
+    },
+    "+rerank": {
+      "retrieval": {
+        "P@5": 0.3733,
+        "R@5": 0.5159,
+        "P@10": 0.2533,
+        "R@10": 0.5659,
+        "MRR": 0.5889
+      },
+      "generation": {
+        "correctness": 2.8,
+        "groundedness": 3.53,
+        "completeness": 2.73,
+        "citation_accuracy": 3.07
+      },
+      "avg_latency_ms": 3028.0,
+      "num_queries": 15
+    },
+    "enhanced": {
+      "retrieval": {
+        "P@5": 0.4133,
+        "R@5": 0.6381,
+        "P@10": 0.2333,
+        "R@10": 0.573,
+        "MRR": 0.5833
+      },
+      "generation": {
+        "correctness": 2.73,
+        "groundedness": 3.27,
+        "completeness": 2.73,
+        "citation_accuracy": 3.13
+      },
+      "avg_latency_ms": 3654.9,
+      "num_queries": 15
+    }
+  }
+}

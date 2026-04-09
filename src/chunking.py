@@ -91,8 +91,15 @@ def _extract_rule_info(text: str) -> tuple[str | None, str | None]:
     rule_match = _RE_RULE_NUMBER.search(text)
     rule_number = rule_match.group(1).strip() if rule_match else None
 
+    # Try [RULE:X] tag first (from preprocessing), then fall back to the
+    # trailing letter on the rule number itself (e.g. "COBS 4.2.1R" → "R")
     type_match = _RE_RULE_TYPE_TAG.search(text)
-    rule_type = type_match.group(1) if type_match else None
+    if type_match:
+        rule_type = type_match.group(1)
+    elif rule_number and rule_number[-1] in "RGDE":
+        rule_type = rule_number[-1]
+    else:
+        rule_type = None
 
     return rule_number, rule_type
 
@@ -239,6 +246,33 @@ def recursive_split(text: str, max_tokens: int, overlap_tokens: int) -> list[str
 
 MIN_CHUNK_TOKENS = 10  # Skip chunks with fewer tokens than this
 
+# Words that dominate application-table rows (Annex sections listing rule applicability)
+_TABLE_FILLER_WORDS = frozenset({
+    "rule", "guidance", "not", "applicable", "r", "g", "d", "e",
+    "otherwise", "otherwise,", "to", "in", "relation", "activities",
+    "insurance", "distribution", ".", ",",
+})
+
+
+def _is_application_table_entry(text: str, section_title: str) -> bool:
+    """
+    Detect low-quality application-table chunks from Annex sections.
+
+    These chunks contain a rule reference followed by filler like
+    'Rule Rule Not applicable Guidance' — useful as a lookup table but
+    harmful for RAG retrieval because they match rule codes without
+    providing substantive regulatory text.
+    """
+    if "annex" not in section_title.lower():
+        return False
+    # Strip rule numbers before checking word content
+    stripped = _RE_RULE_NUMBER.sub("", text)
+    words = stripped.split()
+    if not words:
+        return True
+    filler_count = sum(1 for w in words if w.lower().strip(".,;:") in _TABLE_FILLER_WORDS)
+    return filler_count / len(words) > 0.7
+
 
 def chunk_file(filepath: Path) -> list[dict]:
     """
@@ -263,6 +297,8 @@ def chunk_file(filepath: Path) -> list[dict]:
 
             for i, chunk_text in enumerate(sub_chunks):
                 if count_tokens(chunk_text) < MIN_CHUNK_TOKENS:
+                    continue
+                if _is_application_table_entry(chunk_text, section["title"]):
                     continue
 
                 rule_number, rule_type = _extract_rule_info(chunk_text)

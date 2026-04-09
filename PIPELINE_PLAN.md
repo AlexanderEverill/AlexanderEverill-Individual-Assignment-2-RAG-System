@@ -54,7 +54,7 @@
 | Vector store | ChromaDB | Latest (open-source, local) |
 | BM25 keyword search | `rank_bm25` | Python package |
 | Re-ranker | `sentence-transformers` | `cross-encoder/ms-marco-MiniLM-L-6-v2` |
-| LLM (generation) | OpenAI | `gpt-4o` (enhanced) / `gpt-3.5-turbo` (baseline, optional) |
+| LLM (generation) | OpenAI | `gpt-4o` (both baseline and enhanced) |
 | PDF parsing | `PyMuPDF` (fitz) | For policy statement PDFs |
 | Orchestration | Custom Python | No framework dependency (LangChain optional) |
 
@@ -451,7 +451,7 @@ Include at least one failure case with analysis of why it failed.
 | Risk | Impact | Mitigation |
 |---|---|---|
 | FCA website structure changes | Cannot scrape data | Download and cache all raw data locally early. Manual copy as fallback. |
-| OpenAI API rate limits / cost | Slow evaluation, high spend | Batch embedding calls. Cache results. Use GPT-3.5-turbo for baseline generation. |
+| OpenAI API rate limits / cost | Slow evaluation, high spend | Batch embedding calls. Cache results. |
 | Cross-encoder model too large | Slow on CPU | Use MiniLM variant (~80MB). Acceptable latency (~0.3s for 20 chunks). |
 | Corpus too small for recall metrics | Unreliable evaluation | Ensure minimum 1,000 chunks across 3+ sourcebooks. |
 | Ground truth labelling is subjective | Inconsistent evaluation | Use multiple annotators (self + LLM-as-judge). Report inter-rater agreement. |
