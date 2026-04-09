@@ -1,5 +1,5 @@
 ---
-ingested_at: '2026-03-30'
+ingested_at: '2026-04-08'
 page_count: 86
 preprocessed: true
 source_type: pdf
@@ -96,36 +96,36 @@ www.handbook.fca.org.uk
 February 2026
 Section : PRIN 1.1 Application and purpose
 Application
-PRIN 1.1.1
+PRIN 1.1.1G
 The Principles (see PRIN 2) apply in whole or in part to every firm. The application of the
 Principles is modified for firms conducting MiFID business and Annex II benchmark
 administrators. PRIN 3 (Rules about application) specifies to whom, to what and where the
 Principles apply.
-PRIN 1.1.1A
+PRIN 1.1.1AG
 The Principles also apply to certain payment service providers and electronic money issuers
 that are not firms. PRIN 3.1.1AR sets out the application of the Principles to these persons.
 The references to a firm in PRIN 2 includes such persons.
 Purpose
-PRIN 1.1.2
+PRIN 1.1.2G
 The Principles are a general statement of the fundamental obligations of firms and the other
 persons to whom they apply under the regulatory system. They derive their authority from
 the FCA's rule-making powers as set out in the Act, including as applied by the Payment
 Services Regulations and the Electronic Money Regulations, and reflect the statutory
 objectives.
 Link to fit and proper standard
-PRIN 1.1.4
+PRIN 1.1.4G
 In substance, the Principles express the main dimensions of the "fit and proper" standard
 set for firms in threshold condition 5 (Suitability), although they do not derive their authority
 from that standard or exhaust its implications. Being ready, willing and organised to abide by
 the Principles is therefore a critical factor in applications for Part 4A permission, and
 breaching the Principles may call into question whether a firm with Part 4A permission is still
 fit and proper.
-PRIN 1.1.4A
+PRIN 1.1.4AG
 For persons authorised or registered under the Payment Services Regulations or the
 Electronic Money Regulations, the relevant "fit and proper standards" are the standards set
 in those Regulations.
 Taking group activities into account
-PRIN 1.1.5
+PRIN 1.1.5G
 Principles 3 (Management and control), 4 (Financial prudence) and (in so far as it relates to
 disclosing to the FCA ) 11 (Relations with regulators) take into account the activities of
 members of a firm's group. Compliance by another person to whom the Principles apply with
@@ -136,19 +136,13 @@ contravening Principle 3 or 4. Rather, the potential impact of a group member's 
 (and, for example, risk management systems operating on a group basis) will be relevant in
 determining the adequacy of the firm's risk management systems or resources respectively.
 Standards in markets outside the United Kingdom
-G
-G
-G
-G
-G
-G
 
 [PAGE 6]
 PRIN
 PRIN Principles for Businesses
 www.handbook.fca.org.uk
 February 2026
-PRIN 1.1.6
+PRIN 1.1.6G
 As set out in PRIN 3.3 (Where?), Principles 1 (Integrity), 2 (Skill, care and diligence) and 3
 (Management and control) apply to world-wide activities in a prudential context. Principle 5
 (Market conduct) applies to world-wide activities which might have a negative effect on
@@ -160,11 +154,11 @@ applies to world-wide activities; in considering whether to take regulatory acti
 Principle 11 in relation to cooperation with an overseas regulator, the FCA will have regard
 to the extent of, and limits to, the duties owed by the firm or other person to that regulator.
 (Principle 4 (Financial prudence) also applies to world-wide activities.)
-PRIN 1.1.6A
+PRIN 1.1.6AG
 PRIN 4 (Principles : MiFID Business) provides guidance on the application of the Principles
 to MiFID business.
 Consequences of breaching the Principles
-PRIN 1.1.7
+PRIN 1.1.7G
 Breaching a Principle makes a firm or other person to whom the Principles apply liable to
 disciplinary sanctions. In determining whether a Principle has been breached it is necessary
 to look to the standard of conduct required by the Principle in question. Under each of the
@@ -177,14 +171,14 @@ diligence in the conduct of its business. Similarly, under Principle 3 (Manageme
 control) a firm or other person would not be in breach simply because it failed to control or
 prevent unforeseeable risks; but a breach would occur if the firm or other person had failed
 to take reasonable care to organise and control its affairs responsibly or effectively.
-PRIN 1.1.8
+PRIN 1.1.8G
 The Principles are also relevant to the FCA's powers of information-gathering, to vary a
 firm's Part 4A permission or authorisation or registration under the Payment Services
 Regulations or Electronic Money Regulations, and of investigation and intervention, and
 provide a basis on which the FCA may apply to a court for an injunction or restitution order
 or require a firm or other person to make restitution. However, the Principles do not give rise
 to actions for damages by a private person (see PRIN 3.4.4 R).
-PRIN 1.1.9
+PRIN 1.1.9G
 Some of the other rules and guidance in the Handbook deal with the bearing of the
 Principles upon particular circumstances. However, since the Principles are also designed
 as a general statement of regulatory requirements applicable in new or unforeseen
@@ -192,21 +186,15 @@ situations, and in situations in which there is no need for guidance, the FCA's 
 and guidance or onshored regulations should not be viewed as exhausting the implications
 of the Principles themselves.
 Responsibilities of providers and distributors under the Principles
-G
-G
-G
-G
-G
 
 [PAGE 7]
 PRIN
 PRIN Principles for Businesses
 www.handbook.fca.org.uk
 February 2026
-PRIN 1.1.10
+PRIN 1.1.10G
 RPPD contains guidance on the responsibilities of providers and distributors for the fair
 treatment of customers under the Principles.
-G
 
 [PAGE 8]
 PRIN
@@ -215,7 +203,7 @@ www.handbook.fca.org.uk
 February 2026
 Section : PRIN 1.2 Clients and the Principles
 Characteristics of the client
-PRIN 1.2.1
+PRIN 1.2.1G
 Principles 6 (Customers' interests), 7 (Communications with clients), 8 (Conflicts of interest),
 9 (Customers: relationships of trust), 10 (Clients' assets) and 12 (Consumer Duty) impose
 requirements on firms expressly in relation to their clients or customers. These requirements
@@ -224,15 +212,13 @@ what is "due regard" (in Principles 6 and 7), "fairly" (in Principles 6 and 8), 
 misleading" (in Principle 7), "reasonable care" (in Principle 9), "adequate" (in Principle 10) or
 "good outcomes" (in Principle 12) will, of course, depend on those characteristics.
 Acting through an agent
-PRIN 1.2.6
+PRIN 1.2.6G
 If the person with or for whom the firm is carrying on an activity is acting through an agent,
 the ability of the firm to treat the agent as its client under COBS 2.4.3 [RULE:R] (Agent as client) will
 not be available. For example, if a general insurer is effecting a general insurance contract
 through a general insurance broker who is acting as agent for a disclosed policyholder, the
 policyholder will be a client of the firm and the firm must comply with the Principles
 accordingly.
-G
-G
 
 [PAGE 9]
 PRIN
@@ -286,8 +272,6 @@ called up share capital of at least
 £10 million (or its equivalent in any
 other currency at the relevant
 time);
-PRIN 1 Annex 1
-R
 
 [PAGE 10]
 PRIN
@@ -465,7 +449,7 @@ www.handbook.fca.org.uk
 February 2026
 Section : PRIN 2.1 The Principles
 The Principles
-PRIN 2.1.1
+PRIN 2.1.1R
 1 Integrity
 A firm must conduct its business with
 integrity.
@@ -518,7 +502,6 @@ reasonably expect notice.
 12 Consumer Duty
 A firm must act to deliver good
 outcomes for retail customers.
-R
 
 [PAGE 15]
 PRIN
@@ -549,32 +532,32 @@ www.handbook.fca.org.uk
 February 2026
 Section : PRIN 2A.1 Application and purpose
 Application
-PRIN 2A.1.1
+PRIN 2A.1.1R
 References in PRIN to the obligations on firms under Principle 12 include the obligations
 imposed by rules in PRIN 2A.
-PRIN 2A.1.2
+PRIN 2A.1.2R
 References in PRIN to obligations imposed on firms under PRIN 2A include the obligation
 imposed by Principle 12.
-PRIN 2A.1.3
+PRIN 2A.1.3G
 The application of Principle 12 and PRIN 2A is set out in PRIN 3, including PRIN 3.2.6R to
 PRIN 3.2.12G. Principle 12 applies in relation to a firm's retail market business or where the
 firm communicates or approves financial promotions which are addressed to, or
 disseminated in such a way that they are likely to be received by, a retail customer. To the
 extent that Principle 12 applies, Principles 6 and 7 do not apply.
-PRIN 2A.1.4
+PRIN 2A.1.4G
 The definition of a product for the purposes of Principle 12 and PRIN 2A includes both
 products and services.
-PRIN 2A.1.5
+PRIN 2A.1.5G
 The definition of a retail customer for the purposes of Principle 12 and PRIN 2A includes a
 prospective customer.
-PRIN 2A.1.6
+PRIN 2A.1.6G
 The rules in Principle 12 and PRIN 2A are to be interpreted in accordance with the standard
 that could reasonably be expected of a prudent firm carrying on the same activity in relation
 to the same product and taking appropriate account of the needs and characteristics of retail
 customers as set out in PRIN 2A.7.1R. Further guidance about what can reasonably be
 expected and the needs and characteristics of retail customers is set out at PRIN 2A.7.2G
 to 2A.7.5G.
-PRIN 2A.1.7
+PRIN 2A.1.7R
 References in this chapter (including those within Glossary definitions used in this chapter)
 to regulated activities include payment services and issuing electronic money (whether or
 not the activity of issuing electronic money specified in article 9B of the Regulated Activities
@@ -582,22 +565,13 @@ Order); and unless otherwise stated are to be taken to include activities connec
 provision of payment services and to the issuing of electronic money (whether or not the
 activity of issuing electronic money specified in article 9B of the Regulated Activities Order).
 Purpose
-PRIN 2A.1.8
+PRIN 2A.1.8G
 Principle 12 reflects a general expectation by the FCA that firms should conduct their
 business to a standard which ensures an appropriate level of protection for retail customers.
 While recognising the general principle that consumers should take responsibility for their
 decisions, having regard to the other factors set out in s.1C of the Act, it is appropriate to
 require a high level of protection for retail customers for reasons including:
-PRIN 2A.1.9
-[RULE:R]
-R
-G
-G
-G
-G
-R
-G
-G
+PRIN 2A.1.9G
 
 [PAGE 18]
 PRIN
@@ -610,7 +584,7 @@ February 2026
 retail market business; and
 (4) that there are frequently information asymmetries involved in retail market
 business.
-PRIN 2A.1.10
+PRIN 2A.1.10G
 (1) The cross-cutting obligations at PRIN 2A.2 set out the overarching conduct which
 firms must demonstrate when they act to deliver good outcomes for retail customers.
 (2) The main elements of firms' conduct obligations under Principle 12 and PRIN 2A
@@ -620,17 +594,17 @@ out firms' key obligations in relation to product governance, price and value,
 consumer understanding and supporting consumers.
 (4) There are particular provisions concerning closed products and existing products
 distributed to retail customers before 31 July 2023 in PRIN 2A.3 and PRIN 2A.4.
-PRIN 2A.1.11
+PRIN 2A.1.11G
 Principle 12 does not change the nature of a firm's relationship with any given retail
 customer. In particular, it does not create a fiduciary relationship where one would not
 otherwise exist nor require a firm to provide advice or carry out any other regulated activity
 where it would not otherwise have done so.
-PRIN 2A.1.12
+PRIN 2A.1.12G
 The FCA has issued guidance on the Consumer Duty in FG22/5, which firms should read
 alongside Principle 12 and PRIN 2A as a guide to the FCA's view as to how Principle 12
 and PRIN 2A might be complied with.
 Guidance on responsibilities of firms in a product's distribution chain
-PRIN 2A.1.13
+PRIN 2A.1.13G
 (1) Principle 12 imposes obligations on firms towards retail customers of products
 irrespective of whether the customer is a client of the firm.
 (2) This extended application aims to ensure the effectiveness of obligations under
@@ -640,18 +614,12 @@ customer is not in a client relationship.
 (3) A firm's role in the distribution chain may mean it is unable to determine or
 materially influence retail customer outcomes in connection with the product. If so,
 the firm may not be subject to any obligation under Principle 12.
-PRIN 2A.1.14
+PRIN 2A.1.14G
 Obligations on firms in the distribution chain of a product must be interpreted reasonably, in
 a manner that reflects the firm's role in that distribution chain and the degree to which it can
 determine or materially influence retail customer outcomes.
 The extent of a firm's responsibilities under Principle 12 in any one case will turn on the
-PRIN 2A.1.15
-[RULE:G]
-G
-G
-G
-G
-G
+PRIN 2A.1.15G
 
 [PAGE 19]
 PRIN
@@ -662,16 +630,16 @@ substance of the firm's role in the arrangements relating to the product. A firm
 determines or has a material influence over retail customer outcomes is accountable
 notwithstanding that the retail customer may not be its client due to the indirect nature of
 their relationship.
-PRIN 2A.1.15A
+PRIN 2A.1.15AG
 For example, where a firm's sole activity subject to obligations under Principle 12 is
 communicating or approving a financial promotion, the rules and guidance in PRIN 2A.3
 (products and services), PRIN 2A.4 (price and value), PRIN 2A.6 (customer support) and
 PRIN 2A.11 (sale and purchase of product books) are likely to have limited relevance.
 Relevance of guidance about Principles 6 and 7
-PRIN 2A.1.16
+PRIN 2A.1.16G
 Given the high-level nature and breadth of application of the Principles, guidance about a
 Principle cannot exhaustively cover its implications (see also PRIN 1.1.9G).
-PRIN 2A.1.17
+PRIN 2A.1.17G
 (1) In general terms, Principle 12 and PRIN 2A impose a higher and more exacting
 standard of conduct in relation to a firm's activities relative to what Principles 6 or 7
 would have otherwise required. Principle 12 and PRIN 2A also have a broader
@@ -692,13 +660,9 @@ should not be relied on alone in considering how to comply with Principle 12. Fi
 also need to consider all their obligations not only under the Principles, but under any
 other applicable law, including other FCA rules such as those expanding upon
 Principle 12 as set out in PRIN 2A.
-PRIN 2A.1.18
+PRIN 2A.1.18G
 The effect of PRIN 3.2.10R is that the application of Principles 6 and 7 is unchanged with
 respect to a firm's activities insofar as they are not subject to Principle 12.
-G
-G
-G
-G
 
 [PAGE 20]
 PRIN
@@ -707,12 +671,12 @@ www.handbook.fca.org.uk
 February 2026
 Section : PRIN 2A.2 Cross-cutting obligations
 Act in good faith
-PRIN 2A.2.1
+PRIN 2A.2.1R
 A firm must act in good faith towards retail customers.
-PRIN 2A.2.2
+PRIN 2A.2.2R
 Acting in good faith is a standard of conduct characterised by honesty, fair and open dealing
 and acting consistently with the reasonable expectations of retail customers.
-PRIN 2A.2.3
+PRIN 2A.2.3G
 Examples of where a firm is not acting in good faith would include:
 (a) failing to take account of retail customers' interests, for example in the way it
 designs a product or presents information;
@@ -724,35 +688,28 @@ characteristics of vulnerability, in a manner which is likely to cause detriment
 (d) carrying out the same activity to a higher standard or more quickly when it
 benefits the firm than when it benefits the retail customer, without objective
 justification.
-PRIN 2A.2.4
+PRIN 2A.2.4G
 Acting in good faith does not mean a firm is prevented from pursuing legitimate commercial
 interests or seeking a profit, provided it does so in a manner which is compliant with
 Principle 12 and PRIN 2A. Acting in good faith does not require a firm to act in a fiduciary
 capacity where it was not already obliged to do so.
-PRIN 2A.2.5
+PRIN 2A.2.5R
 If a firm identifies through complaints, its internal monitoring or from any other source, that
 retail customers have suffered foreseeable harm as a result of acts or omissions by the firm,
 it must act in good faith and take appropriate action to rectify the situation, including
 providing redress where appropriate.
 [Note: PRIN 2A.10 contains rules which are relevant when a firm is considering what
 "appropriate action" it must take.]
-PRIN 2A.2.6
+PRIN 2A.2.6R
 PRIN 2A.2.5 does not apply where the harm identified was caused by risks inherent in a
 product, provided the firm reasonably believed that retail customers or the relevant retail
 customer (as the context requires) understood and accepted those risks.
-PRIN 2A.2.7
+PRIN 2A.2.7G
 Whether such a belief is reasonable will depend (among other things) on the nature of the
 product offered by the firm; the adequacy of the firm's product design, communications and
 customer services; the needs and characteristics of retail customers or the relevant retail
 customer (as the context requires); and the extent to which the firm is compliant with
 applicable law in relation to the sale of that product, including the rules set out in PRIN 2A.
-R
-R
-G
-G
-R
-R
-G
 
 [PAGE 21]
 PRIN
@@ -760,13 +717,13 @@ PRIN Principles for Businesses
 www.handbook.fca.org.uk
 February 2026
 Avoid causing foreseeable harm
-PRIN 2A.2.8
+PRIN 2A.2.8R
 A firm must avoid causing foreseeable harm to retail customers.
-PRIN 2A.2.9
+PRIN 2A.2.9R
 Foreseeable harm may be caused by both act and omission, in a firm's direct relationship
 with a retail customer or through its role in the distribution chain even where another firm in
 that chain also contributes to the harm.
-PRIN 2A.2.10
+PRIN 2A.2.10G
 Avoiding causing foreseeable harm to retail customers includes:
 (1) ensuring all aspects of the design, terms, marketing, sale of and support for its
 products avoid causing foreseeable harm;
@@ -786,11 +743,11 @@ unreasonable additional costs), for example when they want to switch
 products or providers or to complain;
 (iv) allowing time and support for retail customers to find suitable alternatives
 where a product is withdrawn.
-PRIN 2A.2.11
+PRIN 2A.2.11G
 A firm with an ongoing relationship with a retail customer in relation to a product would need
 to act to avoid causing foreseeable harm to that customer throughout the lifecycle of that
 product.
-PRIN 2A.2.12
+PRIN 2A.2.12G
 A firm which is involved with the provision of a product at a point in time and without an
 ongoing relationship with the retail customer does not need to act to avoid causing harm
 which only later becomes foreseeable.
@@ -801,13 +758,7 @@ product. Where a firm reasonably believes a retail customer understands and
 accepts such risks, it will not breach the rule if it fails to prevent them;
 (2) whether such a belief is reasonable will depend (among other things) on the
 nature of the product offered by the firm, the adequacy of the firm's product design,
-PRIN 2A.2.13
-[RULE:R]
-R
-G
-G
-G
-G
+PRIN 2A.2.13G
 
 [PAGE 22]
 PRIN
@@ -821,32 +772,32 @@ PRIN 2A; and
 a risk of repossession and most investments carry a risk that the market may move
 resulting in capital loss.
 Enable and support retail customers
-PRIN 2A.2.14
+PRIN 2A.2.14R
 A firm must enable and support retail customers to pursue their financial objectives.
-PRIN 2A.2.15
+PRIN 2A.2.15G
 The conclusions a firm can properly reach about the financial objectives of retail customers
 will depend on the type of product it provides.
-PRIN 2A.2.16
+PRIN 2A.2.16G
 A firm which provides an execution-only service or a non-advised service can assume
 (unless it knows or could reasonably be expected to have known otherwise) that the
 financial objectives of retail customers are to purchase, use and enjoy the full benefits of the
 product in question.
-PRIN 2A.2.17
+PRIN 2A.2.17G
 A firm which provides advisory or discretionary services is entitled to rely on the objectives
 that retail customers have disclosed unless it knows or could reasonably be expected to
 know that information disclosed is manifestly out of date, inaccurate or incomplete.
-PRIN 2A.2.18
+PRIN 2A.2.18G
 Information a firm must obtain under a provision of law (including, but not limited to,
 information required by COBS 9.2.1R, COBS 9A.2.1R, COBS 10.2.1R, COBS 10A.2.1R,
 ICOBS 5.2.2R, MCOB 4.7A.6 R, MCOB 11.6.2R and CONC 5.2A.5R) is relevant to whether
 a firm knew or could reasonably be expected to know that a customer has different financial
 objectives for the purposes of PRIN 2A.2.16G and PRIN 2A.2.17G.
-PRIN 2A.2.19
+PRIN 2A.2.19G
 To the extent that a firm becomes aware or should reasonably have become aware of a
 specific financial objective sought by a retail customer in connection with a product, it should
 consider how to support progress towards achieving that objective in its interactions with
 that retail customer.
-PRIN 2A.2.20
+PRIN 2A.2.20G
 Enabling and supporting retail customers to pursue their financial objectives includes acting
 to empower retail customers to make good choices in their interests, including by:
 (1) ensuring all aspects of the design, terms, marketing, sale of and support for its
@@ -857,20 +808,13 @@ they need it, to make and act on informed decisions;
 product where they want to without unreasonable barriers or delay; and
 (4) taking account of retail customers' behavioural biases and the impact of
 characteristics of vulnerability in all aspects of customer interaction.
-R
-G
-G
-G
-G
-G
-G
 
 [PAGE 23]
 PRIN
 PRIN Principles for Businesses
 www.handbook.fca.org.uk
 February 2026
-PRIN 2A.2.21
+PRIN 2A.2.21G
 Enabling and supporting retail customers to pursue their financial objectives may include the
 proactive provision of information or offer of support when a firm declines to provide a
 particular product to a retail customer. In particular:
@@ -881,7 +825,7 @@ and
 (2) they should take reasonable steps to ensure any information they provide to a
 retail customer which is produced by an external third party such as a money advice
 charity, to which the retail customer is signposted, is independent and reliable.
-PRIN 2A.2.22
+PRIN 2A.2.22G
 Enabling and supporting retail customers to pursue their financial objectives does not mean
 that a firm is expected to go beyond what a prudent firm carrying out the same activity in
 relation to the same product, taking appropriate account of the needs and characteristics of
@@ -889,14 +833,14 @@ retail customers, including in particular as set out in PRIN 2A.7.4G to PRIN 2A.
 do. For example, it does not require firms to go beyond what is reasonably expected by
 retail customers in the delivery of the product.
 Guidance on the cross-cutting obligations
-PRIN 2A.2.23
+PRIN 2A.2.23G
 (1) The obligations in PRIN 2A.2 apply at all stages of the customer journey and
 during the whole lifecycle of a product. Firms will therefore need to keep products
 under regular review and consider the impact of any changes they make to those
 products.
 (2) In applying the obligations in PRIN 2A.2, firms should note that each of the crosscutting obligations in this section requires firms to act both proactively and reactively,
 as the context requires.
-PRIN 2A.2.24
+PRIN 2A.2.24G
 The obligations in PRIN 2A.2 apply both at a target market and (where context requires) at
 an individual customer level, for example:
 (1) Where a firm interacts with an individual retail customer or is providing a bespoke
@@ -904,36 +848,28 @@ service the obligations in PRIN 2A.2 apply to those interactions and that servic
 (2) Where a firm is not interacting with an individual retail customer, for example in
 the design of a product, when making pricing decisions or designing communications,
 the obligations in PRIN 2A.2 apply at the level of that target market.
-PRIN 2A.2.25
+PRIN 2A.2.25G
 Each of the cross-cutting obligations in this section requires firms to understand and take
 account of cognitive and behavioural biases and the impact of characteristics of vulnerability
 and/or lack of knowledge on retail customers' needs and decisions.
 Interaction between Principle 12 and the cross-cutting obligations
-PRIN 2A.2.26
+PRIN 2A.2.26R
 The cross-cutting obligations (the rules in PRIN 2A.2) exhaust what is required under
 Principle 12.
-G
-G
-G
-G
-G
-R
 
 [PAGE 24]
 PRIN
 PRIN Principles for Businesses
 www.handbook.fca.org.uk
 February 2026
-PRIN 2A.2.27
+PRIN 2A.2.27G
 The cross-cutting obligations define how firms should act to deliver good outcomes for retail
 customers.
 Interaction between the cross-cutting obligations and the outcomes
 rules
-PRIN 2A.2.28
+PRIN 2A.2.28G
 The outcomes rules at PRIN 2A.3 to PRIN 2A.6 help to define what is required by Principle
 12 and PRIN 2A.2 but do not exhaust those rules.
-G
-G
 
 [PAGE 25]
 PRIN
@@ -942,24 +878,24 @@ www.handbook.fca.org.uk
 February 2026
 Section : PRIN 2A.3 Consumer Duty: retail customer outcome - products and services
 General nature of product governance obligations
-PRIN 2A.3.1
+PRIN 2A.3.1G
 The product governance obligations on firms under Principle 12 are general in nature and
 should be considered alongside any other legal or regulatory obligations that may apply, for
 example any marketing restrictions in relation to the product.
 Manufacturer product governance arrangements
-PRIN 2A.3.2
+PRIN 2A.3.2R
 A manufacturer must maintain, operate and review a process for the approval of:
 (1) a product; and
 (2) significant adaptations of a product,
 in each case before it is marketed or distributed to retail customers.
-PRIN 2A.3.3
+PRIN 2A.3.3G
 PRIN 2A.3.2R includes any product which is a new product manufactured on or after 31 July
 2023, or an existing product. In relation to an existing product "marketing" or "distributing"
 includes reference to any future activity regardless of whether the product has previously
 been made available for marketing or distribution.
 Manufacturers: product approval process for products that are not
 closed products
-PRIN 2A.3.4
+PRIN 2A.3.4R
 For each product that is not a closed product, a manufacturer's product approval procedures
 must:
 (1) specify the target market for the product at a sufficiently granular level, taking into
@@ -980,12 +916,7 @@ and
 distributed to the identified target market.
 Manufacturers: product approval process for closed products
 (1) A manufacturer of a closed product must maintain, operate and review a process
-PRIN 2A.3.5
-[RULE:G]
-R
-G
-R
-R
+PRIN 2A.3.5R
 
 [PAGE 26]
 PRIN
@@ -998,13 +929,13 @@ retail customers.
 (2) The manufacturer's process in (1) does not have to comply with PRIN 2A.3.2R,
 PRIN 2A.3.4R, PRIN 2A.3.7R, PRIN 2A.3.9R, PRIN 2A.3.10R, PRIN 2A.3.11R or
 PRIN 2A.3.12R.
-PRIN 2A.3.6
+PRIN 2A.3.6R
 The manufacturer's process must also assess and regularly review whether the closed
 product affects groups of retail customers in different ways and in particular whether any
 retail customers in the target market with characteristics of vulnerability are adversely
 affected by any aspect of the product.
 Manufacturer: review
-PRIN 2A.3.7
+PRIN 2A.3.7R
 A manufacturer must regularly review its products taking into account any event that could
 materially affect the potential risk to the target market. In doing so, the manufacturer must
 assess at least the following:
@@ -1015,14 +946,14 @@ customers in the target market with characteristics of vulnerability; and
 the product is being distributed to the target market or reaching retail customers
 outside the target market.
 Manufacturer: action following review of products
-PRIN 2A.3.8
+PRIN 2A.3.8R
 Where a manufacturer identifies any circumstances related to the product that may
 adversely affect retail customers, the manufacturer must:
 (1) take appropriate action to mitigate the situation and prevent any further harm; and
 (2) where appropriate, promptly inform other relevant persons in the distribution chain
 about the circumstances that led to action being taken and the remedial action taken.
 Manufacturers: testing products
-PRIN 2A.3.9
+PRIN 2A.3.9R
 (1) Manufacturers must test their products appropriately, including scenario analyses
 where relevant.
 (2) A manufacturer must, as part of discharging its obligations in (1), assess whether
@@ -1033,12 +964,7 @@ in the target market with characteristics of vulnerability.
 the type and nature of the product and the related risk of detriment to retail
 customers, quantitative manner.
 If the results of the testing show that the product does not meet the identified needs,
-PRIN 2A.3.10
-[RULE:R]
-R
-R
-R
-R
+PRIN 2A.3.10R
 
 [PAGE 27]
 PRIN
@@ -1062,12 +988,12 @@ needs, characteristics and objectives of the target market, including identified
 needs, characteristics and objectives of any group or groups of retail
 customers in the target market with characteristics of vulnerability.
 Manufacturers: collaborating on manufacture
-PRIN 2A.3.11
+PRIN 2A.3.11R
 Where firms collaborate to manufacture a product, they must set out in a written agreement
 their respective roles and responsibilities in the product approval process in PRIN 2A.3.
 Manufacturer: selecting distribution channels and providing
 information to distributors
-PRIN 2A.3.12
+PRIN 2A.3.12R
 (1) A manufacturer must select distribution channels that are appropriate for the
 target market.
 (2) A manufacturer must provide each distributor with adequate information in good
@@ -1075,23 +1001,18 @@ time to enable it to comply with the rules applicable to it in this section.
 (3) The information to be made available under (2) includes all appropriate
 information regarding the product and the product approval process from time to time
 to enable the distributor to comply with PRIN 2A.3.16R.
-PRIN 2A.3.12A
+PRIN 2A.3.12AG
 A manufacturer that is a manager is reminded of its obligations under ESG 4.1.8R and ESG
 5.2.9R in meeting its obligations under PRIN 2A.3.12R.
 Distributors: unregulated manufacturer
-PRIN 2A.3.13
+PRIN 2A.3.13R
 Where a distributor distributes a product manufactured by a person to whom the rules in
 PRIN 2A.3 do not apply, it must take all reasonable steps to comply with PRIN 2A.3.14R to
 2A.3.23G.
 Distributor: distribution arrangements
 A distributor must maintain, operate and review product distribution arrangements for each
 product it distributes that:
-PRIN 2A.3.14
-[RULE:R]
-R
-G
-R
-R
+PRIN 2A.3.14R
 
 [PAGE 28]
 PRIN
@@ -1103,14 +1024,14 @@ customers;
 (2) support a proper management of conflicts of interest; and
 (3) ensure the needs, characteristics and objectives of the target market are duly
 taken into account.
-PRIN 2A.3.15
+PRIN 2A.3.15G
 PRIN 2A.3.14R includes any product whether a new product distributed on or after 31 July
 2023, or an existing product. In relation to an existing product, "distributes" includes
 reference to any future distribution activity regardless of whether the product has previously
 been made available for distribution, for example, renewing a contract with an existing retail
 customer.
 Distributors: obtaining information from manufacturers
-PRIN 2A.3.16
+PRIN 2A.3.16R
 A distributor must ensure that the product distribution arrangements contain effective
 measures and procedures to obtain sufficient, adequate and reliable information from the
 manufacturer about the product to:
@@ -1121,30 +1042,24 @@ target market with characteristics of vulnerability;
 (4) identify the intended distribution strategy for the product; and
 (5) ensure the product will be distributed in accordance with the needs,
 characteristics and objectives of the target market.
-PRIN 2A.3.16A
+PRIN 2A.3.16AG
 A distributor is reminded of its obligations under ESG 4.1.16R to ESG 4.1.19R in meeting its
 obligations under PRIN 2A.3.16R.
 Distributors: specific distribution strategy
-PRIN 2A.3.17
+PRIN 2A.3.17R
 (1) This rule applies where a distributor sets up or implements a specific distribution
 strategy to supplement the manufacturer's strategy under PRIN 2A.3.4R(5).
 (2) Any strategy set up or implemented by a distributor must be consistent with:
 (a) the manufacturer's intended distribution strategy; and
 (b) the identified target market.
 Distributors: providing sales information to manufacturers
-PRIN 2A.3.18
+PRIN 2A.3.18R
 To support product reviews carried out by manufacturers, a distributor must, upon request,
 provide manufacturers with relevant information including, where appropriate, sales
 information and information on the regular reviews of the product distribution arrangements.
 Distributors: review
 (1) A distributor must regularly review its distribution arrangements to ensure that
-PRIN 2A.3.19
-[RULE:G]
-R
-G
-R
-R
-R
+PRIN 2A.3.19R
 
 [PAGE 29]
 PRIN
@@ -1155,7 +1070,7 @@ they are still appropriate and up to date.
 (2) When reviewing the distribution arrangements, a distributor must verify that it is
 only distributing each product to the identified target market.
 Distributor: action following review of products
-PRIN 2A.3.20
+PRIN 2A.3.20R
 Where a distributor identifies an issue following a review, it must:
 (1) make appropriate amendments to the product distribution arrangements;
 (2) where harm has been identified, take appropriate action to mitigate the situation
@@ -1163,43 +1078,35 @@ and prevent any further harm; and
 (3) promptly inform all relevant persons in the distribution chain about any action
 taken.
 Vested rights
-PRIN 2A.3.21
+PRIN 2A.3.21R
 Where a product has existing contracts entered into before 31 July 2023, unless the firm
 has identified a breach of rules in force at the time, the appropriate action a firm must take
 under PRIN 2A.3.8R or PRIN 2A.3.20R does not require a firm to waive its vested rights
 under those existing contracts.
-PRIN 2A.3.22
+PRIN 2A.3.22G
 For the purposes of PRIN 2A.3.21R, vested rights are likely to include the following:
 (1) payments already due under the terms of the contract;
 (2) remuneration for services wholly or partly provided under the contract; and
 (3) contractual charges payable on early termination of the contract.
-PRIN 2A.3.23
+PRIN 2A.3.23G
 Whether a right is a vested right or not will depend on all the facts of the case and
 interpretation of the relevant contract.
 Application of the product governance outcome
-PRIN 2A.3.24
+PRIN 2A.3.24R
 PRIN 2A.3 does not apply to:
 (1) any firm subject to PROD 3, PROD 4, or PROD 7 for any product they
 manufacture or distribute that falls within the scope of the relevant PROD chapter; or
 (2) a bespoke insurance contract within the meaning of PROD 1.4.3-CR.
-PRIN 2A.3.25
+PRIN 2A.3.25G
 Products within scope of PROD include any product significantly adapted since the relevant
 PROD rules came into force, legacy non-investment insurance products and funeral plans
 which were existing products as of 29 July 2022.
-PRIN 2A.3.26
+PRIN 2A.3.26R
 A closed product not already subject to PROD must follow the closed product rules set out
 in PRIN 2A.3.5R to PRIN 2A.3.6R and 2A.3.21R to PRIN 2A.3.23G.
 A closed product will already be subject to PROD if it is:
 (1) a financial instrument or structured deposit manufactured by a firm subject to
-PRIN 2A.3.27
-[RULE:R]
-R
-G
-G
-R
-G
-R
-G
+PRIN 2A.3.27G
 
 [PAGE 30]
 PRIN
@@ -1209,7 +1116,7 @@ February 2026
 PROD 3 on or after 3 January 2018;
 (2) an insurance product manufactured on or after 1 October 2018 or a legacy noninvestment insurance product; or
 (3) a funeral plan product manufactured on or after 29 July 2022.
-PRIN 2A.3.28
+PRIN 2A.3.28R
 PRIN 2A.3 does not apply to both:
 (1) units in an authorised fund or the sub-fund of such a scheme, where the relevant
 authorised fund or sub-fund is in the process of winding up or termination under, or in
@@ -1218,7 +1125,7 @@ accordance with, COLL 7.3, COLL 7.4, or COLL 7.4A; and
 of such a scheme or AIF, where the relevant fund or sub-fund is in a process of
 winding up or termination which is equivalent to that referred to in (1).
 Compliance with other Handbook provisions
-PRIN 2A.3.29
+PRIN 2A.3.29G
 A firm which either:
 (1) conducts business in relation to products that would be covered by chapters in
 PROD if they were manufactured after the date the relevant chapter in PROD came
@@ -1229,7 +1136,7 @@ that applies to the product (PROD 3 for financial instruments and structured dep
 PROD 4 for insurance products) or the processes set out in PRIN 2A.3. PRIN 2A.3.30E sets
 out the circumstances where a firm that chooses to comply with the relevant chapter of
 PROD is likely to be considered in breach of PRIN 2A.3.
-PRIN 2A.3.30
+PRIN 2A.3.30E
 (1) This provision applies to:
 (a) any firm to which PROD 1.3.2R applies;
 (b) a manufacturer of an existing product manufactured before 3 January
@@ -1243,9 +1150,6 @@ those provisions of PRIN 2A.3 that apply to the firm.
 (3) For firms within (1)(c), where the firm is following the provisions of PROD 4,
 contravention of PROD 4 may be relied on as tending to establish contravention of
 those provisions of PRIN 2A.3 that apply to the firm.
-R
-G
-E
 
 [PAGE 31]
 PRIN
@@ -1254,36 +1158,36 @@ www.handbook.fca.org.uk
 February 2026
 Section : PRIN 2A.4 Consumer Duty: retail customer outcome on price and value
 What is value?
-PRIN 2A.4.1
+PRIN 2A.4.1R
 For the purposes of this outcome:
 (1) value is the relationship between the amount paid by a retail customer for the
 product and the benefits they can reasonably expect to get from the product; and
 (2) a product provides fair value where the amount paid for the product is reasonable
 relative to the benefits of the product.
 Price and value: manufacturers general obligation
-PRIN 2A.4.2
+PRIN 2A.4.2R
 A manufacturer must:
 (1) ensure that its products provide fair value to retail customers in the target markets
 for those products; and
 (2) carry out a value assessment of its products and review that assessment on a
 regular basis appropriate to the nature and duration of the product.
-PRIN 2A.4.3
+PRIN 2A.4.3R
 An initial value assessment must be carried out for:
 (1) a product; and
 (2) any significant adaptation of a product,
 in each case before it is marketed or distributed to a retail customer.
-PRIN 2A.4.4
+PRIN 2A.4.4G
 PRIN 2A.4.2R and PRIN 2A.4.3R include any product whether a new product manufactured
 on or after 31 July 2023, an existing product or a closed product. In relation to an existing
 product or a closed product, "marketing" or "distributing" includes reference to any future
 activity regardless of whether the product has previously been made available for marketing
 or distribution.
-PRIN 2A.4.5
+PRIN 2A.4.5R
 In ensuring that a product provides fair value, a manufacturer must be satisfied that this will
 be the case from the point at which the manufacturer completes the assessment for a
 reasonably foreseeable period, including, where the product is one that renews, following
 renewal.
-PRIN 2A.4.6
+PRIN 2A.4.6G
 What constitutes a 'reasonably foreseeable period' will depend on the type of product. This
 could include the expected length of time a retail customer in the target market will keep it,
 including, where relevant, the number of occasions the firm would reasonably expect that a
@@ -1292,14 +1196,7 @@ Product packages
 Where a product is intended to be provided with one or more other products, a manufacturer
 must ensure that:
 (1) each component product; and
-PRIN 2A.4.7
-[RULE:R]
-R
-R
-G
-R
-G
-R
+PRIN 2A.4.7R
 
 [PAGE 32]
 PRIN
@@ -1309,7 +1206,7 @@ February 2026
 (2) the package as a whole,
 provides fair value to retail customers in the target market.
 The value assessment
-PRIN 2A.4.8
+PRIN 2A.4.8R
 A manufacturer's assessment of whether or not a product provides fair value must include
 (but is not limited to) consideration of the following:
 (1) the nature of the product, including the benefits that will be provided or may be
@@ -1330,7 +1227,7 @@ to the firm; and
 display and the impact these characteristics have on the likelihood that retail
 customers may not receive fair value from its products.
 Guidance on the value assessment: factors that may be considered
-PRIN 2A.4.9
+PRIN 2A.4.9G
 A manufacturer may consider one or more of the following in its assessment of whether or
 not a product is providing fair value:
 (1) the costs incurred by the firm in manufacturing or distributing the product;
@@ -1339,23 +1236,20 @@ not a product is providing fair value:
 (4) whether there are any products that are priced significantly lower for a similar or
 better benefit.
 Guidance on the value assessment: benefits and costs
-PRIN 2A.4.10
+PRIN 2A.4.10G
 (1) The types of benefits that retail customers may reasonably expect to obtain may
 include non-financial benefits such as an enhanced level of customer service
 providing extra assistance to retail customers in using the product.
 (2) Examples of non-financial costs include the provision of personal data and the
 granting of permission to use that data.
 Guidance on the value assessment: characteristics of retail customers
-R
-G
-G
 
 [PAGE 33]
 PRIN
 PRIN Principles for Businesses
 www.handbook.fca.org.uk
 February 2026
-PRIN 2A.4.11
+PRIN 2A.4.11G
 In considering the value assessment and how it applies when manufacturers have different
 groups of retail customer in their target market for a product, they should have regard in
 particular to the following:
@@ -1367,20 +1261,20 @@ of the product involves different prices being charged to different groups of re
 customers.
 Guidance on the value assessment: interaction with the Duty and the
 retail customer outcomes
-PRIN 2A.4.12
+PRIN 2A.4.12G
 In ensuring that a product provides fair value, a manufacturer should have regard to how the
 cross-cutting obligations (PRIN 2A.2) and the other retail customer outcome rules (PRIN
 2A.3 to PRIN 2A.6) are met in respect of the product.
 Manufacturers: collaboration with another firm or with unregulated
 persons
-PRIN 2A.4.13
+PRIN 2A.4.13R
 Where firms collaborate to manufacture a product, they must set out in a written agreement
 their respective roles and responsibilities in the value assessment in PRIN 2A.4.
-PRIN 2A.4.14
+PRIN 2A.4.14R
 Where a firm collaborates with a person who is not a firm to manufacture a product, it
 remains fully responsible for discharging all its obligations under PRIN 2A.4.
 Manufacturers: information for distributors
-PRIN 2A.4.15
+PRIN 2A.4.15R
 The manufacturer of a product must ensure that firms distributing the product have all
 necessary information to understand the value that the product is intended to provide to a
 retail customer.
@@ -1397,13 +1291,7 @@ and quality of any services provided by the distributor; and
 (d) whether the impact that the distribution arrangements (including any
 remuneration it or (so far as the distributor is aware of it) another person in the
 distribution chain receives) would result in the product ceasing to provide fair
-PRIN 2A.4.16
-[RULE:G]
-G
-R
-R
-R
-R
+PRIN 2A.4.16R
 
 [PAGE 34]
 PRIN
@@ -1412,11 +1300,11 @@ www.handbook.fca.org.uk
 February 2026
 value to retail customers.
 Distributors: unregulated manufacturer
-PRIN 2A.4.17
+PRIN 2A.4.17R
 Where a distributor distributes a product manufactured by a person to whom the rules in
 PRIN 2A.4 do not apply, it must take all reasonable steps to comply with PRIN 2A.4.16R.
 Distribution chains
-PRIN 2A.4.18
+PRIN 2A.4.18R
 (1) A firm which distributes products to retail customers is responsible for ensuring
 the fair value obligations in relation to distribution are met in respect of any product it
 distributes to a retail customer.
@@ -1428,7 +1316,7 @@ consider whether they are also a co-manufacturer of the product they are distrib
 and if they are, apply the manufacturer rules in this section.
 When must a manufacturer and a distributor consider the value
 assessment?
-PRIN 2A.4.19
+PRIN 2A.4.19R
 Manufacturers and distributors are responsible for the value assessment as follows:
 (1) A manufacturer must consider the fair value assessment at every stage of the
 product approval process, including in particular when:
@@ -1440,23 +1328,18 @@ needs to provide fair value; and
 distribution strategy for the product and in particular where the product is to be
 distributed with another product whether as part of a package or not.
 The value assessment: general
-PRIN 2A.4.20
+PRIN 2A.4.20R
 In determining whether a product provides fair value, or distribution arrangements are
 consistent with fair value being provided, a firm must not rely on individual retail customers
 to consider whether they believe the product provides fair value in place of the firm's own
 assessment.
 Closed products
-PRIN 2A.4.21
+PRIN 2A.4.21R
 (1) The obligation on manufacturers in PRIN 2A.4.2R to ensure that a product
 provides fair value applies to closed products as well as new and existing products.
 (2) In the case of a closed product, the reference to a target market in PRIN 2A.4.2R
 should be read as referring to the retail customers who are customers of the closed
 product.
-R
-R
-R
-R
-R
 
 [PAGE 35]
 PRIN
@@ -1464,36 +1347,36 @@ PRIN Principles for Businesses
 www.handbook.fca.org.uk
 February 2026
 Guidance on the value assessment: closed and existing products
-PRIN 2A.4.22
+PRIN 2A.4.22G
 The assessment of whether a closed product or an existing product provides fair value
 should be on a forward-looking basis only. Unless required to do so by any other rule,
 manufacturers do not need to consider whether their closed products or existing products
 provided fair value prior to these rules coming into force.
-PRIN 2A.4.23
+PRIN 2A.4.23G
 In assessing whether a closed product or an existing product provides fair value, a
 manufacturer may take into account the benefits provided, the costs charged to the retail
 customer and the costs incurred by the firm prior to these rules coming into effect.
 [Note: See also PRIN 2A.4.29R regarding appropriate action for closed products if the
 product no longer provides fair value.]
 Reviewing the value assessment
-PRIN 2A.4.24
+PRIN 2A.4.24R
 (1) A manufacturer must regularly review the value assessment throughout the life of
 the product to ensure that the product continues to provide fair value to retail
 customers in the target market.
 (2) A distributor must regularly review its distribution arrangements throughout the life
 of the product to ensure that they remain consistent with the product providing fair
 value to retail customers in the target market.
-PRIN 2A.4.25
+PRIN 2A.4.25R
 Where a manufacturer identifies in its review of its value assessment that the product no
 longer provides fair value, it must take appropriate action to:
 (1) mitigate, and where appropriate, remediate any harm caused to existing retail
 customers; and
 (2) prevent harm to new retail customers.
-PRIN 2A.4.26
+PRIN 2A.4.26R
 Appropriate action under PRIN 2A.4.25R includes notifying the distributor(s) of the product
 of the issue and of any changes to the product and the distribution strategy that the
 manufacturer has put place to mitigate and prevent further harm.
-PRIN 2A.4.27
+PRIN 2A.4.27R
 Where a distributor identifies that the product no longer provides fair value, whether that is
 due to aspects of the product or the distribution arrangements, it must take appropriate
 action to:
@@ -1505,14 +1388,7 @@ in the distributor's distribution arrangements; and
 (3) inform any relevant manufacturers and other distributors in the chain promptly
 about any concerns they have and any action the distributor is taking.
 The appropriate action that a distributor may need to take under PRIN 2A.4.27R will depend
-PRIN 2A.4.28
-[RULE:G]
-G
-R
-R
-R
-R
-G
+PRIN 2A.4.28G
 
 [PAGE 36]
 PRIN
@@ -1523,21 +1399,21 @@ on the role the distributor has in the distribution chain and in relation to the
 distributed. A distributor who is a co-manufacturer of the product being distributed is likely to
 be able to do more to mitigate the situation than distributors who are not co-manufacturers.
 Vested rights
-PRIN 2A.4.29
+PRIN 2A.4.29R
 In the case of a closed product, or an existing product held by a retail customer before 31
 July 2023, unless the firm has identified a breach of rules in existence before 31 July 2023,
 the appropriate action a firm may take does not require a firm to waive its vested contractual
 rights.
-PRIN 2A.4.30
+PRIN 2A.4.30G
 For the purposes of PRIN 2A.4.29R, vested contractual rights include the following:
 (1) payments already due under the terms of the contract;
 (2) remuneration for services wholly or partly provided under the contract; and
 (3) contractual charges payable on early termination of the contract.
-PRIN 2A.4.31
+PRIN 2A.4.31G
 Whether a right is a vested right or not will depend on all the facts of the case and
 interpretation of the relevant contract.
 Application of the price and value outcome
-PRIN 2A.4.32
+PRIN 2A.4.32R
 (1) The rules in PRIN 2A.4 do not apply to:
 1. (a)
  a firm which manufactures or distributes a non-investment insurance product or a
@@ -1551,7 +1427,7 @@ legacy non-investment insurance product;
 (2)
  A firm in (1) must continue to apply PROD 4 (in accordance with the application of
 PROD 1.4) and PROD 7 or the relevant COLL rules .
-PRIN 2A.4.33
+PRIN 2A.4.33R
 PRIN 2A.4 does not apply to both:
 (1) units in an authorised fund or the sub-fund of such a scheme, where the relevant
 authorised fund or sub-fund is in the process of winding up or termination under, or in
@@ -1560,13 +1436,7 @@ accordance with, COLL 7.3, COLL 7.4, or COLL 7.4A; and
 of such a scheme or AIF, where the relevant fund or sub-fund is in a process of
 winding up or termination which is equivalent to that referred to in (1).
 (1) A manufacturer of a funeral plan product which is a closed product and was
-PRIN 2A.4.34
-[RULE:R]
-G
-G
-R
-R
-R
+PRIN 2A.4.34R
 
 [PAGE 37]
 PRIN
@@ -1577,14 +1447,14 @@ manufactured before 29 July 2022 must apply the closed product rules and guidanc
 in PRIN 2A.4..
 (2) The closed product rules and guidance are PRIN 2A.4.1R to 2A.4.2R, 2A.4.4G to
 2A.4.6G, 2A.4.8R to 2A.4.12G 2A.4.20R to 2A.4.25R and 2A.4.29R to 2A.4.31G.
-PRIN 2A.4.35
+PRIN 2A.4.35E
 Where a manufacturer of a closed product which is a funeral plan product manufactured
 before 29 July 2022 is following the provisions of PROD 7 concerning the fair value of
 funeral plan products, contravention of PROD 7 may be relied on as tending to establish
 contravention of those provisions of PRIN 2A.4 that apply to the firm.
 Application to pension scheme operators and providers of pathway
 investments
-PRIN 2A.4.36
+PRIN 2A.4.36R
 (1) This rule applies to a firm that is required to comply with COBS 19.5 (Independent
 Governance Committees (IGCs) and publication and disclosure of costs and
 charges).
@@ -1601,8 +1471,6 @@ provides fair value the firm must use the framework set out in COBS 19.5.
 (5) A firm that is unable to adequately explain why it disagrees with a value for money
 assessment conducted under COBS 19.5 must apply PRIN 2A.4.25R to the relevant
 scheme or pathway investment.
-E
-R
 
 [PAGE 38]
 PRIN
@@ -1612,7 +1480,7 @@ February 2026
 Section : PRIN 2A.5 Consumer Duty: retail customer outcome on consumer
 understanding
 Application
-PRIN 2A.5.1
+PRIN 2A.5.1R
 (1) Other than PRIN 2A.5.15R, this section applies to:
 (a) all firms to whom Principle 12 and PRIN 2A apply, involved in the
 production, approval or distribution of retail customer communications,
@@ -1629,11 +1497,11 @@ retail customer, regardless of the channel used or intended to be used for the
 communication, including electronic communications, such as on social
 media.
 (2) PRIN 2A.5.15R applies to all firms to whom Principle 12 and PRIN 2A apply.
-PRIN 2A.5.2
+PRIN 2A.5.2G
 Retail customers in this section means the retail customers intended to receive the
 communication.
 Communications to retail customers
-PRIN 2A.5.3
+PRIN 2A.5.3R
 (1) A firm must support retail customer understanding so that its communications:
 (a) meet the information needs of retail customers;
 (b) are likely to be understood by retail customers; and
@@ -1641,19 +1509,14 @@ PRIN 2A.5.3
 properly informed.
 (2) A firm must communicate information to retail customers in a way which is clear,
 fair and not misleading.
-PRIN 2A.5.4
+PRIN 2A.5.4R
 With regard to PRIN 2A.5.3R(1):
 (1) for product-specific communications, a firm should consider the target market for
 that product; or
 (2) for non product-specific communications, a firm should consider its retail
 customers.
 With regard to PRIN 2A.5.3R(1)(c), for a firm to provide information on a timely basis, it must
-PRIN 2A.5.5
-[RULE:R]
-G
-R
-R
-R
+PRIN 2A.5.5R
 
 [PAGE 39]
 PRIN
@@ -1663,14 +1526,14 @@ February 2026
 communicate in good time for retail customers to make effective decisions, including:
 (1) before the purchase of a product; and
 (2) at suitable points throughout the lifecycle of the product.
-PRIN 2A.5.6
+PRIN 2A.5.6R
 In considering the methods of communicating with retail customers, a firm must satisfy itself
 that the communication channel:
 (1) enables the communication of relevant information which retail customers are
 likely to need in a way that supports effective decision making; and
 (2) provides an appropriate opportunity for retail customers to review the information
 and, where relevant, assess their options.
-PRIN 2A.5.7
+PRIN 2A.5.7G
 In supporting the understanding of retail customers through its communications, a firm
 should:
 (1) explain or present information in a logical manner;
@@ -1684,7 +1547,7 @@ such as tables, bullet points, graphs, graphics, audio-visuals and interactive m
 (5) provide relevant information with an appropriate level of detail, to avoid providing
 too much information such that it may prevent retail customers from making effective
 decisions.
-PRIN 2A.5.8
+PRIN 2A.5.8R
 In supporting the understanding of retail customers, the firm must tailor communications
 provided to retail customers, taking into account:
 (1) the characteristics of retail customers, including any characteristics of
@@ -1700,11 +1563,7 @@ appropriate:
 (1) tailor the communication to meet the information needs of that retail customer,
 taking into account whether they have characteristics of vulnerability; and
 (2) ask the retail customer whether they understand the information and if they have
-PRIN 2A.5.9
-[RULE:R]
-G
-R
-R
+PRIN 2A.5.9R
 
 [PAGE 40]
 PRIN
@@ -1714,7 +1573,7 @@ February 2026
 any further questions, particularly if the information is reasonably regarded as key
 information, such as where it prompts that retail customer to make a decision.
 Testing, monitoring and adapting communications
-PRIN 2A.5.10
+PRIN 2A.5.10R
 (1) Where appropriate, a firm must:
 (a) test communications before communicating them to retail customers; and
 (b) (as set out in PRIN 2A.9) regularly monitor the impact of the
@@ -1731,7 +1590,7 @@ adapting its communications would not be sufficient in isolation to
 support good outcomes for retail customers; and
 (c) (where appropriate) follow the requirements in relation to remedies and
 other action in PRIN 2A.2.5R and PRIN 2A.10.
-PRIN 2A.5.11
+PRIN 2A.5.11G
 With regard to the firm's role, it would be more appropriate for the firm to:
 (1) test communications if the firm is or ought to reasonably be responsible for:
 (a) the production of those communications; or
@@ -1751,10 +1610,7 @@ customers);
 (5) whether the scope for harm to retail customers is likely to be significant, including
 if the information being conveyed were misunderstood or overlooked by retail
 customers; and
-PRIN 2A.5.12
-[RULE:R]
-G
-G
+PRIN 2A.5.12G
 
 [PAGE 41]
 PRIN
@@ -1763,7 +1619,7 @@ www.handbook.fca.org.uk
 February 2026
 (6) whether, to support good outcomes for retail customers, it is more important to
 communicate information urgently, rather than carrying out testing beforehand.
-PRIN 2A.5.13
+PRIN 2A.5.13G
 (1) A firm should adapt its communications in accordance with PRIN
 2A.5.10R(2)(b)(i) to support retail customer understanding if it identifies that:
 (a) there are areas of common misunderstanding among retail customers; or
@@ -1774,21 +1630,18 @@ by retail customers than was reasonably anticipated by the firm or ought to have
 been reasonably anticipated, including a notably lower response rate, following a
 communication prompting retail customers to take action, then this would suggest
 that the communication has not been understood.
-PRIN 2A.5.14
+PRIN 2A.5.14R
 Where a firm identifies or becomes aware of a communication produced by another firm in
 its distribution chain that is not delivering good outcomes for retail customers, it must
 promptly notify the issue to the relevant firm in the distribution chain, such as a
 manufacturer.
 Providing information to other firms
-PRIN 2A.5.15
+PRIN 2A.5.15R
 A firm must provide information in good time to another firm in the same distribution chain,
 where such information is:
 (1) requested by the other firm and is reasonably required; or
 (2) otherwise considered to be reasonably required by the firm,
 so that it can be communicated to retail customers.
-G
-R
-R
 
 [PAGE 42]
 PRIN
@@ -1797,7 +1650,7 @@ www.handbook.fca.org.uk
 February 2026
 Section : PRIN 2A.6 Consumer Duty: retail customer outcome on consumer support
 Application
-PRIN 2A.6.1
+PRIN 2A.6.1R
 (1) Other than in PRIN 2A.6.6R, this section applies:
 (a) to all firms to whom Principle 12 and PRIN 2A apply, who are responsible
 for interacting directly with, and providing support to, retail customers, such as
@@ -1813,7 +1666,7 @@ of or in connection with the firm providing customer services, including:
 (ii) support that does not relate to a specific product.
 (2) PRIN 2A.6.6R applies to all firms to whom Principle 12 and PRIN 2A apply.
 Design and delivery of customer support
-PRIN 2A.6.2
+PRIN 2A.6.2R
 A firm must design and deliver support to retail customers such that it:
 (1) meets the needs of retail customers, including those with characteristics of
 vulnerability;
@@ -1834,10 +1687,7 @@ want to:
 relationship with the firm.
 For the purposes of PRIN 2A.6.2R(4):
 (1) unreasonable barriers are those which are likely to cause retail customers to take
-PRIN 2A.6.3
-[RULE:R]
-R
-G
+PRIN 2A.6.3G
 
 [PAGE 43]
 PRIN
@@ -1854,7 +1704,7 @@ unreasonable additional steps to progress their objectives, including:
 with PRIN 2A.6.2R(3), this would not amount to an unreasonable barrier; and
 (3) unreasonable additional costs includes where retail customers incur unreasonable
 exit fees or other charges, delays, distress or inconvenience.
-PRIN 2A.6.4
+PRIN 2A.6.4G
 A firm would be unlikely to meet its obligations in PRIN 2A.6.2R if its support to retail
 customers causes or would be likely to cause:
 (1) prospective retail customers to be prioritised over existing retail customers;
@@ -1867,7 +1717,7 @@ existing product than to purchase a new product; or
 customers; or
 (c) the firm processing information or evidence received from retail customers.
 Dealing with representatives
-PRIN 2A.6.5
+PRIN 2A.6.5R
 (1) Where a person is authorised by a retail customer or by law to assist in the
 conduct of the retail customer's affairs (such as a power of attorney), the firm must
 provide the same level of support to that person that they would have provided to the
@@ -1875,12 +1725,9 @@ retail customer.
 (2) PRIN 2A.6.5R(1) does not apply where the person assisting in the conduct of the
 retail customer's affairs is also a firm.
 Dealing with requests from other firms
-PRIN 2A.6.6
+PRIN 2A.6.6R
 A firm must deal with reasonable requests from another firm in an effective way and in good
 time to enable the other firm to support retail customers.
-G
-R
-R
 
 [PAGE 44]
 PRIN
@@ -1889,7 +1736,7 @@ www.handbook.fca.org.uk
 February 2026
 Section : PRIN 2A.7 General
 Expected standards under Principle 12 and PRIN 2A
-PRIN 2A.7.1
+PRIN 2A.7.1R
 Principle 12 and the obligations in PRIN 2A must be interpreted in accordance with the
 standard that could reasonably be expected of a prudent firm:
 (1) carrying on the same activity in relation to the same product; and
@@ -1927,9 +1774,7 @@ What is reasonable may be different where advice is being provided;
 determining or materially influencing outcomes for retail customers in relation
 to the product;
 (d) the stage in the firm's relationship with the retail customer. There will be
-PRIN 2A.7.2
-[RULE:R]
-G
+PRIN 2A.7.2G
 
 [PAGE 45]
 PRIN
@@ -1941,14 +1786,14 @@ when they fall into arrears or are considering long-term investment decisions.
 The actions a firm needs to take to be acting reasonably in such
 circumstances may be greater than when a retail customer is making
 decisions which carry a lesser risk of adverse outcomes.
-PRIN 2A.7.3
+PRIN 2A.7.3G
 Acting in a way that could reasonably be expected of a prudent firm requires more than
 adopting a single solution that is reasonable. It includes (among other things) considering
 whether the preferred solution provides good outcomes for all retail customers affected or
 only some; and if only some, why it does not work for all, and how best to identify additional
 actions which might mitigate the outcome for those adversely affected.
 Protected characteristics and characteristics of vulnerability
-PRIN 2A.7.4
+PRIN 2A.7.4G
 In relation to the needs and characteristics of retail customers, a firm should, among other
 things:
 (1) pay appropriate regard to the nature and scale of characteristics of vulnerability
@@ -1962,7 +1807,7 @@ indicate vulnerability and, where relevant, seek information from retail custome
 characteristics of vulnerability that will allow staff to respond to their needs; and
 (5) set up systems and processes in a way that supports and enables retail
 customers with characteristics of vulnerability to disclose their needs.
-PRIN 2A.7.5
+PRIN 2A.7.5G
 (1) Firms should be aware that groups of retail customers with specific protected
 characteristics may have, or be more likely to have, characteristics of vulnerability, for
 example older customers. In addition, where health is a driver of vulnerability it will
@@ -1975,9 +1820,6 @@ retail customers with specific protected characteristics are more likely to have
 characteristics of vulnerability. Firms should take account of any such evidence when
 considering whether they are compliant with Principle 12 and PRIN 2A and their
 obligations under the Equality Act 2010 or equivalent legislation.
-G
-G
-G
 
 [PAGE 46]
 PRIN
@@ -1986,7 +1828,7 @@ www.handbook.fca.org.uk
 February 2026
 Section : PRIN 2A.8 Governance and culture
 Governance, strategy and policies
-PRIN 2A.8.1
+PRIN 2A.8.1R
 A firm must:
 (1) ensure that Principle 12 and the obligations in this chapter are reflected in their
 strategies, governance, leadership and people policies, including incentives at all
@@ -1995,17 +1837,17 @@ levels; and
 (a) the firm's risk control arrangements under SYSC; and
 (b) the firm's internal audit function.
 Staff incentives
-PRIN 2A.8.2
+PRIN 2A.8.2G
 A firm should not use staff incentives, performance management or remuneration structures
 in a way that conflicts with their obligations under Principle 12 and PRIN 2A. Firms should
 be aware that these structures are capable of causing harm to retail customers and should
 design their structures in a way that is consistent with ensuring good outcomes for retail
 customers.
 Governing body report
-PRIN 2A.8.3
+PRIN 2A.8.3R
 A firm must prepare a report for its governing body setting out the results of its monitoring
 under PRIN 2A.9 and any actions required as a result of the monitoring.
-PRIN 2A.8.4
+PRIN 2A.8.4R
 At least annually, the governing body of a firm must:
 (1) review and approve the firm's report on the outcomes being received by retail
 customers;
@@ -2013,7 +1855,7 @@ customers;
 Principle 12 and PRIN 2A; and
 (3) assess whether the firm's future business strategy is consistent with its
 obligations under Principle 12 and PRIN 2A.
-PRIN 2A.8.5
+PRIN 2A.8.5R
 When approving the firm's report under PRIN 2A.8.4R(1), the governing body of the firm
 must also agree:
 (1) any action required to address any identified risk that retail customers may not
@@ -2022,11 +1864,6 @@ receive good outcomes;
 have not received good outcomes; and
 (3) any amendments to the firm's business strategy to ensure that it remains
 consistent with meeting the firm's obligations under Principle 12 and PRIN 2A.
-R
-G
-R
-R
-R
 
 [PAGE 47]
 PRIN
@@ -2035,19 +1872,19 @@ www.handbook.fca.org.uk
 February 2026
 Section : PRIN 2A.9 Monitoring of consumer outcomes
 General
-PRIN 2A.9.1
+PRIN 2A.9.1R
 This section sets out the general obligation on firms to monitor under Principle 12 and PRIN
 2A the outcomes that retail customers are experiencing from their products.
-PRIN 2A.9.2
+PRIN 2A.9.2G
 The purpose of the monitoring obligation is to enable firms to identify whether there are any
 risks that they are not meeting the requirements of the cross-cutting obligations and the
 retail customer outcomes, and consequently they are not acting to deliver good outcomes
 for retail customers.
-PRIN 2A.9.3
+PRIN 2A.9.3G
 The frequency of monitoring, and the nature of the information a firm must collect to
 effectively monitor the outcomes received by retail customers depends on the type of firm
 and its role in the distribution chain, the nature of the product, and the target market.
-PRIN 2A.9.4
+PRIN 2A.9.4G
 (1) The monitoring obligation applies proportionately to a firm's role in the distribution
 chain. Where a firm does not have direct contact with retail customers it should
 monitor the outcomes of the service it provides, having regard to any information it
@@ -2056,15 +1893,15 @@ chain.
 (2) A firm that does not have direct contact with retail customers should act
 reasonably to obtain information about the outcomes experienced by retail customers
 of the products the firm has distributed.
-PRIN 2A.9.5
+PRIN 2A.9.5G
 To the extent that a firm is also required to carry out specific monitoring or reviews under
 any of the outcomes in PRIN 2A.3 to PRIN 2A.6, the specific monitoring or reviews form part
 of the general monitoring required by this section and firms may utilise the information
 gathered through these processes in preparing the report required under PRIN 2A.8.3R.
-PRIN 2A.9.6
+PRIN 2A.9.6G
 In relation to communications, PRIN 2A.5.10R to PRIN 2A.5.14R set out specific
 requirements on the testing and monitoring of communications.
-PRIN 2A.9.7
+PRIN 2A.9.7G
 Where a firm's compliance with any other rules replaces their requirement to comply with
 provisions of PRIN 2A, or tends to show compliance with provisions of PRIN 2A, the firm
 may use any monitoring or reviews it carries out under those other rules in complying with
@@ -2073,15 +1910,7 @@ Requirement to monitor retail customer outcomes
 A firm must regularly monitor the outcomes retail customers receive from:
 (1) the products the firm manufactures or distributes;
 (2) the communications the firm has with retail customers; and
-PRIN 2A.9.8
-[RULE:R]
-G
-G
-G
-G
-G
-G
-R
+PRIN 2A.9.8R
 
 [PAGE 48]
 PRIN
@@ -2089,7 +1918,7 @@ PRIN Principles for Businesses
 www.handbook.fca.org.uk
 February 2026
 (3) the customer support the firm provides to retail customers.
-PRIN 2A.9.9
+PRIN 2A.9.9R
 The monitoring carried out by a firm must enable it to determine at least:
 (1) whether retail customers are being, or have been, sold products that have been
 designed to meet their needs, characteristics and objectives;
@@ -2099,7 +1928,7 @@ value;
 (3) whether retail customers are equipped with the right information to make effective,
 timely and properly informed decisions; and
 (4) whether retail customers receive the support they need.
-PRIN 2A.9.10
+PRIN 2A.9.10R
 The firm's monitoring must also enable it to identify:
 (1) whether the firm is complying with Principle 12 and the cross-cutting obligations in
 PRIN 2A.2;
@@ -2109,10 +1938,10 @@ customers of the same product; and
 (3) whether any retail customers have suffered harm as a result of the firm's acts or
 omissions.
 Action required of firms
-PRIN 2A.9.11
+PRIN 2A.9.11R
 A firm must have in place processes to identify the root causes of any failure to deliver the
 outcomes listed in PRIN 2A.9.9R for retail customers.
-PRIN 2A.9.12
+PRIN 2A.9.12R
 Where a firm identifies that:
 (1) retail customers are not receiving the outcomes listed in PRIN 2A.9.9R, or there is
 a risk that retail customers will not receive these outcomes;
@@ -2121,40 +1950,31 @@ another group of retail customers for the same product;
 (3) the firm is not complying with Principle 12 and the cross-cutting obligations in
 PRIN 2A.2,
 it must take appropriate action to address the situation.
-PRIN 2A.9.13
+PRIN 2A.9.13G
 PRIN 2A.9.12R does not require a firm to take action to remove the effects of risks inherent
 in a product that the firm reasonably believed the retail customer understood and accepted.
-PRIN 2A.9.14
+PRIN 2A.9.14G
 Firms should have regard to PRIN 2A.10 in considering what may be appropriate action
 under PRIN 2A.9.12R.
 Record keeping
-R
-R
-R
-R
-G
-G
 
 [PAGE 49]
 PRIN
 PRIN Principles for Businesses
 www.handbook.fca.org.uk
 February 2026
-PRIN 2A.9.15
+PRIN 2A.9.15G
 SYSC 3 and SYSC 9 contain high level requirements in relation to record keeping. Firms will
 need to decide, in line with these requirements, what records they need to keep in relation
 to their obligations under Principle 12, the cross-cutting obligations and the consumer
 outcomes.
 Obligation to notify the FCA
-PRIN 2A.9.16
+PRIN 2A.9.16G
 Firms are reminded of their obligations under Principle 11 to inform the FCA of anything
 relating to the firm of which the FCA would reasonably expect notice.
-PRIN 2A.9.17
+PRIN 2A.9.17R
 A firm in a distribution chain must notify the FCA if it becomes aware that any other firm in
 that distribution chain is not or may not be complying with Principle 12 or PRIN 2A.
-G
-G
-R
 
 [PAGE 50]
 PRIN
@@ -2163,7 +1983,7 @@ www.handbook.fca.org.uk
 February 2026
 Section : PRIN 2A.10 Redress or other appropriate action
 Purpose
-PRIN 2A.10.1
+PRIN 2A.10.1G
 The purpose of this section is to set out the conduct required of firms where they identify
 foreseeable harm has been caused to retail customers.
 Appropriate action
@@ -2205,9 +2025,7 @@ or redress accepted by the retail customer.
 (b) DISP 1.1A.21G as if it read:
 Factors that may be relevant in the assessment of the foreseeable harm
 under DISP 1.1A.20R(2) include the following:
-PRIN 2A.10.2
-[RULE:G]
-R
+PRIN 2A.10.2R
 
 [PAGE 51]
 PRIN
@@ -2309,29 +2127,26 @@ outcomes to the circumstances
 which led to the foreseeable harm in
 question (the procedures for which
 are described in DISP 1.3.2AG).
-PRIN 2A.10.3
+PRIN 2A.10.3R
 A firm, MiFID investment firm or third country investment firm which identifies that it has
 caused retail customers foreseeable harm but which does not have a client relationship with
 that customer or the means to contact them shall take all reasonable steps to notify a
 customer of the matters in DISP 1.4.1R as modified by PRIN 2A.10.2R(2).
-R
 
 [PAGE 53]
 PRIN
 PRIN Principles for Businesses
 www.handbook.fca.org.uk
 February 2026
-PRIN 2A.10.4
+PRIN 2A.10.4G
 Reasonable steps for the purposes of 2A.10.3R might include (among other things)
 contacting the distributor of the relevant product and asking whether information can be
 passed on to the retail customer.
-PRIN 2A.10.5
+PRIN 2A.10.5R
 Where a firm, MiFID investment firm or third country investment firm identifies that a retail
 customer has been caused harm but concludes that another firm in the distribution chain
 was the sole or joint cause of that harm, it shall promptly notify that other firm and provide
 appropriate information about the harm caused.
-G
-R
 
 [PAGE 54]
 PRIN
@@ -2339,11 +2154,11 @@ PRIN Principles for Businesses
 www.handbook.fca.org.uk
 February 2026
 Section : PRIN 2A.11 Sale and purchase of product books
-PRIN 2A.11.1
+PRIN 2A.11.1R
 This section applies where:
 (1) a firm has purchased or purchases a product book from another firm; and
 (2) a firm sells a product book.
-PRIN 2A.11.2
+PRIN 2A.11.2R
 (1) Where the product book was purchased before 31 July 2023, the firm must
 comply with Principle 12 and PRIN 2A.
 (2) Unless:
@@ -2352,11 +2167,11 @@ comply with Principle 12 and PRIN 2A.
 the requirement in (1) to comply with PRIN 2A.3 and PRIN 2A.4 is a requirement on
 the firm to use its best endeavours to comply with the applicable rules in those
 chapters.
-PRIN 2A.11.3
+PRIN 2A.11.3G
 A firm that is required to apply PRIN 2A.3 or PRIN 2A.4 to a product book on a 'best
 endeavours' basis should continue to have regard to the RPPD and should read references
 in the RPPD to Principles 6 and 7 as referring to Principle 12.
-PRIN 2A.11.4
+PRIN 2A.11.4R
 (1) This rule applies where a product book is sold for the first time after 31 July 2023.
 (2) The firm selling the product book must provide relevant information to the
 purchasing firm to enable the purchasing firm to comply with Principle 12 and PRIN
@@ -2378,12 +2193,7 @@ under PRIN 2A.4.
 the purchasing firm to comply with Principle 12 and PRIN 2A in respect of the product
 book.
 Where a firm purchases a product book after 31 July 2023 and the first sale of that product
-PRIN 2A.11.5
-[RULE:R]
-R
-G
-R
-R
+PRIN 2A.11.5R
 
 [PAGE 55]
 PRIN
@@ -2414,15 +2224,15 @@ PRIN Principles for Businesses
 www.handbook.fca.org.uk
 February 2026
 Section : PRIN 3.1 Who?
-PRIN 3.1.1
+PRIN 3.1.1R
 PRIN applies to every firm, except that it does not apply to a firm in relation to its carrying on
 of auction regulation bidding.
-PRIN 3.1.1A
+PRIN 3.1.1AR
 PRIN also applies:
 (1) to an electronic money institution, an authorised payment institution, a small
 payment institution or a registered account information service provider; and
 (2) [deleted]
-PRIN 3.1.1B
+PRIN 3.1.1BR
 (1) Principle 7 applies to a registered person communicating a financial promotion
 relating to one or more qualifying cryptoassets (in reliance on the exemption in article
 73ZA of the Financial Promotion Order) as it applies to an authorised person
@@ -2430,14 +2240,14 @@ communicating a financial promotion relating to one or more qualifying cryptoass
 (PRIN 3.2.2R), disregarding the effect of PRIN 3.2.10R.
 (2) For the purpose of (1), relevant references in this sourcebook to a firm include
 reference to a registered person.
-PRIN 3.1.6
+PRIN 3.1.6R
 A firm will not be subject to a Principle or PRIN 2A to the extent that it would be contrary to
 the requirements of an EU measure passed or made before IP completion day, to the extent
 that those requirements continue to have effect after IP completion day under the EUWA.
-PRIN 3.1.7
+PRIN 3.1.7G
 PRIN 4 provides specific guidance on the application of the Principles and PRIN 2A for
 MiFID business.
-PRIN 3.1.8
+PRIN 3.1.8G
 The Principles will not apply to the extent that they purport to impose an obligation which is
 inconsistent with requirements which implemented the Payment Services Directive, the
 Consumer Credit Directive or the Electronic Money Directive. For example, there may be
@@ -2447,22 +2257,14 @@ and applicable to payment service providers and electronic money issuers (see Pa
 7 of the Payment Services Regulations and Part 5 of the Electronic Money Regulations) or
 derived from the Consumer Credit Directive (see, for example, the information requirements
 in the Consumer Credit (Disclosure of Information) Regulations 2010 ()).
-PRIN 3.1.9
+PRIN 3.1.9R
 PRIN applies to a TP firm, except that Principle 4 only applies to the extent that a TP firm is
 subject to rules relating to capital adequacy.
 (1) Only Principles 1, 2, 3, 9, 11, 12 and PRIN 2A apply to a TP UCITS qualifier, and
 only with respect to the activities in PRIN 3.2.2R (Communication and approval of
 financial promotions).
 (2) Where Principle 12 and PRIN 2A do not apply, Principle 7 also applies to a TP
-PRIN 3.1.10
-[RULE:R]
-R
-R
-R
-G
-G
-R
-R
+PRIN 3.1.10R
 
 [PAGE 58]
 PRIN
@@ -2470,19 +2272,16 @@ PRIN Principles for Businesses
 www.handbook.fca.org.uk
 February 2026
 UCITS qualifier with respect to the activities in PRIN 3.2.2R.
-PRIN 3.1.11
+PRIN 3.1.11G
 For the purposes of PRIN 3.1.9R, a TP firm should refer to GEN 2.2.30R and GEN 2.2.31G
 to determine which rules relating to capital adequacy apply to it.
-PRIN 3.1.12
+PRIN 3.1.12R
 Principle 12 and PRIN 2A only apply where a client is a retail customer, or there is
 distribution chain which involves a retail customer.
-PRIN 3.1.13
+PRIN 3.1.13R
 Principle 12 and PRIN 2A apply to:
 (1) a TP firm; and
 (2) a Gibraltar-based firm.
-G
-R
-R
 
 [PAGE 59]
 PRIN
@@ -2490,7 +2289,7 @@ PRIN Principles for Businesses
 www.handbook.fca.org.uk
 February 2026
 Section : PRIN 3.2 What?
-PRIN 3.2.1A
+PRIN 3.2.1AR
 PRIN (other than Principle 12 and PRIN 2A) applies with respect to the carrying on of:
 (1) regulated activities;
 (2) activities that constitute dealing in investments as principal, disregarding the
@@ -2500,7 +2299,7 @@ activity, regulated funeral plan activity, credit-related regulated activity, in
 distribution activity, regulated pensions dashboard activity and accepting deposits;
 and
 (4) activities directly arising from insurance risk transformation.
-PRIN 3.2.1B
+PRIN 3.2.1BR
 Other than with respect to a firm that is a credit union, PRIN also applies with respect to:
 (1) the provision of payment services;
 (2) issuing of electronic money (where not the activity of issuing electronic money
@@ -2508,40 +2307,34 @@ specified in article 9B of the Regulated Activities Order); and
 (3) activities connected to the provision of payment services and to the issuing of
 electronic money (whether or not the activity of issuing electronic money specified in
 article 9B of the Regulated Activities Order).
-PRIN 3.2.1C
+PRIN 3.2.1CG
 Issuing of electronic money will therefore be covered under either PRIN 3.2.1AR(1) where it
 is the regulated activity of issuing electronic money specified in article 9B of the Regulated
 Activities Order, or under PRIN 3.2.1BR where it is not that regulated activity.
-PRIN 3.2.2
+PRIN 3.2.2R
 PRIN also applies with respect to the communication and approval of financial promotions
 which:
 (1) if communicated by an unauthorised person without approval would contravene
 section 21(1) of the Act (Restrictions on financial promotion); and
 (2) may be communicated by a firm without contravening section 238(1) of the Act
 (Restrictions on promotion of collective investment schemes).
-PRIN 3.2.2-A
+PRIN 3.2.2-AG
 PRIN applies to the communication of promotions concerning payment services and
 electronic money.
-PRIN 3.2.3
+PRIN 3.2.3R
 Subject to PRIN 3.2.4R, Principles 3, 4 and (in so far as it relates to disclosing to the FCA)
 11 (and this chapter) also:
 (1) apply to firms with respect to the carrying on of unregulated activities (for Principle
 3 this is only in a prudential context); and
 (2) for firms and other persons that are subject to the Principles, take into account
 any activity of other members of a group of which the firm is a member.
-R
-R
-G
-R
-G
-R
 
 [PAGE 60]
 PRIN
 PRIN Principles for Businesses
 www.handbook.fca.org.uk
 February 2026
-PRIN 3.2.4
+PRIN 3.2.4R
 In relation to an Annex II benchmark administrator which:
 (1) administers only benchmarks which are subject to Annex II to the benchmarks
 regulation; and
@@ -2549,12 +2342,12 @@ regulation; and
 which Principle 11 applies,
 Principle 11 (in so far as it relates to disclosing to the FCA) applies only to the regulated
 activity of administering a benchmark.
-PRIN 3.2.5
+PRIN 3.2.5G
 The FCA only expects an Annex II benchmark administrator subject to PRIN 3.2.4R to
 disclose information under Principle 11 which is relevant to the firm's compliance with its
 obligations under the benchmarks regulation.
 Principle 12 and PRIN 2A: additional application provisions
-PRIN 3.2.6
+PRIN 3.2.6R
 (1) Principle 12 and PRIN 2A apply to a firm's retail market business, including in
 respect of existing products and closed products.
 (2)
@@ -2574,39 +2367,31 @@ regulated activity other than issuing electronic money; and
 (b) activities connected to or ancillary activities in relation to issuing electronic
 money, but only insofar as the activity is not an ancillary activity in relation to
 another regulated activity.
-PRIN 3.2.7
+PRIN 3.2.7R
 Where Principle 12 and PRIN 2A apply to the activities of a firm operating in a distribution
 chain, Principle 12 and PRIN 2A apply only to the extent that the person is responsible in
 the course of carrying out those activities for determining or materially influencing retail
 customer outcomes.
-PRIN 3.2.8
+PRIN 3.2.8R
 Subject to PRIN 3.2.7R, Principle 12 and PRIN 2A do not apply to activities to the extent
 that those activities are not included in a rule which sets out the scope of protections offered
 to retail customers by COBS, ICOBS, MCOB, BCOBS, CMCOB, FPCOB, PROD or CONC.
 Interaction between Principle 12 and Principles 6 and 7
-R
-G
-R
-R
-R
 
 [PAGE 61]
 PRIN
 PRIN Principles for Businesses
 www.handbook.fca.org.uk
 February 2026
-PRIN 3.2.10
+PRIN 3.2.10R
 Principles 6 and 7 do not apply to a firm's activities to the extent that Principle 12 and PRIN
 2A apply.
-PRIN 3.2.11
+PRIN 3.2.11G
 Activities to which Principles 6 and 7 rather than Principle 12 and PRIN 2A may apply
 include, for example, services provided to professional clients.
-PRIN 3.2.12
+PRIN 3.2.12G
 Principle 12 and PRIN 2A have a broader application than Principles 6 and 7, for example
 they apply to firms in the distribution chain for whom the retail customer may not be a client.
-R
-G
-G
 
 [PAGE 62]
 PRIN
@@ -2658,8 +2443,6 @@ carried on; otherwise these Principles apply
 with respect to activities carried on from an
 establishment maintained by the firm (or its
 Principles 6, 7, 8, 9 and 10
-PRIN 3.3.1
-[RULE:R]
 
 [PAGE 63]
 PRIN
@@ -2693,12 +2476,12 @@ which case Principle 12 and PRIN 2A apply
 with that scope in relation to the activity
 described in that rule or onshored
 legislation.
-PRIN 3.3.3
+PRIN 3.3.3R
 PRIN 3.3.1R applies to electronic money institutions, payment institutions and registered
 account information service providers as if the references to a firm were references to a
 person within that description, and references to an appointed representative were to an
 agent of such a person within the meaning of the Payment Services Regulations.
-PRIN 3.3.4
+PRIN 3.3.4R
 Notwithstanding PRIN 3.3.1R, PRIN applies to:
 (1) a TP firm with respect to activities carried on from an establishment maintained by
 the firm (or its appointed representative) in the United Kingdom;
@@ -2706,8 +2489,6 @@ the firm (or its appointed representative) in the United Kingdom;
 its appointed representative) from an establishment in an EEA State; and
 (3) a TP UCITS qualifier with respect to the firm's activities in relation to the AIF or
 scheme in question, in the United Kingdom.
-R
-R
 
 [PAGE 64]
 PRIN
@@ -2724,18 +2505,18 @@ PRIN 3.4.1R, PRIN 3.4.2R and PRIN 1 Annex 1 do not apply with respect to:
 (4) payment services; or
 (4A) regulated pensions dashboard activity; or
 (5) the issuing of electronic money (where not a regulated activity).
-PRIN 3.4.1
+PRIN 3.4.1R
 For business other than MiFID or equivalent third country business, the only requirement of
 Principle 7 relating to eligible counterparties is that a firm must communicate information to
 eligible counterparties in a way that is not misleading.
-PRIN 3.4.1A
+PRIN 3.4.1AG
 Principle 7 applies in full to MiFID or equivalent third country business.
-PRIN 3.4.2
+PRIN 3.4.2R
 For the purposes of PRIN, a firm intending to carry on, or carrying on, activities that do not
 involve designated investment business, may treat a client as an eligible counterparty in
 accordance with PRIN 1 Annex 1 R.
 Guarantors etc
-PRIN 3.4.3A
+PRIN 3.4.3AR
 (1) Paragraph (2) applies in relation to an individual who:
 (a) has provided, or is to provide, a guarantee or an indemnity (or both) in
 relation to a regulated credit agreement, a regulated consumer hire agreement
@@ -2747,20 +2528,13 @@ for the purposes of Principle 12 and PRIN 2A.
 (3) For the purposes of this rule, a guarantee does not include a legal or equitable
 mortgage or a pledge.
 Actions for damages
-PRIN 3.4.4
+PRIN 3.4.4R
 A contravention of the rules in PRIN does not give rise to a right of action by a private
 person under section 138D of the Act (and each of those rules is specified under section
 138D(3) of the Act as a provision giving rise to no such right of action).
 Reference to "regulators" in Principle 11
 Where Principle 11 refers to regulators, this means, in addition to the FCA, other regulators
-PRIN 3.4.5
-[RULE:R]
-R
-G
-R
-R
-R
-R
+PRIN 3.4.5R
 
 [PAGE 65]
 PRIN
@@ -2792,7 +2566,7 @@ PRIN Principles for Businesses
 www.handbook.fca.org.uk
 February 2026
 Section : PRIN 4.1 Principles: MiFID business
-PRIN 4.1.1
+PRIN 4.1.1G
 PRIN 3.1.6 [RULE:R] gives effect to the provisions of the EUWA concerning the continuing
 application of the principle of the supremacy of EU law. It ensures that the Principles and
 PRIN 2A do not impose obligations upon firms which are inconsistent with a relevant EU
@@ -2801,15 +2575,15 @@ disapplies that Principle or provision of PRIN 2A, but only to the extent necess
 compatibility with the relevant EU measure. This disapplication has practical effect only for
 certain matters covered by MiFID, which are explained in this section.
 Where?
-PRIN 4.1.2
+PRIN 4.1.2G
 Under PRIN 3.3.1 R, the territorial application of a number of Principles and PRIN 2A to a
 UK MiFID investment firm is extended to the extent that another applicable rule or onshored
 regulation which is relevant to an activity has a wider territorial scope.
-PRIN 4.1.3
+PRIN 4.1.3G
 Principles 4, 5 and 11 will have the same scope of territorial application for MiFID business
 as for other business.
 What?
-PRIN 4.1.4
+PRIN 4.1.4G
 (1) Certain requirements derived from MiFID are disapplied for:
 (a) eligible counterparty business;
 (b) transactions concluded under the rules governing a multilateral trading
@@ -2829,10 +2603,6 @@ application of those Principles or PRIN 2A in relation to other matters, such as
 asset protections, systems and controls, prudential requirements and market
 integrity. Further information about these limitations is contained in COBS 1 Annex 1.
 (3) Principles 3, 4, 5, 7, 8, 10 and 11 are not limited in this way.
-G
-G
-G
-G
 
 [PAGE 68]
 PRIN
@@ -3223,9 +2993,6 @@ PRIN Principles for Businesses
 www.handbook.fca.org.uk
 February 2026
 Section : PRIN Sch 1 Record Keeping Requirements
-PRIN Sch 1.1
-There are no record keeping requirements in PRIN.
-G
 .
 .
 
@@ -3282,8 +3049,6 @@ regulator would
 reasonably
 expect notice
 Appropriate
-G
-G
 .
 .
 
@@ -3308,9 +3073,6 @@ PRIN Principles for Businesses
 www.handbook.fca.org.uk
 February 2026
 Section : PRIN Sch 3 Fees and other required payments
-PRIN Sch 3.1
-There are no requirements for fees or other payments in PRIN.
-G
 .
 .
 
@@ -3335,9 +3097,6 @@ PRIN Principles for Businesses
 www.handbook.fca.org.uk
 February 2026
 Section : PRIN Sch 3 Fees and other required payments
-PRIN Sch 3.1
-There are no requirements for fees or other payments in PRIN.
-G
 .
 .
 
@@ -3426,6 +3185,5 @@ waive all its rules, other than rules made under section 137O (Threshold conditi
 section 247 (Trust scheme rules), section 248 (Scheme particular rules), section 261I
 (Contractual scheme rules) or section 261J (Contractual scheme particulars rules) of the
 Act.
-G
 .
 .

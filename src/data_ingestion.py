@@ -9,6 +9,7 @@ Consumer Duty PDFs must be downloaded manually and placed in:
     data/raw/consumer_duty/*.pdf
 """
 
+import re
 import sys
 from pathlib import Path
 from datetime import date
@@ -87,6 +88,103 @@ def download_pdf(url: str, dest_path: Path) -> Path:
     return dest_path
 
 
+# FCA Handbook PDFs use a two-column layout where rule numbers (e.g.
+# "COBS 4.2.1") and their type letters (R/G/D/E) are in separate PDF text
+# blocks at different x-coordinates on the same visual line.  Standard text
+# extraction loses the association.  The constants below identify the
+# type-letter column so we can spatially re-join them.
+_TYPE_LETTER_X_MIN = 110      # type letters appear at x ≈ 116
+_TYPE_LETTER_X_MAX = 125
+_TYPE_LETTER_SIZE = 7.2       # font size (within ± 0.5)
+_TYPE_LETTER_SIZE_TOL = 0.5
+_Y_MATCH_TOLERANCE = 5.0      # max vertical distance to pair rule + type
+
+# Matches rule headings like "COBS 4.2.1", "PRIN 2A.1.3", "SYSC 4.1.1-AR"
+_RE_RULE_HEADING = re.compile(
+    r"^(COBS|PRIN|SYSC)\s+"
+    r"-?\d+[A-Z]?\.\d+[A-Z]?\.\d+[A-Z]{0,2}"
+    r"(-[A-Z]{1,2})?$"
+)
+
+
+def _extract_page_text_with_rule_types(page: fitz.Page) -> str:
+    """
+    Extract text from a single PDF page, spatially joining rule-heading
+    numbers with their separated type letters (R/G/D/E).
+
+    The FCA Handbook PDFs place the type letter in a separate column at
+    x ≈ 116.  This function detects those isolated letters, matches each
+    to the nearest rule heading on the same visual line (within 5 pt),
+    appends the letter to the rule number, and omits the orphaned letter
+    from the output.
+    """
+    page_dict = page.get_text("dict")
+    blocks = page_dict.get("blocks", [])
+
+    # --- Step 1: identify isolated type-letter blocks and rule headings ---
+    type_letters = []       # (block_idx, y_origin, letter)
+    rule_headings = []      # (block_idx, line_idx, span_idx, y_origin, text)
+
+    for bi, block in enumerate(blocks):
+        if "lines" not in block:
+            continue
+        for li, line in enumerate(block["lines"]):
+            spans = line["spans"]
+            full_text = "".join(s["text"] for s in spans).strip()
+            if not spans:
+                continue
+            s0 = spans[0]
+
+            # Isolated type letter in the type-letter column
+            if (full_text in ("R", "G", "D", "E")
+                    and abs(s0["size"] - _TYPE_LETTER_SIZE) < _TYPE_LETTER_SIZE_TOL
+                    and _TYPE_LETTER_X_MIN < s0["origin"][0] < _TYPE_LETTER_X_MAX):
+                type_letters.append((bi, s0["origin"][1], full_text))
+                continue
+
+            # Bold rule heading at the standard heading font size
+            if (_RE_RULE_HEADING.match(full_text)
+                    and "Bold" in s0.get("font", "")
+                    and abs(s0["size"] - _TYPE_LETTER_SIZE) < _TYPE_LETTER_SIZE_TOL):
+                rule_headings.append((bi, li, 0, s0["origin"][1], full_text))
+
+    # --- Step 2: spatial join — pair each type letter to nearest heading ---
+    # Map (block_idx, line_idx) -> suffix letter to append
+    heading_suffix: dict[tuple[int, int], str] = {}
+    # Set of block indices to skip entirely (orphaned type-letter blocks)
+    skip_blocks: set[int] = set()
+
+    for tl_bi, tl_y, letter in type_letters:
+        best = None
+        best_dist = _Y_MATCH_TOLERANCE + 1
+        for rh_bi, rh_li, _, rh_y, _ in rule_headings:
+            dist = abs(tl_y - rh_y)
+            if dist < best_dist:
+                best_dist = dist
+                best = (rh_bi, rh_li)
+        if best is not None and best_dist <= _Y_MATCH_TOLERANCE:
+            heading_suffix[best] = letter
+        skip_blocks.add(tl_bi)
+
+    # --- Step 3: rebuild page text with suffixes applied ---
+    lines_out: list[str] = []
+    for bi, block in enumerate(blocks):
+        if bi in skip_blocks:
+            continue
+        if "lines" not in block:
+            continue
+        for li, line in enumerate(block["lines"]):
+            spans = line["spans"]
+            line_text = "".join(s["text"] for s in spans)
+            # Append type suffix if this heading was matched
+            suffix = heading_suffix.get((bi, li))
+            if suffix:
+                line_text = line_text.rstrip() + suffix
+            lines_out.append(line_text)
+
+    return "\n".join(lines_out)
+
+
 def extract_text_from_pdf(pdf_path: Path) -> tuple[str, list[dict]]:
     """
     Extract full text and table-of-contents from a PDF.
@@ -104,7 +202,7 @@ def extract_text_from_pdf(pdf_path: Path) -> tuple[str, list[dict]]:
 
     pages = []
     for page_num, page in enumerate(doc, start=1):
-        page_text = page.get_text("text")
+        page_text = _extract_page_text_with_rule_types(page)
         if page_text.strip():
             pages.append(f"[PAGE {page_num}]\n{page_text}")
 

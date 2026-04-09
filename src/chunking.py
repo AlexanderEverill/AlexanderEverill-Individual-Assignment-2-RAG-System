@@ -91,8 +91,15 @@ def _extract_rule_info(text: str) -> tuple[str | None, str | None]:
     rule_match = _RE_RULE_NUMBER.search(text)
     rule_number = rule_match.group(1).strip() if rule_match else None
 
+    # Try [RULE:X] tag first (from preprocessing), then fall back to the
+    # trailing letter on the rule number itself (e.g. "COBS 4.2.1R" → "R")
     type_match = _RE_RULE_TYPE_TAG.search(text)
-    rule_type = type_match.group(1) if type_match else None
+    if type_match:
+        rule_type = type_match.group(1)
+    elif rule_number and rule_number[-1] in "RGDE":
+        rule_type = rule_number[-1]
+    else:
+        rule_type = None
 
     return rule_number, rule_type
 
