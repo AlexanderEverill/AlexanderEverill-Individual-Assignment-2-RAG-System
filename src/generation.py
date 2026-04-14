@@ -107,6 +107,23 @@ def _format_context_with_sources(chunks: list[dict]) -> str:
 # ---------------------------------------------------------------------------
 
 
+def generate_no_rag(question: str) -> str:
+    """
+    Ask GPT-4o the question directly with no retrieved context.
+
+    This serves as the true baseline — the LLM answering from its
+    training data alone, with no RAG pipeline involved.
+    """
+    client = OpenAI(api_key=OPENAI_API_KEY)
+    response = client.chat.completions.create(
+        model=GENERATION_MODEL,
+        messages=[{"role": "user", "content": question}],
+        temperature=0.2,
+        max_tokens=2048,
+    )
+    return response.choices[0].message.content.strip()
+
+
 def generate_baseline(question: str, chunks: list[dict]) -> str:
     """
     Build the baseline prompt from retrieved chunks and call GPT-4o.

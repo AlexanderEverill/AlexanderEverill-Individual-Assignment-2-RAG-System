@@ -252,6 +252,8 @@ where `k = 60` (standard constant). Take union of results, compute RRF score for
 
 ### 6.8 Generation (`generation.py`)
 
+**No-RAG mode:** Sends the question directly to GPT-4o with no retrieved context, serving as the true baseline for the ablation study.
+
 **Baseline prompt template:**
 
 ```
@@ -359,16 +361,18 @@ Each query has:
 
 ### 7.4 Ablation study
 
-Run 4 configurations to isolate contributions:
+Run 6 configurations to isolate contributions:
 
 | Config | Retrieval | Re-ranking | Prompt |
 |---|---|---|---|
+| No RAG | None (LLM only) | None | Direct question |
 | Baseline | Vector only (k=5) | None | Vanilla |
-| +Hybrid | Hybrid BM25+Vector (k=20→5) | None | Vanilla |
-| +Rerank | Vector only (k=20→5) | Cross-encoder | Vanilla |
+| +Prompt | Vector only (k=5) | None | Enhanced |
+| +Hybrid | Hybrid BM25+Vector (k=20→5) | None | Enhanced |
+| +Rerank | Vector only (k=20→5) | Cross-encoder | Enhanced |
 | Enhanced (full) | Hybrid (k=20) | Cross-encoder (→top 5) | Enhanced |
 
-This lets us attribute improvements: hybrid retrieval vs re-ranking vs prompt engineering.
+The no-RAG config establishes a true baseline (LLM from training data only), demonstrating the value added by retrieval-augmented generation. The remaining configs let us attribute improvements: prompt engineering vs hybrid retrieval vs re-ranking.
 
 ---
 

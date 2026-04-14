@@ -2,7 +2,7 @@
 
 A Retrieval-Augmented Generation system for answering questions about UK Financial Conduct Authority (FCA) regulatory documents. Built as part of IB9AU0 coursework at Warwick Business School (2025-26).
 
-The system ingests FCA Handbook sourcebooks (PRIN, COBS, SYSC), chunks and indexes them, then retrieves relevant passages to generate grounded answers via GPT-4o. Two pipeline configurations — **baseline** and **enhanced** — enable an ablation study comparing retrieval and generation strategies.
+The system ingests FCA Handbook sourcebooks (PRIN, COBS, SYSC), chunks and indexes them, then retrieves relevant passages to generate grounded answers via GPT-4o. Six pipeline configurations — from a **no-RAG** baseline through to a fully **enhanced** pipeline — enable an ablation study isolating the contribution of each retrieval and generation technique.
 
 ## Architecture
 
@@ -41,9 +41,9 @@ FCA PDFs ──▶ Ingestion ──▶ Preprocessing ──▶ Chunking ──�
 │   ├── bm25_index.py        # BM25Okapi index building and querying
 │   ├── retrieval.py         # Vector, BM25, and hybrid RRF retrieval
 │   ├── reranker.py          # Cross-encoder re-ranking
-│   ├── generation.py        # Baseline and enhanced prompt templates + GPT-4o
+│   ├── generation.py        # No-RAG, baseline, and enhanced prompt templates + GPT-4o
 │   ├── pipeline.py          # Orchestrates baseline/enhanced runs (CLI entry point)
-│   └── evaluation.py        # 5-config ablation with retrieval + generation metrics
+│   └── evaluation.py        # 6-config ablation with retrieval + generation metrics
 ├── data/
 │   ├── raw/                 # Ingested source text with YAML frontmatter
 │   ├── processed/           # Cleaned and rule-tagged text
@@ -100,7 +100,7 @@ python -m src.pipeline --mode baseline --query "What are the FCA Principles for 
 
 ### Run the evaluation
 
-Runs all 5 ablation configurations against the 25-query test set:
+Runs all 6 ablation configurations against the 25-query test set:
 
 ```bash
 python src/evaluation.py
@@ -110,7 +110,7 @@ Results are written to `outputs/evaluation_results.json`.
 
 ## Evaluation
 
-The evaluation framework tests 5 configurations in an ablation study across 25 queries spanning 6 categories (fact lookup, rule reference, cross-section reasoning, ambiguous, edge case, keyword).
+The evaluation framework tests 6 configurations in an ablation study across 25 queries spanning 6 categories (fact lookup, rule reference, cross-section reasoning, ambiguous, edge case, keyword). A no-RAG baseline (LLM only, no retrieval) is included to demonstrate the value of the RAG pipeline itself.
 
 **Retrieval metrics:** Precision@5, Recall@5, Precision@10, Recall@10, MRR
 
@@ -120,23 +120,26 @@ The evaluation framework tests 5 configurations in an ablation study across 25 q
 
 | Configuration | P@5 | R@5 | MRR | Correctness | Groundedness | Citation Acc. |
 |---------------|------|------|------|-------------|--------------|---------------|
-| `baseline` | 0.245 | 0.415 | 0.517 | 1.56 | 1.68 | 1.52 |
-| `+prompt` | 0.245 | 0.415 | 0.517 | 3.32 | 3.92 | 3.96 |
-| `+hybrid` | 0.300 | 0.520 | **0.549** | 3.40 | 3.80 | 3.84 |
-| `+rerank` | 0.300 | 0.457 | 0.417 | 3.36 | 3.84 | 3.88 |
-| `enhanced` | **0.318** | **0.492** | 0.454 | 3.20 | 3.64 | **3.88** |
+| `no_rag` | — | — | — | 3.08 | 1.00 | 1.00 |
+| `baseline` | 0.216 | 0.365 | 0.455 | 1.60 | 1.72 | 1.68 |
+| `+prompt` | 0.216 | 0.365 | 0.455 | 3.36 | 3.84 | 3.88 |
+| `+hybrid` | 0.264 | 0.458 | **0.483** | 3.44 | 3.68 | 3.76 |
+| `+rerank` | 0.264 | 0.402 | 0.367 | 3.36 | 3.72 | 3.64 |
+| `enhanced` | **0.280** | **0.433** | 0.399 | 3.28 | **3.88** | **3.92** |
 
 **Key findings:**
-- The enhanced prompt alone provides the largest single improvement to generation quality (correctness 1.56 &rarr; 3.32).
-- Hybrid retrieval (BM25 + Vector with RRF) yields the best MRR (0.549) and meaningful recall gains.
-- Spatial PDF extraction with rule-type rejoining improved baseline retrieval metrics across the board (P@5 up from 0.224 to 0.245, MRR from 0.399 to 0.517).
+- The no-RAG baseline achieves reasonable correctness (3.08) from LLM training data alone, but scores 1.0 on groundedness and citation accuracy — confirming that RAG is essential for verifiable, source-grounded answers.
+- The enhanced prompt alone provides the largest single improvement to generation quality (correctness 1.60 &rarr; 3.36).
+- Hybrid retrieval (BM25 + Vector with RRF) yields the best MRR (0.483) and meaningful recall gains.
+- The fully enhanced pipeline achieves the highest groundedness (3.88) and citation accuracy (3.92).
 
 ## Changes Since Initial Pipeline
 
 1. **Spatial PDF extraction with rule-type rejoining** — FCA Handbook PDFs place rule type letters (R/G/D/E) in a separate column from the rule number. Standard text extraction lost this association. `data_ingestion.py` now uses PyMuPDF's dictionary-mode extraction to spatially match type letters to their rule headings based on x/y coordinates, producing cleaner source text (e.g. `COBS 4.2.1R` instead of `COBS 4.2.1` with an orphaned `R`).
 2. **Improved rule-type fallback in chunking** — `chunking.py` now falls back to the trailing letter on the rule number itself (e.g. the `R` in `COBS 4.2.1R`) when no `[RULE:X]` preprocessing tag is present, improving rule-type metadata coverage.
 3. **Manually validated evaluation questions** — The 25-query test set was reviewed and corrected to ensure ground-truth answers and relevant rule codes accurately reflect the FCA Handbook content.
-4. **Re-run evaluation** — All data was re-ingested, re-embedded, and re-evaluated with the improved pipeline, producing updated metrics.
+4. **No-RAG baseline config** — Added a 6th ablation configuration (`no_rag`) that queries GPT-4o directly without any retrieval, serving as a true baseline to demonstrate the value of the RAG pipeline.
+5. **Re-run evaluation** — All data was re-ingested, re-embedded, and re-evaluated with the improved pipeline across all 6 configurations, producing updated metrics.
 
 ## Tech Stack
 

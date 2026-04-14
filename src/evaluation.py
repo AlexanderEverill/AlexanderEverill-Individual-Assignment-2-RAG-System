@@ -1,12 +1,13 @@
 # Runs evaluation metrics (P@5, R@5, P@10, R@10, MRR, generation quality) on the test set
 
 """
-Evaluation module — runs all 5 ablation configurations against the test set,
+Evaluation module — runs all 6 ablation configurations against the test set,
 computes retrieval metrics (P@5, R@5, P@10, R@10, MRR) and LLM-as-judge
 generation scores, then writes consolidated results to
 outputs/evaluation_results.json.
 
 Ablation configurations:
+    0. No RAG        — No retrieval, LLM answers from training data only
     1. Baseline      — Vector only (k=5), no re-ranking, vanilla prompt
     2. +Prompt       — Vector only (k=5), no re-ranking, enhanced prompt
     3. +Hybrid       — Hybrid BM25+Vector (k=20→top 5 by RRF), no re-ranking, enhanced prompt
@@ -33,7 +34,7 @@ from config import (
 )
 from retrieval import vector_search, hybrid_search
 from reranker import rerank
-from generation import generate_baseline, generate_enhanced
+from generation import generate_no_rag, generate_baseline, generate_enhanced
 
 
 # ---------------------------------------------------------------------------
@@ -50,6 +51,12 @@ def load_test_set() -> list[dict]:
 # ---------------------------------------------------------------------------
 # Ablation pipeline runners
 # ---------------------------------------------------------------------------
+
+def run_config_no_rag(question: str) -> dict:
+    """Config 0: No retrieval — LLM answers from training data only."""
+    answer = generate_no_rag(question)
+    return {"answer": answer, "chunks": [], "candidates": []}
+
 
 def run_config_baseline(question: str) -> dict:
     """Config 1: Vector only (k=5) → vanilla prompt."""
@@ -90,6 +97,7 @@ def run_config_enhanced(question: str) -> dict:
 
 
 CONFIGS = {
+    "no_rag":       run_config_no_rag,
     "baseline":     run_config_baseline,
     "+prompt":      run_config_prompt_only,
     "+hybrid":      run_config_hybrid,
