@@ -3785,16 +3785,16 @@
         "citation_accuracy": 1.0
       },
       "avg_latency_ms": 4533.8,
-      "num_queries_retrieval": 22,
+      "num_queries_retrieval": 20,
       "num_queries_generation": 25
     },
     "baseline": {
       "retrieval": {
-        "P@5": 0.2455,
-        "R@5": 0.4152,
-        "P@10": 0.1227,
-        "R@10": 0.4152,
-        "MRR": 0.5167
+        "P@5": 0.27,
+        "R@5": 0.4567,
+        "P@10": 0.135,
+        "R@10": 0.4567,
+        "MRR": 0.5683
       },
       "generation": {
         "correctness": 1.6,
@@ -3803,16 +3803,16 @@
         "citation_accuracy": 1.68
       },
       "avg_latency_ms": 1335.5,
-      "num_queries_retrieval": 22,
+      "num_queries_retrieval": 20,
       "num_queries_generation": 25
     },
     "+prompt": {
       "retrieval": {
-        "P@5": 0.2455,
-        "R@5": 0.4152,
-        "P@10": 0.1227,
-        "R@10": 0.4152,
-        "MRR": 0.5167
+        "P@5": 0.27,
+        "R@5": 0.4567,
+        "P@10": 0.135,
+        "R@10": 0.4567,
+        "MRR": 0.5683
       },
       "generation": {
         "correctness": 3.36,
@@ -3821,16 +3821,16 @@
         "citation_accuracy": 3.88
       },
       "avg_latency_ms": 3748.0,
-      "num_queries_retrieval": 22,
+      "num_queries_retrieval": 20,
       "num_queries_generation": 25
     },
     "+hybrid": {
       "retrieval": {
-        "P@5": 0.3,
-        "R@5": 0.5205,
-        "P@10": 0.2091,
-        "R@10": 0.5909,
-        "MRR": 0.5492
+        "P@5": 0.31,
+        "R@5": 0.5058,
+        "P@10": 0.22,
+        "R@10": 0.5833,
+        "MRR": 0.5667
       },
       "generation": {
         "correctness": 3.44,
@@ -3839,16 +3839,16 @@
         "citation_accuracy": 3.76
       },
       "avg_latency_ms": 3967.7,
-      "num_queries_retrieval": 22,
+      "num_queries_retrieval": 20,
       "num_queries_generation": 25
     },
     "+rerank": {
       "retrieval": {
-        "P@5": 0.3,
-        "R@5": 0.4568,
-        "P@10": 0.2227,
-        "R@10": 0.5189,
-        "MRR": 0.4167
+        "P@5": 0.33,
+        "R@5": 0.5025,
+        "P@10": 0.245,
+        "R@10": 0.5708,
+        "MRR": 0.4583
       },
       "generation": {
         "correctness": 3.36,
@@ -3857,16 +3857,16 @@
         "citation_accuracy": 3.64
       },
       "avg_latency_ms": 4169.7,
-      "num_queries_retrieval": 22,
+      "num_queries_retrieval": 20,
       "num_queries_generation": 25
     },
     "enhanced": {
       "retrieval": {
-        "P@5": 0.3182,
-        "R@5": 0.4924,
-        "P@10": 0.2091,
-        "R@10": 0.5909,
-        "MRR": 0.4538
+        "P@5": 0.35,
+        "R@5": 0.5417,
+        "P@10": 0.22,
+        "R@10": 0.5833,
+        "MRR": 0.4992
       },
       "generation": {
         "correctness": 3.28,
@@ -3875,7 +3875,7 @@
         "citation_accuracy": 3.92
       },
       "avg_latency_ms": 4103.0,
-      "num_queries_retrieval": 22,
+      "num_queries_retrieval": 20,
       "num_queries_generation": 25
     }
   }

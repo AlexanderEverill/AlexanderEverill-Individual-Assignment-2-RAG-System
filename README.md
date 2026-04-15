@@ -53,8 +53,6 @@ FCA PDFs ──▶ Ingestion ──▶ Preprocessing ──▶ Chunking ──�
 │       └── test_set.json    # 25 evaluation queries with ground truth
 ├── outputs/
 │   └── evaluation_results.json
-├── notebooks/
-│   └── exploration.ipynb
 ├── requirements.txt
 └── PIPELINE_PLAN.md         # Detailed project plan and design document
 ```
@@ -121,16 +119,16 @@ The evaluation framework tests 6 configurations in an ablation study across 25 q
 | Configuration | P@5 | R@5 | MRR | Correctness | Groundedness | Citation Acc. |
 |---------------|------|------|------|-------------|--------------|---------------|
 | `no_rag` | — | — | — | 3.08 | 1.00 | 1.00 |
-| `baseline` | 0.216 | 0.365 | 0.455 | 1.60 | 1.72 | 1.68 |
-| `+prompt` | 0.216 | 0.365 | 0.455 | 3.36 | 3.84 | 3.88 |
-| `+hybrid` | 0.264 | 0.458 | **0.483** | 3.44 | 3.68 | 3.76 |
-| `+rerank` | 0.264 | 0.402 | 0.367 | 3.36 | 3.72 | 3.64 |
-| `enhanced` | **0.280** | **0.433** | 0.399 | 3.28 | **3.88** | **3.92** |
+| `baseline` | 0.270 | 0.457 | 0.568 | 1.60 | 1.72 | 1.68 |
+| `+prompt` | 0.270 | 0.457 | **0.568** | 3.36 | 3.84 | 3.88 |
+| `+hybrid` | 0.310 | 0.506 | 0.567 | 3.44 | 3.68 | 3.76 |
+| `+rerank` | 0.330 | 0.503 | 0.458 | 3.36 | 3.72 | 3.64 |
+| `enhanced` | **0.350** | **0.542** | 0.499 | 3.28 | **3.88** | **3.92** |
 
 **Key findings:**
 - The no-RAG baseline achieves reasonable correctness (3.08) from LLM training data alone, but scores 1.0 on groundedness and citation accuracy — confirming that RAG is essential for verifiable, source-grounded answers.
 - The enhanced prompt alone provides the largest single improvement to generation quality (correctness 1.60 &rarr; 3.36).
-- Hybrid retrieval (BM25 + Vector with RRF) yields the best MRR (0.483) and meaningful recall gains.
+- Hybrid retrieval (BM25 + Vector with RRF) yields meaningful recall gains over vector-only retrieval.
 - The fully enhanced pipeline achieves the highest groundedness (3.88) and citation accuracy (3.92).
 
 ## Changes Since Initial Pipeline

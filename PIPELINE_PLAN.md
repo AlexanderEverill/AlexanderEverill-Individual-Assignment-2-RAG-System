@@ -90,16 +90,10 @@ fca-rag-pipeline/
 │   ├── pipeline.py              # Orchestrates full RAG pipeline (baseline + enhanced)
 │   └── evaluation.py            # Runs eval metrics on test set
 │
-├── notebooks/
-│   └── exploration.ipynb        # Data exploration, chunk size analysis, quick tests
-│
 ├── outputs/
 │   ├── evaluation_results.json  # Full evaluation output
 │   ├── demo_log.md              # Sample inputs + outputs + commentary
 │   └── report.docx              # 1,500-word report
-│
-└── tests/
-    └── test_pipeline.py         # Basic integration tests
 ```
 
 ---

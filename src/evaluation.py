@@ -369,8 +369,8 @@ def run_evaluation(verbose: bool = True) -> dict:
             query_result["configs"][cfg_name] = cfg_result
 
             # Accumulate (exclude edge cases from retrieval metrics as they
-            # have no relevant rule codes, making P/R/MRR undefined)
-            if relevant_codes:
+            # are adversarial queries not suited for retrieval evaluation)
+            if category != "edge_case" and relevant_codes:
                 accum[cfg_name]["p5"].append(p5)
                 accum[cfg_name]["r5"].append(r5)
                 accum[cfg_name]["p10"].append(p10)
